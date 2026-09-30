@@ -312,6 +312,10 @@ python prep/archive_roles.py --unpack          # checks SHA256SUMS, rebuilds dat
 python prep/preflight_roles.py                 # Stage 3, to confirm: RESULT: PASS
 ```
 
+Stage 3 then warns on two checks, `one state` and `scaling`: they compare the role
+files with `data/prepared/`, which only Stage 1 makes. The other checks run as
+usual, and the result is still `PASS`.
+
 There are two archives, so you can fetch only what you need:
 
 | archive | holds | for |
