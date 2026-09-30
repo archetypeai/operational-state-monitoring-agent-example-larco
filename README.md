@@ -560,6 +560,30 @@ role, including the hours per state of each scored set.
 python fit/baseline_bar.py           # ~90 s, local, no platform time
 ```
 
+**Why a bar:** the example tests whether frozen Omega embeddings recognise machine
+states better than simple signal features. So the bar keeps everything else the
+same as Omega's run: the same library windows (cut within the same pieces), the
+same validation windows labelled by their last row, the same classifier (kNN), the
+same platform-style macro-F1, and the same choice of setting on the 6 search
+cycles. What's left to differ is the representation: Omega's embedding against a
+hand-made feature.
+
+| features | what it is | why |
+|---|---|---|
+| **level** | per-channel log RMS of the window, mean removed: 9 numbers | what a **threshold** uses: "how loud is each sensor". Exploration found an RMS threshold already scored 0.86 on 3 states, so this is the baseline most likely to be hard to beat |
+| **fft** | per-channel log power in 16 log-spaced frequency bands, each window standardised first: 144 numbers | the classic hand-crafted vibration feature. Standardising removes loudness, so it measures **shape** (which frequencies), not level. It tests whether spectral shape alone does as well as Omega |
+| **level+fft** | both: 153 numbers | the strongest simple combination: loudness plus spectrum |
+
+The features are z-scored on the library before kNN, so no one feature dominates
+the distances.
+
+**How to read it:** level wins at every window/step pair. On this machine
+loudness separates the states well (spin is loud, fill and drain are medium, wash
+is quiet), and adding FFT's 144 dimensions dilutes level's 9 in the kNN distance.
+So the bar is effectively a loudness classifier. That's what makes the comparison
+informative: Omega beats it on drain, which loudness alone can't place, and loses
+on spin, where loudness is exactly the right cue.
+
 **What it does:** scores simple baselines on the role files the way the
 platform scores Omega:
 - windows of 1,024 rows at step 1,024, labelled by their last row;
