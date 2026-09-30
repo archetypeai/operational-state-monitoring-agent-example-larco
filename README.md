@@ -303,7 +303,7 @@ Stage 0 is stdlib-only; Stages 1a–1c need the packages above.
 ### Shortcut: skip Stages 0–3 with the packed role files
 
 The role files Stage 2 builds (`data/roles/`, 25.45 GB) are in the repo, packed as
-tar.xz parts in Git LFS under `data/archives/`, about 5× smaller. So Stages 4–7
+tar.xz parts in Git LFS under `data/archives/`: 4.45 GB, about 6× smaller. So Stages 4–7
 can run without downloading or preparing anything:
 
 ```sh
@@ -318,17 +318,17 @@ usual, and the result is still `PASS`.
 
 There are two archives, so you can fetch only what you need:
 
-| archive | holds | for |
-|---|---|---|
-| `roles_core` | library, validation, test, `manifest.json`, `zscore_stats.json` | Stages 4–5 |
-| `roles_delivery` | delivery, delivery_labels | Stages 6–7 |
+| archive | holds | size | for |
+|---|---|---|---|
+| `roles_core` | library, validation, test, `manifest.json`, `zscore_stats.json` | 1.27 GB, 2 parts | Stages 4–5 |
+| `roles_delivery` | delivery, delivery_labels | 3.18 GB, 4 parts | Stages 6–7 |
 
 For Stages 4–5 only: `git lfs pull --include "data/archives/roles_core*"`, then
 `python prep/archive_roles.py --unpack --only core`. Stage 3 checks every
 role, so it will flag the missing delivery files; skip it in that case.
 
 Unpacking needs about 26 GB free. The archives were packed with
-`python prep/archive_roles.py --pack --background` after Stage 2, and are
+`python prep/archive_roles.py --pack --background` after Stage 2 (19 min), and are
 repacked whenever Stage 2 changes.
 
 ### Stage 0: split and download (skip if `data/raw/` is already complete)
