@@ -1,0 +1,2002 @@
+[
+ {
+  "path": "aggregated_data.csv",
+  "archive": "general.zip",
+  "size": 1312274
+ },
+ {
+  "path": "metadata.xlsx",
+  "archive": "general.zip",
+  "size": 90071
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_0_0.csv",
+  "archive": "general.zip",
+  "size": 1334795
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_0_10.csv",
+  "archive": "general.zip",
+  "size": 1524737
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_0_11.csv",
+  "archive": "general.zip",
+  "size": 1409842
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_0_2.csv",
+  "archive": "general.zip",
+  "size": 1350242
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_0_4.csv",
+  "archive": "general.zip",
+  "size": 1360817
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_0_6.csv",
+  "archive": "general.zip",
+  "size": 1363836
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_0_8.csv",
+  "archive": "general.zip",
+  "size": 1397164
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_30_0.csv",
+  "archive": "general.zip",
+  "size": 1329684
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_30_10.csv",
+  "archive": "general.zip",
+  "size": 1425455
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_30_11.csv",
+  "archive": "general.zip",
+  "size": 1405103
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_30_2.csv",
+  "archive": "general.zip",
+  "size": 1357887
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_30_4.csv",
+  "archive": "general.zip",
+  "size": 1356087
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_30_6.csv",
+  "archive": "general.zip",
+  "size": 1384907
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_30_8.csv",
+  "archive": "general.zip",
+  "size": 1405928
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_40_0.csv",
+  "archive": "general.zip",
+  "size": 1338383
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_40_10.csv",
+  "archive": "general.zip",
+  "size": 1426341
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_40_11.csv",
+  "archive": "general.zip",
+  "size": 1547123
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_40_2.csv",
+  "archive": "general.zip",
+  "size": 1374167
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_40_4.csv",
+  "archive": "general.zip",
+  "size": 1385968
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_40_6.csv",
+  "archive": "general.zip",
+  "size": 1350622
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_40_8.csv",
+  "archive": "general.zip",
+  "size": 1399438
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_60_0.csv",
+  "archive": "general.zip",
+  "size": 1455063
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_60_10.csv",
+  "archive": "general.zip",
+  "size": 1513501
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_60_11.csv",
+  "archive": "general.zip",
+  "size": 1496057
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_60_2.csv",
+  "archive": "general.zip",
+  "size": 1498632
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_60_4.csv",
+  "archive": "general.zip",
+  "size": 1496091
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_60_6.csv",
+  "archive": "general.zip",
+  "size": 1496278
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_cotton_60_8.csv",
+  "archive": "general.zip",
+  "size": 1514549
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_eco_40-60_0.csv",
+  "archive": "general.zip",
+  "size": 1305788
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_eco_40-60_10.csv",
+  "archive": "general.zip",
+  "size": 1372704
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_eco_40-60_11.csv",
+  "archive": "general.zip",
+  "size": 1429136
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_eco_40-60_2.csv",
+  "archive": "general.zip",
+  "size": 1357753
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_eco_40-60_4.csv",
+  "archive": "general.zip",
+  "size": 1369122
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_eco_40-60_6.csv",
+  "archive": "general.zip",
+  "size": 1358146
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_cold_eco_40-60_8.csv",
+  "archive": "general.zip",
+  "size": 1370644
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_0_0.csv",
+  "archive": "general.zip",
+  "size": 1341190
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_0_10.csv",
+  "archive": "general.zip",
+  "size": 1387349
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_0_11.csv",
+  "archive": "general.zip",
+  "size": 1395070
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_0_2.csv",
+  "archive": "general.zip",
+  "size": 1343082
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_0_4.csv",
+  "archive": "general.zip",
+  "size": 1409426
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_0_6.csv",
+  "archive": "general.zip",
+  "size": 1378821
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_0_8.csv",
+  "archive": "general.zip",
+  "size": 1384501
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_30_0.csv",
+  "archive": "general.zip",
+  "size": 1340137
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_30_10.csv",
+  "archive": "general.zip",
+  "size": 1410806
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_30_11.csv",
+  "archive": "general.zip",
+  "size": 1396041
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_30_2.csv",
+  "archive": "general.zip",
+  "size": 1357290
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_30_4.csv",
+  "archive": "general.zip",
+  "size": 1373955
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_30_6.csv",
+  "archive": "general.zip",
+  "size": 1372023
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_30_8.csv",
+  "archive": "general.zip",
+  "size": 1412125
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_40_0.csv",
+  "archive": "general.zip",
+  "size": 1336653
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_40_10.csv",
+  "archive": "general.zip",
+  "size": 1546226
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_40_11.csv",
+  "archive": "general.zip",
+  "size": 1475044
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_40_2.csv",
+  "archive": "general.zip",
+  "size": 1355920
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_40_4.csv",
+  "archive": "general.zip",
+  "size": 1380485
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_40_6.csv",
+  "archive": "general.zip",
+  "size": 1385583
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_40_8.csv",
+  "archive": "general.zip",
+  "size": 1397058
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_60_0.csv",
+  "archive": "general.zip",
+  "size": 1443385
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_60_10.csv",
+  "archive": "general.zip",
+  "size": 1675033
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_60_11.csv",
+  "archive": "general.zip",
+  "size": 1542633
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_60_2.csv",
+  "archive": "general.zip",
+  "size": 1513577
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_60_4.csv",
+  "archive": "general.zip",
+  "size": 1476536
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_60_6.csv",
+  "archive": "general.zip",
+  "size": 1501883
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_cotton_60_8.csv",
+  "archive": "general.zip",
+  "size": 1531286
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_eco_40-60_0.csv",
+  "archive": "general.zip",
+  "size": 1341297
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_eco_40-60_10.csv",
+  "archive": "general.zip",
+  "size": 1378961
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_eco_40-60_11.csv",
+  "archive": "general.zip",
+  "size": 1761952
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_eco_40-60_2.csv",
+  "archive": "general.zip",
+  "size": 1334429
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_eco_40-60_4.csv",
+  "archive": "general.zip",
+  "size": 1341041
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_eco_40-60_6.csv",
+  "archive": "general.zip",
+  "size": 1361292
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_hot_eco_40-60_8.csv",
+  "archive": "general.zip",
+  "size": 1377034
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_20-deg_20_0.csv",
+  "archive": "general.zip",
+  "size": 439342
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_20-deg_20_11.csv",
+  "archive": "general.zip",
+  "size": 489441
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_20-deg_20_2.csv",
+  "archive": "general.zip",
+  "size": 456143
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_20-deg_20_6.csv",
+  "archive": "general.zip",
+  "size": 476505
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_delicate_30_0.csv",
+  "archive": "general.zip",
+  "size": 379975
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_delicate_30_11.csv",
+  "archive": "general.zip",
+  "size": 581775
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_delicate_30_2.csv",
+  "archive": "general.zip",
+  "size": 359292
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_delicate_30_6.csv",
+  "archive": "general.zip",
+  "size": 344920
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_fast-15_0.csv",
+  "archive": "general.zip",
+  "size": 138842
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_fast-15_11.csv",
+  "archive": "general.zip",
+  "size": 164402
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_fast-15_2.csv",
+  "archive": "general.zip",
+  "size": 126516
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_fast-15_6.csv",
+  "archive": "general.zip",
+  "size": 141153
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_fast-45_40_0.csv",
+  "archive": "general.zip",
+  "size": 346088
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_fast-45_40_11.csv",
+  "archive": "general.zip",
+  "size": 379533
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_fast-45_40_2.csv",
+  "archive": "general.zip",
+  "size": 325222
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_fast-45_40_6.csv",
+  "archive": "general.zip",
+  "size": 353993
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_jeans_60_0.csv",
+  "archive": "general.zip",
+  "size": 868334
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_jeans_60_11.csv",
+  "archive": "general.zip",
+  "size": 968269
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_jeans_60_2.csv",
+  "archive": "general.zip",
+  "size": 879449
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_jeans_60_6.csv",
+  "archive": "general.zip",
+  "size": 905142
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_mix_40_0.csv",
+  "archive": "general.zip",
+  "size": 484354
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_mix_40_11.csv",
+  "archive": "general.zip",
+  "size": 534832
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_mix_40_2.csv",
+  "archive": "general.zip",
+  "size": 474975
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_mix_40_6.csv",
+  "archive": "general.zip",
+  "size": 514656
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_sport_40_0.csv",
+  "archive": "general.zip",
+  "size": 344013
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_sport_40_11.csv",
+  "archive": "general.zip",
+  "size": 536709
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_sport_40_2.csv",
+  "archive": "general.zip",
+  "size": 326750
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_sport_40_6.csv",
+  "archive": "general.zip",
+  "size": 333383
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_synthetic_0.csv",
+  "archive": "general.zip",
+  "size": 1231120
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_synthetic_11.csv",
+  "archive": "general.zip",
+  "size": 1278504
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_synthetic_2.csv",
+  "archive": "general.zip",
+  "size": 1239256
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_synthetic_6.csv",
+  "archive": "general.zip",
+  "size": 1241428
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_wool_0.csv",
+  "archive": "general.zip",
+  "size": 524085
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_wool_11.csv",
+  "archive": "general.zip",
+  "size": 663085
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_wool_2.csv",
+  "archive": "general.zip",
+  "size": 508604
+ },
+ {
+  "path": "raw/labels/wm_becken-flt_BWM5381IX_warm_wool_6.csv",
+  "archive": "general.zip",
+  "size": 510676
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_0_0.csv",
+  "archive": "general.zip",
+  "size": 1303998
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_0_10.csv",
+  "archive": "general.zip",
+  "size": 1331482
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_0_11.csv",
+  "archive": "general.zip",
+  "size": 940254
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_0_2.csv",
+  "archive": "general.zip",
+  "size": 1296423
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_0_4.csv",
+  "archive": "general.zip",
+  "size": 1333359
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_0_6.csv",
+  "archive": "general.zip",
+  "size": 1493502
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_0_8.csv",
+  "archive": "general.zip",
+  "size": 1589270
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_30_0.csv",
+  "archive": "general.zip",
+  "size": 1340756
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_30_10.csv",
+  "archive": "general.zip",
+  "size": 1366765
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_30_11.csv",
+  "archive": "general.zip",
+  "size": 1391371
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_30_2.csv",
+  "archive": "general.zip",
+  "size": 1356467
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_30_4.csv",
+  "archive": "general.zip",
+  "size": 1492485
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_30_6.csv",
+  "archive": "general.zip",
+  "size": 1652608
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_30_8.csv",
+  "archive": "general.zip",
+  "size": 1377084
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_40_0.csv",
+  "archive": "general.zip",
+  "size": 1344641
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_40_10.csv",
+  "archive": "general.zip",
+  "size": 1340159
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_40_11.csv",
+  "archive": "general.zip",
+  "size": 1621772
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_40_2.csv",
+  "archive": "general.zip",
+  "size": 855470
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_40_4.csv",
+  "archive": "general.zip",
+  "size": 1545582
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_40_6.csv",
+  "archive": "general.zip",
+  "size": 1375064
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_40_8.csv",
+  "archive": "general.zip",
+  "size": 1519739
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_60_0.csv",
+  "archive": "general.zip",
+  "size": 1455389
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_60_10.csv",
+  "archive": "general.zip",
+  "size": 1489688
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_60_11.csv",
+  "archive": "general.zip",
+  "size": 1839203
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_60_2.csv",
+  "archive": "general.zip",
+  "size": 1487823
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_60_4.csv",
+  "archive": "general.zip",
+  "size": 1483902
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_60_6.csv",
+  "archive": "general.zip",
+  "size": 1699447
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_cotton_60_8.csv",
+  "archive": "general.zip",
+  "size": 1507386
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_eco_40-60_0.csv",
+  "archive": "general.zip",
+  "size": 1315344
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_eco_40-60_10.csv",
+  "archive": "general.zip",
+  "size": 1781847
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_eco_40-60_11.csv",
+  "archive": "general.zip",
+  "size": 1497639
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_eco_40-60_2.csv",
+  "archive": "general.zip",
+  "size": 1420833
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_eco_40-60_4.csv",
+  "archive": "general.zip",
+  "size": 1370562
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_eco_40-60_6.csv",
+  "archive": "general.zip",
+  "size": 1321193
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_cold_eco_40-60_8.csv",
+  "archive": "general.zip",
+  "size": 1367356
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_0_0.csv",
+  "archive": "general.zip",
+  "size": 1101871
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_0_10.csv",
+  "archive": "general.zip",
+  "size": 1369425
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_0_11.csv",
+  "archive": "general.zip",
+  "size": 1586637
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_0_2.csv",
+  "archive": "general.zip",
+  "size": 1285584
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_0_4.csv",
+  "archive": "general.zip",
+  "size": 1313412
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_0_6.csv",
+  "archive": "general.zip",
+  "size": 1385322
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_0_8.csv",
+  "archive": "general.zip",
+  "size": 1356042
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_30_0.csv",
+  "archive": "general.zip",
+  "size": 1257514
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_30_10.csv",
+  "archive": "general.zip",
+  "size": 1597502
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_30_11.csv",
+  "archive": "general.zip",
+  "size": 1403852
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_30_2.csv",
+  "archive": "general.zip",
+  "size": 1302661
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_30_4.csv",
+  "archive": "general.zip",
+  "size": 1363386
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_30_6.csv",
+  "archive": "general.zip",
+  "size": 1383950
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_30_8.csv",
+  "archive": "general.zip",
+  "size": 1369100
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_40_0.csv",
+  "archive": "general.zip",
+  "size": 1265587
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_40_10.csv",
+  "archive": "general.zip",
+  "size": 1382259
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_40_11.csv",
+  "archive": "general.zip",
+  "size": 1562458
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_40_2.csv",
+  "archive": "general.zip",
+  "size": 1381787
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_40_4.csv",
+  "archive": "general.zip",
+  "size": 1355538
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_40_6.csv",
+  "archive": "general.zip",
+  "size": 1366954
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_40_8.csv",
+  "archive": "general.zip",
+  "size": 1621535
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_60_0.csv",
+  "archive": "general.zip",
+  "size": 1370504
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_60_10.csv",
+  "archive": "general.zip",
+  "size": 1484783
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_60_11.csv",
+  "archive": "general.zip",
+  "size": 1858193
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_60_2.csv",
+  "archive": "general.zip",
+  "size": 1458253
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_60_4.csv",
+  "archive": "general.zip",
+  "size": 1487536
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_60_6.csv",
+  "archive": "general.zip",
+  "size": 1483544
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_cotton_60_8.csv",
+  "archive": "general.zip",
+  "size": 1498620
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_eco_40-60_0.csv",
+  "archive": "general.zip",
+  "size": 1238686
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_eco_40-60_10.csv",
+  "archive": "general.zip",
+  "size": 1359096
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_eco_40-60_11.csv",
+  "archive": "general.zip",
+  "size": 1768788
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_eco_40-60_2.csv",
+  "archive": "general.zip",
+  "size": 1332974
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_eco_40-60_4.csv",
+  "archive": "general.zip",
+  "size": 1349844
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_eco_40-60_6.csv",
+  "archive": "general.zip",
+  "size": 1353140
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_hot_eco_40-60_8.csv",
+  "archive": "general.zip",
+  "size": 1387566
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_15-min_40_0.csv",
+  "archive": "general.zip",
+  "size": 127472
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_15-min_40_2.csv",
+  "archive": "general.zip",
+  "size": 123079
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_20-deg_20_0.csv",
+  "archive": "general.zip",
+  "size": 437163
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_20-deg_20_2.csv",
+  "archive": "general.zip",
+  "size": 460947
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_delicate_30_0.csv",
+  "archive": "general.zip",
+  "size": 370177
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_delicate_30_2.csv",
+  "archive": "general.zip",
+  "size": 341983
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_delicate_30_6.csv",
+  "archive": "general.zip",
+  "size": 498943
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_fast-45_40_0.csv",
+  "archive": "general.zip",
+  "size": 341641
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_fast-45_40_2.csv",
+  "archive": "general.zip",
+  "size": 318429
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_intensive_40_0.csv",
+  "archive": "general.zip",
+  "size": 1644812
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_intensive_40_2.csv",
+  "archive": "general.zip",
+  "size": 1635410
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_mix_40_0.csv",
+  "archive": "general.zip",
+  "size": 484147
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_mix_40_2.csv",
+  "archive": "general.zip",
+  "size": 474457
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_sport_40_0.csv",
+  "archive": "general.zip",
+  "size": 345329
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_sport_40_2.csv",
+  "archive": "general.zip",
+  "size": 357829
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_sport_40_6.csv",
+  "archive": "general.zip",
+  "size": 370906
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_sterilization_0.csv",
+  "archive": "general.zip",
+  "size": 1060320
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_sterilization_2.csv",
+  "archive": "general.zip",
+  "size": 1076905
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_synthetic_40_0.csv",
+  "archive": "general.zip",
+  "size": 1184284
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_synthetic_40_2.csv",
+  "archive": "general.zip",
+  "size": 1240387
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_wool_40_0.csv",
+  "archive": "general.zip",
+  "size": 633173
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_wool_40_2.csv",
+  "archive": "general.zip",
+  "size": 595298
+ },
+ {
+  "path": "raw/labels/wm_becken_BWM5381IX_warm_wool_40_6.csv",
+  "archive": "general.zip",
+  "size": 630344
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_0_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 25341875
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_0_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 32755512
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_0_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29984614
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_0_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28781400
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_0_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28682500
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_0_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28306567
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_0_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29883164
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_30_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27510485
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_30_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30179310
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_30_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 25843300
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_30_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28280049
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_30_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 11775478
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_30_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29430854
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_30_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29986732
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_40_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27562776
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_40_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29844205
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_40_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 32846220
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_40_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29197202
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_40_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29477157
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_40_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28359859
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_40_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29227207
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_60_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30319015
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_60_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30783131
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_60_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 31275425
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_60_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 31331275
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_60_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29560981
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_60_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 31436137
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_cotton_60_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29492087
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_eco_40-60_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 26949313
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_eco_40-60_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28614256
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_eco_40-60_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29932696
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_eco_40-60_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27724384
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_eco_40-60_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27876673
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_eco_40-60_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27500017
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_cold_eco_40-60_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28536297
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_0_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28942938
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_0_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29571050
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_0_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28942128
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_0_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29120956
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_0_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 31705458
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_0_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 24404503
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_0_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30684405
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_30_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28263370
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_30_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28006622
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_30_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30854000
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_30_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29823170
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_30_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 26573916
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_30_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30278740
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_30_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27025224
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_40_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28239755
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_40_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 33038607
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_40_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 32415757
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_40_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 23399439
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_40_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 26162797
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_40_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29902891
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_40_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30000540
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_60_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27877117
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_60_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 35543343
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_60_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 32035063
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_60_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30364365
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_60_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 31569095
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_60_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30169988
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_cotton_60_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 32781481
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_eco_40-60_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27416470
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_eco_40-60_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28875741
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_eco_40-60_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 37765904
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_eco_40-60_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27373084
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_eco_40-60_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27160192
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_eco_40-60_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28713312
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_hot_eco_40-60_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29318285
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_20-deg_20_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 9217774
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_20-deg_20_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 10989661
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_20-deg_20_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 10248491
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_20-deg_20_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 11020968
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_delicate_30_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 7824097
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_delicate_30_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 12775956
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_delicate_30_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 7317218
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_delicate_30_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 7093362
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_fast-15_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 3031108
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_fast-15_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 3719277
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_fast-15_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 2925270
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_fast-15_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 3356872
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_fast-45_40_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 7305590
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_fast-45_40_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 8240583
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_fast-45_40_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 7074757
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_fast-45_40_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 7478578
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_jeans_60_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 18005652
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_jeans_60_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 20588224
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_jeans_60_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 18384277
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_jeans_60_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 19289460
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_mix_40_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 10025536
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_mix_40_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 11549339
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_mix_40_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 9907552
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_mix_40_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 11260778
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_sport_40_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 7308595
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_sport_40_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 11751483
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_sport_40_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 6890695
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_sport_40_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 7231917
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_synthetic_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 24798800
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_synthetic_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 26555995
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_synthetic_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 25876699
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_synthetic_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 18120763
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_wool_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 10592242
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_wool_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 13777361
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_wool_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 10278727
+ },
+ {
+  "path": "raw/vibration/wm_becken-flt_BWM5381IX_warm_wool_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 10251983
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_0_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27100996
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_0_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29323050
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_0_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 33708228
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_0_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27349306
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_0_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27401974
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_0_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30781367
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_0_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 32871262
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_30_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27177744
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_30_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30388311
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_30_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30446435
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_30_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28531876
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_30_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29522949
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_30_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 35392381
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_30_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28786733
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_40_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27107419
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_40_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29573304
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_40_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 35854413
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_40_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28232654
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_40_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 34899225
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_40_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29184501
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_40_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 31597168
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_60_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29863310
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_60_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 32852469
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_60_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 41551243
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_60_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 31186941
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_60_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 31129323
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_60_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 35869973
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_cotton_60_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30585764
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_eco_40-60_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 26985239
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_eco_40-60_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 38843041
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_eco_40-60_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 32418196
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_eco_40-60_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28435792
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_eco_40-60_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27934374
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_eco_40-60_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28115099
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_cold_eco_40-60_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27601504
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_0_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 25922096
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_0_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28117672
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_0_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 33021911
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_0_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27158593
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_0_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27109325
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_0_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29115180
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_0_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27936018
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_30_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 26078715
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_30_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 31495782
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_30_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29470215
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_30_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28396802
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_30_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27334046
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_30_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27683085
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_30_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28247467
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_40_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 26525186
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_40_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28348186
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_40_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 32282858
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_40_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28456271
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_40_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27180705
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_40_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 26696777
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_40_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 33447555
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_60_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 26656054
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_60_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30301281
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_60_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 38120203
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_60_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29017549
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_60_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29823409
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_60_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 29786189
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_cotton_60_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30805444
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_eco_40-60_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 26861665
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_eco_40-60_10_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28003164
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_eco_40-60_11_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 36617338
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_eco_40-60_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 25131006
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_eco_40-60_4_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 26210680
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_eco_40-60_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 27425224
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_hot_eco_40-60_8_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 28639521
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_15-min_40_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 2866444
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_15-min_40_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 2925233
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_20-deg_20_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 9256131
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_20-deg_20_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 10274585
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_delicate_30_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 7617711
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_delicate_30_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 7065540
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_delicate_30_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 10531775
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_fast-45_40_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 7336602
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_fast-45_40_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 7134781
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_intensive_40_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 30805460
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_intensive_40_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 33241040
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_mix_40_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 9979976
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_mix_40_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 9798544
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_sport_40_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 7200804
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_sport_40_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 7911894
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_sport_40_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 8058538
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_sterilization_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 21489154
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_sterilization_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 16491775
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_synthetic_40_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 24784723
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_synthetic_40_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 26423867
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_wool_40_0_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 13002984
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_wool_40_2_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 12332835
+ },
+ {
+  "path": "raw/vibration/wm_becken_BWM5381IX_warm_wool_40_6_acc.parquet",
+  "archive": "vibrations.zip",
+  "size": 13294684
+ }
+]

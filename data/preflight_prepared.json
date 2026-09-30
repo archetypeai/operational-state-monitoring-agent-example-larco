@@ -1,0 +1,9962 @@
+{
+ "cycles": [
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_0_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,134,720 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.986,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 414.0,
+    "wash": 8723.5,
+    "spin": 1257.1,
+    "drain": 279.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_0_10.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,414,350 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "2 segment(s), kept 99.9%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.98,
+    "46": 0.963
+   },
+   "seconds": {
+    "fill": 656.0,
+    "wash": 9795.1,
+    "spin": 1090.6,
+    "drain": 530.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_0_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,230,698 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 650.0,
+    "wash": 9123.4,
+    "spin": 867.1,
+    "drain": 513.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_0_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,155,123 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.986,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 432.0,
+    "wash": 9013.5,
+    "spin": 907.1,
+    "drain": 423.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_0_4.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,154,758 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 497.0,
+    "wash": 8881.6,
+    "spin": 1022.1,
+    "drain": 373.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_0_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,156,457 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.982,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 518.0,
+    "wash": 8836.1,
+    "spin": 994.1,
+    "drain": 434.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_0_8.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,215,152 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.984,
+    "46": 0.964
+   },
+   "seconds": {
+    "fill": 583.0,
+    "wash": 8871.6,
+    "spin": 1075.1,
+    "drain": 546.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,134,479 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.988,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 425.0,
+    "wash": 8872.3,
+    "spin": 1094.1,
+    "drain": 281.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_10.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,247,566 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.986,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 723.1,
+    "wash": 9059.6,
+    "spin": 844.1,
+    "drain": 611.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,170,924 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "8 segment(s), kept 97.7%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9768,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.99,
+    "46": 0.969
+   },
+   "seconds": {
+    "fill": 626.0,
+    "wash": 8825.0,
+    "spin": 867.7,
+    "drain": 535.9
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,165,129 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.986,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 423.0,
+    "wash": 9481.5,
+    "spin": 486.0,
+    "drain": 435.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_4.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "911,762 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "FAIL",
+     "kept 42.2% of the labelled seconds"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.4218,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.982
+   },
+   "seconds": {
+    "fill": 125.0,
+    "wash": 4433.8,
+    "spin": 0.0,
+    "drain": 0.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,194,917 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 574.0,
+    "wash": 8582.4,
+    "spin": 1509.1,
+    "drain": 309.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_8.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,220,031 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.989,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 618.0,
+    "wash": 9034.9,
+    "spin": 867.1,
+    "drain": 580.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_40_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,134,161 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 0.99, 23 Hz 0.98, 46 Hz 0.95"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.995,
+    "23": 0.979,
+    "46": 0.955
+   },
+   "seconds": {
+    "fill": 411.0,
+    "wash": 9024.7,
+    "spin": 955.1,
+    "drain": 280.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_40_10.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,246,746 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.985,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 732.0,
+    "wash": 8814.5,
+    "spin": 1076.1,
+    "drain": 611.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_40_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,454,430 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.982,
+    "46": 0.962
+   },
+   "seconds": {
+    "fill": 652.0,
+    "wash": 10232.0,
+    "spin": 911.1,
+    "drain": 477.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_40_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,189,667 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.985,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 445.0,
+    "wash": 9126.2,
+    "spin": 955.1,
+    "drain": 422.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_40_4.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,198,937 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.983,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 493.0,
+    "wash": 9123.5,
+    "spin": 884.1,
+    "drain": 494.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_40_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,139,445 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.984,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 538.0,
+    "wash": 8390.0,
+    "spin": 1538.1,
+    "drain": 231.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_40_8.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,215,724 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 572.0,
+    "wash": 9158.4,
+    "spin": 807.1,
+    "drain": 541.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_60_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,323,934 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 441.0,
+    "wash": 9868.5,
+    "spin": 1013.1,
+    "drain": 297.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_60_10.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,395,932 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.983,
+    "46": 0.964
+   },
+   "seconds": {
+    "fill": 584.0,
+    "wash": 10040.5,
+    "spin": 819.1,
+    "drain": 536.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_60_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,363,771 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.981,
+    "46": 0.964
+   },
+   "seconds": {
+    "fill": 631.0,
+    "wash": 9656.7,
+    "spin": 1057.1,
+    "drain": 474.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_60_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,385,456 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.984,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 445.0,
+    "wash": 10318.1,
+    "spin": 831.1,
+    "drain": 333.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_60_4.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,365,959 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.983,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 544.0,
+    "wash": 9806.6,
+    "spin": 1010.1,
+    "drain": 469.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_60_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,365,863 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.963
+   },
+   "seconds": {
+    "fill": 565.0,
+    "wash": 10000.2,
+    "spin": 846.1,
+    "drain": 418.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_60_8.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,400,753 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.987,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 566.0,
+    "wash": 10174.6,
+    "spin": 918.1,
+    "drain": 345.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_eco_40-60_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,086,923 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.986,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 307.0,
+    "wash": 9261.5,
+    "spin": 638.0,
+    "drain": 228.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_eco_40-60_10.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,172,385 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.984,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 489.0,
+    "wash": 9058.8,
+    "spin": 884.1,
+    "drain": 430.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_eco_40-60_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,267,976 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.984,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 465.0,
+    "wash": 9547.7,
+    "spin": 928.1,
+    "drain": 399.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_eco_40-60_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,169,702 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.987,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 252.0,
+    "wash": 9683.4,
+    "spin": 727.1,
+    "drain": 186.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_eco_40-60_4.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,185,094 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.988,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 275.0,
+    "wash": 9725.4,
+    "spin": 638.0,
+    "drain": 287.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_eco_40-60_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,172,451 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.986,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 289.0,
+    "wash": 9641.2,
+    "spin": 640.0,
+    "drain": 292.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_eco_40-60_8.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,172,284 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.988,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 455.0,
+    "wash": 9045.3,
+    "spin": 1064.1,
+    "drain": 297.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_0_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,142,195 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.984,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 409.0,
+    "wash": 8890.8,
+    "spin": 1123.1,
+    "drain": 288.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_0_10.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,194,897 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "2 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9998,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.984,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 641.1,
+    "wash": 8755.3,
+    "spin": 1031.1,
+    "drain": 547.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_0_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,203,815 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 685.1,
+    "wash": 8751.9,
+    "spin": 1094.1,
+    "drain": 488.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_0_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,142,839 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.984,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 420.0,
+    "wash": 8831.1,
+    "spin": 1066.0,
+    "drain": 397.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_0_4.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,242,229 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.984,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 490.0,
+    "wash": 9233.0,
+    "spin": 1012.1,
+    "drain": 476.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_0_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,178,047 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "WARN",
+     "worst of 3 stretches: 10 Hz 0.93, 23 Hz 0.84, 46 Hz 0.66"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.926,
+    "23": 0.839,
+    "46": 0.658
+   },
+   "seconds": {
+    "fill": 563.0,
+    "wash": 8846.1,
+    "spin": 985.1,
+    "drain": 496.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_0_8.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,199,275 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.986,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 538.0,
+    "wash": 9103.2,
+    "spin": 815.1,
+    "drain": 540.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_30_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,140,749 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.988,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 447.0,
+    "wash": 8831.6,
+    "spin": 1131.1,
+    "drain": 294.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_30_10.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,239,169 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 605.1,
+    "wash": 8961.7,
+    "spin": 1132.1,
+    "drain": 497.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_30_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,213,772 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.981,
+    "46": 0.963
+   },
+   "seconds": {
+    "fill": 648.0,
+    "wash": 8907.8,
+    "spin": 1025.1,
+    "drain": 488.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_30_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,162,709 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.984,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 409.0,
+    "wash": 9054.4,
+    "spin": 944.1,
+    "drain": 406.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_30_4.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,175,243 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.996,
+    "23": 0.983,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 491.0,
+    "wash": 9093.0,
+    "spin": 874.1,
+    "drain": 418.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_30_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,178,939 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.985,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 549.0,
+    "wash": 8993.5,
+    "spin": 868.1,
+    "drain": 484.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_30_8.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,240,299 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.988,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 582.0,
+    "wash": 9334.4,
+    "spin": 827.0,
+    "drain": 458.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_40_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,133,820 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 406.0,
+    "wash": 8978.9,
+    "spin": 983.1,
+    "drain": 301.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_40_10.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,451,066 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.98,
+    "46": 0.96
+   },
+   "seconds": {
+    "fill": 646.0,
+    "wash": 9998.1,
+    "spin": 1015.1,
+    "drain": 596.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_40_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,351,254 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "2 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9998,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.982,
+    "46": 0.964
+   },
+   "seconds": {
+    "fill": 742.1,
+    "wash": 10059.1,
+    "spin": 951.1,
+    "drain": 4.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_40_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,155,570 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "WARN",
+     "worst of 3 stretches: 10 Hz 0.92, 23 Hz 0.86, 46 Hz 0.66"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.923,
+    "23": 0.858,
+    "46": 0.661
+   },
+   "seconds": {
+    "fill": 416.0,
+    "wash": 9081.7,
+    "spin": 892.1,
+    "drain": 388.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_40_4.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,194,911 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.989,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 451.0,
+    "wash": 9284.4,
+    "spin": 795.1,
+    "drain": 444.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_40_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,194,857 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 598.0,
+    "wash": 8906.2,
+    "spin": 1006.0,
+    "drain": 464.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_40_8.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,235,931 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.984,
+    "46": 0.964
+   },
+   "seconds": {
+    "fill": 563.0,
+    "wash": 9786.5,
+    "spin": 825.1,
+    "drain": 5.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_60_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,308,168 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.983,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 401.0,
+    "wash": 9788.7,
+    "spin": 1059.1,
+    "drain": 292.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_60_10.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,642,266 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.997,
+    "23": 0.978,
+    "46": 0.959
+   },
+   "seconds": {
+    "fill": 716.1,
+    "wash": 10940.1,
+    "spin": 869.0,
+    "drain": 686.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_60_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,441,752 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "2 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.981,
+    "46": 0.964
+   },
+   "seconds": {
+    "fill": 699.0,
+    "wash": 10151.6,
+    "spin": 791.1,
+    "drain": 567.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_60_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,409,473 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "2 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9998,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.984,
+    "46": 0.964
+   },
+   "seconds": {
+    "fill": 479.1,
+    "wash": 10357.2,
+    "spin": 811.1,
+    "drain": 400.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_60_4.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,339,765 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.981,
+    "46": 0.964
+   },
+   "seconds": {
+    "fill": 497.0,
+    "wash": 9933.7,
+    "spin": 884.1,
+    "drain": 384.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_60_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,380,668 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "2 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.984,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 551.0,
+    "wash": 9984.3,
+    "spin": 857.1,
+    "drain": 511.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_60_8.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,416,118 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "2 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "WARN",
+     "worst of 3 stretches: 10 Hz 0.92, 23 Hz 0.86, 46 Hz 0.85"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.92,
+    "23": 0.865,
+    "46": 0.849
+   },
+   "seconds": {
+    "fill": 614.0,
+    "wash": 9949.4,
+    "spin": 995.1,
+    "drain": 522.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_eco_40-60_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,142,804 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.984,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 322.0,
+    "wash": 9584.0,
+    "spin": 616.0,
+    "drain": 192.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_eco_40-60_10.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,184,909 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.983,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 477.0,
+    "wash": 9094.4,
+    "spin": 904.1,
+    "drain": 449.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_eco_40-60_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,788,542 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "2 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.97, 46 Hz 0.95"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.997,
+    "23": 0.975,
+    "46": 0.955
+   },
+   "seconds": {
+    "fill": 594.0,
+    "wash": 11634.5,
+    "spin": 1197.1,
+    "drain": 517.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_eco_40-60_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,138,861 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.985,
+    "46": 0.964
+   },
+   "seconds": {
+    "fill": 265.0,
+    "wash": 9741.2,
+    "spin": 688.0,
+    "drain": 0.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_eco_40-60_4.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,145,645 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.982,
+    "46": 0.963
+   },
+   "seconds": {
+    "fill": 275.0,
+    "wash": 9593.2,
+    "spin": 613.0,
+    "drain": 247.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_eco_40-60_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,164,165 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.982,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 401.0,
+    "wash": 9269.7,
+    "spin": 816.1,
+    "drain": 334.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_eco_40-60_8.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,184,715 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 459.0,
+    "wash": 9198.5,
+    "spin": 865.1,
+    "drain": 401.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_20-deg_20_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "693,204 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9997,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.984
+   },
+   "seconds": {
+    "fill": 322.0,
+    "wash": 1894.9,
+    "spin": 1016.1,
+    "drain": 233.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_20-deg_20_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "748,109 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.983
+   },
+   "seconds": {
+    "fill": 661.1,
+    "wash": 1563.4,
+    "spin": 929.1,
+    "drain": 587.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_20-deg_20_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "711,435 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9998,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.985
+   },
+   "seconds": {
+    "fill": 371.0,
+    "wash": 1802.0,
+    "spin": 955.1,
+    "drain": 429.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_20-deg_20_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "735,101 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.985
+   },
+   "seconds": {
+    "fill": 570.1,
+    "wash": 1435.3,
+    "spin": 1296.1,
+    "drain": 374.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_delicate_30_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "588,895 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 99.9%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9995,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.987
+   },
+   "seconds": {
+    "fill": 569.0,
+    "wash": 1624.4,
+    "spin": 374.0,
+    "drain": 377.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_delicate_30_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "911,870 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.997,
+    "46": 0.98
+   },
+   "seconds": {
+    "fill": 566.0,
+    "wash": 3152.3,
+    "spin": 377.0,
+    "drain": 464.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_delicate_30_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "556,260 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 99.9%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9994,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.987
+   },
+   "seconds": {
+    "fill": 446.1,
+    "wash": 1722.2,
+    "spin": 218.0,
+    "drain": 395.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_delicate_30_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "531,363 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.987
+   },
+   "seconds": {
+    "fill": 473.0,
+    "wash": 1570.7,
+    "spin": 199.0,
+    "drain": 414.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-15_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "208,220 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 99.8%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9982,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.999,
+    "46": 0.988
+   },
+   "seconds": {
+    "fill": 333.0,
+    "wash": 283.0,
+    "spin": 204.0,
+    "drain": 221.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-15_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "249,609 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 99.9%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9992,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.999,
+    "46": 0.989
+   },
+   "seconds": {
+    "fill": 317.0,
+    "wash": 597.0,
+    "spin": 111.0,
+    "drain": 223.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-15_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "188,148 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 99.9%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9987,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.999,
+    "46": 0.989
+   },
+   "seconds": {
+    "fill": 323.0,
+    "wash": 192.7,
+    "spin": 198.0,
+    "drain": 227.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-15_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "210,464 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 99.8%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9984,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.999,
+    "46": 0.988
+   },
+   "seconds": {
+    "fill": 327.0,
+    "wash": 317.3,
+    "spin": 106.0,
+    "drain": 302.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-45_40_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "542,598 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.999,
+    "46": 0.987
+   },
+   "seconds": {
+    "fill": 290.0,
+    "wash": 1982.9,
+    "spin": 247.0,
+    "drain": 193.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-45_40_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "586,893 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 99.9%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9995,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.986
+   },
+   "seconds": {
+    "fill": 386.0,
+    "wash": 1876.4,
+    "spin": 314.0,
+    "drain": 358.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-45_40_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "510,784 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.999,
+    "46": 0.987
+   },
+   "seconds": {
+    "fill": 202.0,
+    "wash": 1774.8,
+    "spin": 400.0,
+    "drain": 177.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-45_40_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "547,122 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 99.9%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9995,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.987
+   },
+   "seconds": {
+    "fill": 348.0,
+    "wash": 1827.5,
+    "spin": 239.0,
+    "drain": 321.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_jeans_60_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "1,384,458 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.995,
+    "46": 0.975
+   },
+   "seconds": {
+    "fill": 346.0,
+    "wash": 4951.1,
+    "spin": 1384.1,
+    "drain": 241.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_jeans_60_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "1,510,201 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.994,
+    "46": 0.973
+   },
+   "seconds": {
+    "fill": 761.1,
+    "wash": 5231.8,
+    "spin": 867.1,
+    "drain": 691.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_jeans_60_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "1,392,440 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.994,
+    "46": 0.974
+   },
+   "seconds": {
+    "fill": 358.0,
+    "wash": 5217.1,
+    "spin": 1175.1,
+    "drain": 212.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_jeans_60_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "1,421,639 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.995,
+    "46": 0.975
+   },
+   "seconds": {
+    "fill": 508.1,
+    "wash": 5073.1,
+    "spin": 1093.1,
+    "drain": 434.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_mix_40_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "764,943 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9997,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.983
+   },
+   "seconds": {
+    "fill": 349.0,
+    "wash": 2462.6,
+    "spin": 774.0,
+    "drain": 239.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_mix_40_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "824,082 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.983
+   },
+   "seconds": {
+    "fill": 616.0,
+    "wash": 2267.3,
+    "spin": 657.0,
+    "drain": 580.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_mix_40_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "742,531 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.985
+   },
+   "seconds": {
+    "fill": 343.0,
+    "wash": 2332.5,
+    "spin": 652.0,
+    "drain": 385.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_mix_40_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "799,415 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9998,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.997,
+    "46": 0.981
+   },
+   "seconds": {
+    "fill": 459.0,
+    "wash": 2534.9,
+    "spin": 452.0,
+    "drain": 551.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_sport_40_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "537,162 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.986
+   },
+   "seconds": {
+    "fill": 342.0,
+    "wash": 1548.7,
+    "spin": 557.0,
+    "drain": 238.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_sport_40_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "833,536 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9997,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.997,
+    "46": 0.981
+   },
+   "seconds": {
+    "fill": 530.0,
+    "wash": 2612.6,
+    "spin": 461.0,
+    "drain": 564.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_sport_40_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "510,844 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 99.9%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9993,
+   "tone_kept": {
+    "10": 0.997,
+    "23": 0.996,
+    "46": 0.984
+   },
+   "seconds": {
+    "fill": 290.0,
+    "wash": 1510.1,
+    "spin": 536.0,
+    "drain": 218.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_sport_40_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "519,079 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 99.9%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9994,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.999,
+    "46": 0.987
+   },
+   "seconds": {
+    "fill": 327.0,
+    "wash": 1421.3,
+    "spin": 614.0,
+    "drain": 233.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_synthetic_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "1,965,350 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.987,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 429.0,
+    "wash": 8386.6,
+    "spin": 725.1,
+    "drain": 286.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_synthetic_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,025,004 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.987,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 707.1,
+    "wash": 8167.9,
+    "spin": 1007.1,
+    "drain": 243.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_synthetic_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "1,985,866 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.987,
+    "46": 0.969
+   },
+   "seconds": {
+    "fill": 421.0,
+    "wash": 8867.3,
+    "spin": 602.0,
+    "drain": 39.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_synthetic_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "1,974,394 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "WARN",
+     "worst of 3 stretches: 10 Hz 0.91, 23 Hz 0.85, 46 Hz 0.66"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.909,
+    "23": 0.851,
+    "46": 0.661
+   },
+   "seconds": {
+    "fill": 519.0,
+    "wash": 8287.9,
+    "spin": 959.0,
+    "drain": 106.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_wool_0.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "817,745 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9997,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.984
+   },
+   "seconds": {
+    "fill": 615.0,
+    "wash": 2429.6,
+    "spin": 644.1,
+    "drain": 400.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_wool_11.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "1,036,076 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.997,
+    "46": 0.979
+   },
+   "seconds": {
+    "fill": 618.0,
+    "wash": 3468.2,
+    "spin": 565.0,
+    "drain": 529.1
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_wool_2.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "794,196 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9997,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.983
+   },
+   "seconds": {
+    "fill": 529.0,
+    "wash": 2519.9,
+    "spin": 532.0,
+    "drain": 390.0
+   }
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_wool_6.csv",
+   "role": "delivery",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "793,086 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.984
+   },
+   "seconds": {
+    "fill": 542.0,
+    "wash": 2504.3,
+    "spin": 421.0,
+    "drain": 498.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_0_0.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,147,636 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.989,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 408.0,
+    "wash": 9063.0,
+    "spin": 994.1,
+    "drain": 273.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_0_10.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,176,935 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.98,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 615.0,
+    "wash": 8727.5,
+    "spin": 1165.1,
+    "drain": 377.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_0_11.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,426,853 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.997,
+    "23": 0.978,
+    "46": 0.969
+   },
+   "seconds": {
+    "fill": 202.0,
+    "wash": 11048.2,
+    "spin": 884.1,
+    "drain": 0.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_0_2.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,125,282 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.985,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 432.0,
+    "wash": 8779.3,
+    "spin": 1166.1,
+    "drain": 249.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_0_4.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,182,700 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.988,
+    "46": 0.97
+   },
+   "seconds": {
+    "fill": 460.0,
+    "wash": 9211.4,
+    "spin": 883.1,
+    "drain": 359.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_0_6.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,443,334 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.997,
+    "23": 0.98,
+    "46": 0.963
+   },
+   "seconds": {
+    "fill": 534.0,
+    "wash": 10254.5,
+    "spin": 951.1,
+    "drain": 477.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_0_8.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,601,200 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "5 segment(s), kept 99.9%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "WARN",
+     "worst of 3 stretches: 10 Hz 1.00, 23 Hz 0.96, 46 Hz 0.86"
+    ]
+   },
+   "kept_share": 0.9995,
+   "tone_kept": {
+    "10": 0.996,
+    "23": 0.963,
+    "46": 0.858
+   },
+   "seconds": {
+    "fill": 567.0,
+    "wash": 10789.4,
+    "spin": 1361.5,
+    "drain": 288.1
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_30_0.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,143,470 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.991,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 402.0,
+    "wash": 9096.2,
+    "spin": 959.1,
+    "drain": 260.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_30_10.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,177,350 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.991,
+    "46": 0.972
+   },
+   "seconds": {
+    "fill": 593.0,
+    "wash": 8954.6,
+    "spin": 852.1,
+    "drain": 487.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_30_11.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,205,920 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.985,
+    "46": 0.97
+   },
+   "seconds": {
+    "fill": 601.1,
+    "wash": 9150.5,
+    "spin": 918.1,
+    "drain": 360.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_30_2.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,163,175 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.991,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 405.0,
+    "wash": 9070.7,
+    "spin": 1089.1,
+    "drain": 251.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_30_4.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,380,383 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.983,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 439.0,
+    "wash": 10180.8,
+    "spin": 904.1,
+    "drain": 378.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_30_6.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,634,335 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.98,
+    "46": 0.957
+   },
+   "seconds": {
+    "fill": 536.0,
+    "wash": 11115.5,
+    "spin": 1066.1,
+    "drain": 454.1
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_30_8.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,184,655 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.986,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 552.0,
+    "wash": 9022.1,
+    "spin": 937.1,
+    "drain": 412.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_40_0.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,144,270 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 405.0,
+    "wash": 9031.2,
+    "spin": 1011.1,
+    "drain": 274.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_40_10.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,124,454 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.99,
+    "46": 0.972
+   },
+   "seconds": {
+    "fill": 602.0,
+    "wash": 8692.1,
+    "spin": 947.1,
+    "drain": 381.1
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_40_11.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,569,577 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "3 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9998,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.983,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 717.0,
+    "wash": 10769.6,
+    "spin": 740.0,
+    "drain": 621.2
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_40_2.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,129,872 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.988,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 422.0,
+    "wash": 8977.3,
+    "spin": 948.1,
+    "drain": 302.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_40_4.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,460,353 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.982,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 449.0,
+    "wash": 10463.6,
+    "spin": 929.1,
+    "drain": 460.1
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_40_6.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,182,759 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "2 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9997,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.986,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 540.0,
+    "wash": 9022.7,
+    "spin": 958.1,
+    "drain": 393.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_40_8.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,411,206 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.982,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 543.0,
+    "wash": 10123.9,
+    "spin": 937.1,
+    "drain": 452.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_60_0.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,329,595 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.981,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 411.0,
+    "wash": 9952.9,
+    "spin": 1011.1,
+    "drain": 273.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_60_10.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,359,564 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.98,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 591.0,
+    "wash": 9794.7,
+    "spin": 1014.1,
+    "drain": 398.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_60_11.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,925,457 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.979,
+    "46": 0.961
+   },
+   "seconds": {
+    "fill": 702.0,
+    "wash": 12325.2,
+    "spin": 1020.1,
+    "drain": 580.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_60_2.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,371,112 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.984,
+    "46": 0.964
+   },
+   "seconds": {
+    "fill": 431.0,
+    "wash": 10169.4,
+    "spin": 906.1,
+    "drain": 349.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_60_4.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,354,138 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.984,
+    "46": 0.964
+   },
+   "seconds": {
+    "fill": 468.0,
+    "wash": 9933.5,
+    "spin": 1075.1,
+    "drain": 294.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_60_6.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,705,483 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.996,
+    "23": 0.978,
+    "46": 0.958
+   },
+   "seconds": {
+    "fill": 490.0,
+    "wash": 11544.3,
+    "spin": 1052.1,
+    "drain": 441.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_60_8.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,385,822 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.982,
+    "46": 0.963
+   },
+   "seconds": {
+    "fill": 567.0,
+    "wash": 10075.0,
+    "spin": 837.1,
+    "drain": 450.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_eco_40-60_0.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,112,295 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.997,
+    "23": 0.984,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 307.0,
+    "wash": 9305.4,
+    "spin": 750.1,
+    "drain": 199.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_eco_40-60_10.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,827,675 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "2 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.97, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.975,
+    "46": 0.96
+   },
+   "seconds": {
+    "fill": 606.0,
+    "wash": 11831.6,
+    "spin": 1428.7,
+    "drain": 272.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_eco_40-60_11.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,385,802 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.987,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 457.0,
+    "wash": 10609.9,
+    "spin": 611.0,
+    "drain": 251.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_eco_40-60_2.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,273,720 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.983,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 262.0,
+    "wash": 10208.5,
+    "spin": 679.1,
+    "drain": 219.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_eco_40-60_4.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,201,018 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.988,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 274.0,
+    "wash": 9763.0,
+    "spin": 792.1,
+    "drain": 176.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_eco_40-60_6.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,174,284 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.991,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 384.0,
+    "wash": 9102.3,
+    "spin": 1202.1,
+    "drain": 183.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_eco_40-60_8.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,170,737 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.989,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 412.0,
+    "wash": 9028.5,
+    "spin": 1210.1,
+    "drain": 203.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_0_0.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,131,083 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.985,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 384.0,
+    "wash": 8780.3,
+    "spin": 1265.1,
+    "drain": 226.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_0_10.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,171,544 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.986,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 431.0,
+    "wash": 8299.6,
+    "spin": 1836.1,
+    "drain": 291.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_0_11.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,523,656 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.981,
+    "46": 0.962
+   },
+   "seconds": {
+    "fill": 667.1,
+    "wash": 10783.1,
+    "spin": 573.0,
+    "drain": 595.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_0_2.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,169,589 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.986,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 439.0,
+    "wash": 9023.8,
+    "spin": 966.1,
+    "drain": 419.1
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_0_4.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,150,610 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 456.0,
+    "wash": 8746.9,
+    "spin": 1280.1,
+    "drain": 270.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_0_6.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,279,570 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.997,
+    "23": 0.98,
+    "46": 0.962
+   },
+   "seconds": {
+    "fill": 509.0,
+    "wash": 10153.8,
+    "spin": 594.0,
+    "drain": 141.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_0_8.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,150,595 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.983,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 588.0,
+    "wash": 8331.8,
+    "spin": 1571.1,
+    "drain": 262.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_30_0.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,132,817 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.991,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 388.0,
+    "wash": 8730.9,
+    "spin": 1290.1,
+    "drain": 255.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_30_10.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,533,371 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "2 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "WARN",
+     "worst of 3 stretches: 10 Hz 0.94, 23 Hz 0.86, 46 Hz 0.67"
+    ]
+   },
+   "kept_share": 0.9998,
+   "tone_kept": {
+    "10": 0.941,
+    "23": 0.865,
+    "46": 0.674
+   },
+   "seconds": {
+    "fill": 739.1,
+    "wash": 10492.7,
+    "spin": 838.1,
+    "drain": 597.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_30_11.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,221,638 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.987,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 688.0,
+    "wash": 8911.0,
+    "spin": 990.1,
+    "drain": 519.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_30_2.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,205,436 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.985,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 420.0,
+    "wash": 9415.1,
+    "spin": 778.1,
+    "drain": 414.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_30_4.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,168,386 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.989,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 451.0,
+    "wash": 9131.8,
+    "spin": 872.1,
+    "drain": 387.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_30_6.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,198,852 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.991,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 525.0,
+    "wash": 9146.1,
+    "spin": 980.1,
+    "drain": 343.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_30_8.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,170,677 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.98,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 561.0,
+    "wash": 8884.3,
+    "spin": 927.1,
+    "drain": 481.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_40_0.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,147,691 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.982,
+    "46": 0.962
+   },
+   "seconds": {
+    "fill": 398.0,
+    "wash": 9223.3,
+    "spin": 836.1,
+    "drain": 281.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_40_10.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,186,973 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.997,
+    "23": 0.981,
+    "46": 0.963
+   },
+   "seconds": {
+    "fill": 594.0,
+    "wash": 8988.7,
+    "spin": 865.1,
+    "drain": 487.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_40_11.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,473,210 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.987,
+    "46": 0.962
+   },
+   "seconds": {
+    "fill": 715.1,
+    "wash": 10065.9,
+    "spin": 990.1,
+    "drain": 595.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_40_2.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,205,894 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.983,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 263.0,
+    "wash": 9120.3,
+    "spin": 1360.1,
+    "drain": 286.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_40_4.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,150,694 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.992,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 455.0,
+    "wash": 8898.3,
+    "spin": 1074.1,
+    "drain": 326.1
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_40_6.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,171,070 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.987,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 490.1,
+    "wash": 9048.2,
+    "spin": 917.1,
+    "drain": 400.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_40_8.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,583,440 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.983,
+    "46": 0.961
+   },
+   "seconds": {
+    "fill": 530.0,
+    "wash": 10899.8,
+    "spin": 924.1,
+    "drain": 563.3
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_60_0.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,325,707 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.984,
+    "46": 0.963
+   },
+   "seconds": {
+    "fill": 403.0,
+    "wash": 9986.4,
+    "spin": 963.1,
+    "drain": 276.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_60_10.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,354,156 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.988,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 595.0,
+    "wash": 9870.6,
+    "spin": 820.1,
+    "drain": 485.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_60_11.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,944,319 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.978,
+    "46": 0.956
+   },
+   "seconds": {
+    "fill": 755.0,
+    "wash": 10413.3,
+    "spin": 2940.2,
+    "drain": 613.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_60_2.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,325,573 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.94"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.983,
+    "46": 0.937
+   },
+   "seconds": {
+    "fill": 410.0,
+    "wash": 9968.7,
+    "spin": 862.1,
+    "drain": 387.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_60_4.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,365,343 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.963
+   },
+   "seconds": {
+    "fill": 475.0,
+    "wash": 10049.6,
+    "spin": 867.1,
+    "drain": 435.1
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_60_6.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,351,081 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.98,
+    "46": 0.965
+   },
+   "seconds": {
+    "fill": 540.0,
+    "wash": 9772.3,
+    "spin": 971.1,
+    "drain": 472.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_60_8.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,376,147 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.997,
+    "23": 0.984,
+    "46": 0.964
+   },
+   "seconds": {
+    "fill": 577.0,
+    "wash": 9934.6,
+    "spin": 881.1,
+    "drain": 488.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_eco_40-60_0.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,101,929 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.989,
+    "46": 0.967
+   },
+   "seconds": {
+    "fill": 308.0,
+    "wash": 9311.5,
+    "spin": 676.1,
+    "drain": 214.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_eco_40-60_10.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,157,377 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.986,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 449.0,
+    "wash": 9147.8,
+    "spin": 883.1,
+    "drain": 307.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_eco_40-60_11.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,812,067 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.95"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.997,
+    "23": 0.977,
+    "46": 0.955
+   },
+   "seconds": {
+    "fill": 578.0,
+    "wash": 11715.1,
+    "spin": 1441.1,
+    "drain": 326.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_eco_40-60_2.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,133,541 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.993,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 247.0,
+    "wash": 9505.6,
+    "spin": 734.1,
+    "drain": 181.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_eco_40-60_4.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,170,368 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "3 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 0.9997,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.985,
+    "46": 0.963
+   },
+   "seconds": {
+    "fill": 269.0,
+    "wash": 9754.6,
+    "spin": 827.2,
+    "drain": 1.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_eco_40-60_6.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,153,192 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.988,
+    "46": 0.966
+   },
+   "seconds": {
+    "fill": 430.0,
+    "wash": 9013.8,
+    "spin": 1051.1,
+    "drain": 271.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_eco_40-60_8.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,210,699 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.98,
+    "46": 0.964
+   },
+   "seconds": {
+    "fill": 401.0,
+    "wash": 9329.4,
+    "spin": 939.1,
+    "drain": 384.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_15-min_40_0.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "198,028 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 99.8%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9981,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.999,
+    "46": 0.989
+   },
+   "seconds": {
+    "fill": 305.0,
+    "wash": 276.1,
+    "spin": 217.0,
+    "drain": 192.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_15-min_40_2.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "188,567 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 99.9%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9988,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.999,
+    "46": 0.989
+   },
+   "seconds": {
+    "fill": 322.0,
+    "wash": 291.8,
+    "spin": 108.0,
+    "drain": 221.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_20-deg_20_0.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "692,011 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9997,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.985
+   },
+   "seconds": {
+    "fill": 328.0,
+    "wash": 2036.9,
+    "spin": 866.1,
+    "drain": 229.1
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_20-deg_20_2.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "717,963 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9997,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.984
+   },
+   "seconds": {
+    "fill": 358.0,
+    "wash": 1992.7,
+    "spin": 910.1,
+    "drain": 329.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_delicate_30_0.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "574,550 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.999,
+    "46": 0.986
+   },
+   "seconds": {
+    "fill": 540.0,
+    "wash": 1723.7,
+    "spin": 284.0,
+    "drain": 325.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_delicate_30_2.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "534,011 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.998,
+    "46": 0.986
+   },
+   "seconds": {
+    "fill": 437.0,
+    "wash": 1732.0,
+    "spin": 195.0,
+    "drain": 306.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_delicate_30_6.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "780,884 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.997,
+    "46": 0.982
+   },
+   "seconds": {
+    "fill": 491.0,
+    "wash": 2785.3,
+    "spin": 277.0,
+    "drain": 351.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_fast-45_40_0.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "550,992 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.988
+   },
+   "seconds": {
+    "fill": 290.0,
+    "wash": 1957.9,
+    "spin": 317.0,
+    "drain": 190.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_fast-45_40_2.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "516,525 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 99.9%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9995,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.999,
+    "46": 0.988
+   },
+   "seconds": {
+    "fill": 200.0,
+    "wash": 1937.6,
+    "spin": 264.0,
+    "drain": 181.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_intensive_40_0.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,640,352 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "2 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "WARN",
+     "worst of 3 stretches: 10 Hz 0.91, 23 Hz 0.84, 46 Hz 0.65"
+    ]
+   },
+   "kept_share": 0.9998,
+   "tone_kept": {
+    "10": 0.907,
+    "23": 0.841,
+    "46": 0.652
+   },
+   "seconds": {
+    "fill": 369.0,
+    "wash": 11546.5,
+    "spin": 1054.2,
+    "drain": 232.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_intensive_40_2.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,639,365 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.98, 46 Hz 0.96"
+    ]
+   },
+   "kept_share": 1.0,
+   "tone_kept": {
+    "10": 0.998,
+    "23": 0.981,
+    "46": 0.96
+   },
+   "seconds": {
+    "fill": 361.0,
+    "wash": 11608.7,
+    "spin": 919.1,
+    "drain": 308.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_mix_40_0.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "764,765 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9997,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.986
+   },
+   "seconds": {
+    "fill": 326.0,
+    "wash": 2581.7,
+    "spin": 698.1,
+    "drain": 218.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_mix_40_2.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "744,687 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.985
+   },
+   "seconds": {
+    "fill": 337.0,
+    "wash": 2529.3,
+    "spin": 528.0,
+    "drain": 329.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_sport_40_0.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "540,004 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9996,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.999,
+    "46": 0.986
+   },
+   "seconds": {
+    "fill": 326.0,
+    "wash": 1556.9,
+    "spin": 593.0,
+    "drain": 224.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_sport_40_2.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "561,122 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9995,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.987
+   },
+   "seconds": {
+    "fill": 324.0,
+    "wash": 1651.5,
+    "spin": 523.0,
+    "drain": 307.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_sport_40_6.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "575,401 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.99"
+    ]
+   },
+   "kept_share": 0.9997,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.999,
+    "46": 0.987
+   },
+   "seconds": {
+    "fill": 399.0,
+    "wash": 1646.9,
+    "spin": 499.0,
+    "drain": 332.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_sterilization_0.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "1,687,504 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.99,
+    "46": 0.971
+   },
+   "seconds": {
+    "fill": 397.0,
+    "wash": 6819.4,
+    "spin": 945.1,
+    "drain": 276.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_sterilization_2.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "1,703,483 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "WARN",
+     "worst of 3 stretches: 10 Hz 0.91, 23 Hz 0.86, 46 Hz 0.67"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.91,
+    "23": 0.856,
+    "46": 0.666
+   },
+   "seconds": {
+    "fill": 458.1,
+    "wash": 6695.2,
+    "spin": 900.1,
+    "drain": 464.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_synthetic_40_0.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "1,948,098 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.986,
+    "46": 0.97
+   },
+   "seconds": {
+    "fill": 413.0,
+    "wash": 8221.4,
+    "spin": 824.1,
+    "drain": 282.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_synthetic_40_2.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "2,040,284 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 0.99, 46 Hz 0.97"
+    ]
+   },
+   "kept_share": 0.9999,
+   "tone_kept": {
+    "10": 0.999,
+    "23": 0.988,
+    "46": 0.968
+   },
+   "seconds": {
+    "fill": 433.0,
+    "wash": 8549.3,
+    "spin": 844.1,
+    "drain": 375.1
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_wool_40_0.csv",
+   "role": "library",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "1,023,354 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9998,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.998,
+    "46": 0.98
+   },
+   "seconds": {
+    "fill": 607.0,
+    "wash": 3677.7,
+    "spin": 469.0,
+    "drain": 363.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_wool_40_2.csv",
+   "role": "test",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "963,281 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9997,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.997,
+    "46": 0.979
+   },
+   "seconds": {
+    "fill": 517.0,
+    "wash": 3639.3,
+    "spin": 264.0,
+    "drain": 396.0
+   }
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_wool_40_6.csv",
+   "role": "validation",
+   "checks": {
+    "file": [
+     "PASS",
+     ""
+    ],
+    "columns": [
+     "PASS",
+     ""
+    ],
+    "grid": [
+     "PASS",
+     "1,019,920 rows, all steps 5 ms"
+    ],
+    "values": [
+     "PASS",
+     ""
+    ],
+    "states": [
+     "PASS",
+     ""
+    ],
+    "coverage": [
+     "PASS",
+     "1 segment(s), kept 100.0%"
+    ],
+    "state match": [
+     "PASS",
+     ""
+    ],
+    "resampling": [
+     "PASS",
+     "10 Hz 1.00, 23 Hz 1.00, 46 Hz 0.98"
+    ]
+   },
+   "kept_share": 0.9997,
+   "tone_kept": {
+    "10": 1.0,
+    "23": 0.997,
+    "46": 0.98
+   },
+   "seconds": {
+    "fill": 579.0,
+    "wash": 4054.5,
+    "spin": 0.0,
+    "drain": 466.0
+   }
+  }
+ ],
+ "failures": 0,
+ "acknowledged": [
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_4.csv",
+   "check": "coverage",
+   "reason": "kept in delivery for now (2026-09-29); revisit whether to drop the uncovered part"
+  }
+ ]
+}

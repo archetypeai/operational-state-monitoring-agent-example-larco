@@ -1,0 +1,4284 @@
+{
+ "step_ms": 5,
+ "cycles": [
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_0_0.csv",
+   "rows": 2134720,
+   "segments": [
+    {
+     "start": 1695309780.395,
+     "rows": 2134720
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 414.0,
+    "wash": 8723.5,
+    "spin": 1257.1,
+    "drain": 279.0
+   },
+   "label_seconds": 10674,
+   "bytes": 27252344
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_0_10.csv",
+   "rows": 2414350,
+   "segments": [
+    {
+     "start": 1696928318.745,
+     "rows": 2357907
+    },
+    {
+     "start": 1696940109.785,
+     "rows": 56443
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 656.0,
+    "wash": 9795.1,
+    "spin": 1090.6,
+    "drain": 530.0
+   },
+   "label_seconds": 12084,
+   "bytes": 32255817
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_0_11.csv",
+   "rows": 2230698,
+   "segments": [
+    {
+     "start": 1697531671.51,
+     "rows": 2230698
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 650.0,
+    "wash": 9123.4,
+    "spin": 867.1,
+    "drain": 513.0
+   },
+   "label_seconds": 11154,
+   "bytes": 29621419
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_0_2.csv",
+   "rows": 2155123,
+   "segments": [
+    {
+     "start": 1696582547.385,
+     "rows": 2155123
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 432.0,
+    "wash": 9013.5,
+    "spin": 907.1,
+    "drain": 423.0
+   },
+   "label_seconds": 10776,
+   "bytes": 28130012
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_0_4.csv",
+   "rows": 2154758,
+   "segments": [
+    {
+     "start": 1696429759.205,
+     "rows": 2154758
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 497.0,
+    "wash": 8881.6,
+    "spin": 1022.1,
+    "drain": 373.0
+   },
+   "label_seconds": 10774,
+   "bytes": 27906408
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_0_6.csv",
+   "rows": 2156457,
+   "segments": [
+    {
+     "start": 1695218746.715,
+     "rows": 2156457
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 518.0,
+    "wash": 8836.1,
+    "spin": 994.1,
+    "drain": 434.1
+   },
+   "label_seconds": 10783,
+   "bytes": 28081296
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_0_8.csv",
+   "rows": 2215152,
+   "segments": [
+    {
+     "start": 1696605188.24,
+     "rows": 2215152
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 583.0,
+    "wash": 8871.6,
+    "spin": 1075.1,
+    "drain": 546.0
+   },
+   "label_seconds": 11076,
+   "bytes": 29460026
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_0.csv",
+   "rows": 2134479,
+   "segments": [
+    {
+     "start": 1695287336.605,
+     "rows": 2134479
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 425.0,
+    "wash": 8872.3,
+    "spin": 1094.1,
+    "drain": 281.0
+   },
+   "label_seconds": 10673,
+   "bytes": 26738117
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_10.csv",
+   "rows": 2247566,
+   "segments": [
+    {
+     "start": 1698078942.17,
+     "rows": 2247566
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 723.1,
+    "wash": 9059.6,
+    "spin": 844.1,
+    "drain": 611.0
+   },
+   "label_seconds": 11239,
+   "bytes": 29579233
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_11.csv",
+   "rows": 2170924,
+   "segments": [
+    {
+     "start": 1697743508.205,
+     "rows": 1859254
+    },
+    {
+     "start": 1697752819.59,
+     "rows": 1397
+    },
+    {
+     "start": 1697752827.225,
+     "rows": 3286
+    },
+    {
+     "start": 1697752874.09,
+     "rows": 44744
+    },
+    {
+     "start": 1697753106.255,
+     "rows": 218967
+    },
+    {
+     "start": 1697754205.1,
+     "rows": 5871
+    },
+    {
+     "start": 1697754371.195,
+     "rows": 1783
+    },
+    {
+     "start": 1697754507.89,
+     "rows": 35622
+    }
+   ],
+   "dropped_short": [
+    {
+     "start": 1697752807.811,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697752811.665,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697752815.584,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697752847.633,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697752849.511,
+     "seconds": 2.2
+    },
+    {
+     "start": 1697752853.845,
+     "seconds": 1.9
+    },
+    {
+     "start": 1697752858.963,
+     "seconds": 5.0
+    },
+    {
+     "start": 1697752866.94,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697752870.718,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697753101.145,
+     "seconds": 2.6
+    },
+    {
+     "start": 1697754201.648,
+     "seconds": 2.4
+    },
+    {
+     "start": 1697754237.571,
+     "seconds": 2.9
+    },
+    {
+     "start": 1697754243.424,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754247.101,
+     "seconds": 2.5
+    },
+    {
+     "start": 1697754251.545,
+     "seconds": 2.0
+    },
+    {
+     "start": 1697754266.266,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754270.482,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754275.341,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754279.4,
+     "seconds": 4.9
+    },
+    {
+     "start": 1697754287.795,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754291.815,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754296.534,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754300.611,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754305.149,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754309.23,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754313.446,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754317.599,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754321.446,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754337.919,
+     "seconds": 0.5
+    },
+    {
+     "start": 1697754364.615,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754366.278,
+     "seconds": 1.5
+    },
+    {
+     "start": 1697754368.415,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754385.678,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754391.374,
+     "seconds": 1.0
+    },
+    {
+     "start": 1697754421.297319,
+     "seconds": 0.1
+    },
+    {
+     "start": 1697754438.86,
+     "seconds": 0.0
+    }
+   ],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 626.0,
+    "wash": 8825.0,
+    "spin": 867.7,
+    "drain": 535.9
+   },
+   "label_seconds": 11112,
+   "bytes": 28409948
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_2.csv",
+   "rows": 2165129,
+   "segments": [
+    {
+     "start": 1697031524.355,
+     "rows": 2165129
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 423.0,
+    "wash": 9481.5,
+    "spin": 486.0,
+    "drain": 435.1
+   },
+   "label_seconds": 10826,
+   "bytes": 28109919
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_4.csv",
+   "rows": 911762,
+   "segments": [
+    {
+     "start": 1696875722.02,
+     "rows": 908709
+    },
+    {
+     "start": 1696880316.775,
+     "rows": 3053
+    }
+   ],
+   "dropped_short": [
+    {
+     "start": 1696880267.893,
+     "seconds": 1.0
+    },
+    {
+     "start": 1696880271.038,
+     "seconds": 1.0
+    },
+    {
+     "start": 1696880273.044,
+     "seconds": 1.0
+    },
+    {
+     "start": 1696880275.647,
+     "seconds": 0.1
+    },
+    {
+     "start": 1696880278.512,
+     "seconds": 1.0
+    },
+    {
+     "start": 1696880281.963,
+     "seconds": 2.3
+    },
+    {
+     "start": 1696880287.097,
+     "seconds": 1.0
+    },
+    {
+     "start": 1696880290.998,
+     "seconds": 1.0
+    },
+    {
+     "start": 1696880300.007,
+     "seconds": 0.7
+    }
+   ],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 125.0,
+    "wash": 4433.8,
+    "spin": 0.0,
+    "drain": 0.0
+   },
+   "label_seconds": 10808,
+   "bytes": 11568197
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_6.csv",
+   "rows": 2194917,
+   "segments": [
+    {
+     "start": 1696408213.415,
+     "rows": 2194917
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 574.0,
+    "wash": 8582.4,
+    "spin": 1509.1,
+    "drain": 309.0
+   },
+   "label_seconds": 10975,
+   "bytes": 29153002
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_30_8.csv",
+   "rows": 2220031,
+   "segments": [
+    {
+     "start": 1697105013.84,
+     "rows": 2220031
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 618.0,
+    "wash": 9034.9,
+    "spin": 867.1,
+    "drain": 580.1
+   },
+   "label_seconds": 11101,
+   "bytes": 29417644
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_40_0.csv",
+   "rows": 2134161,
+   "segments": [
+    {
+     "start": 1695374602.19,
+     "rows": 2134161
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 411.0,
+    "wash": 9024.7,
+    "spin": 955.1,
+    "drain": 280.0
+   },
+   "label_seconds": 10672,
+   "bytes": 27847277
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_40_10.csv",
+   "rows": 2246746,
+   "segments": [
+    {
+     "start": 1698309594.27,
+     "rows": 2246746
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 732.0,
+    "wash": 8814.5,
+    "spin": 1076.1,
+    "drain": 611.1
+   },
+   "label_seconds": 11234,
+   "bytes": 29834612
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_40_11.csv",
+   "rows": 2454430,
+   "segments": [
+    {
+     "start": 1698411043.85,
+     "rows": 2454430
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 652.0,
+    "wash": 10232.0,
+    "spin": 911.1,
+    "drain": 477.0
+   },
+   "label_seconds": 12273,
+   "bytes": 32891573
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_40_2.csv",
+   "rows": 2189667,
+   "segments": [
+    {
+     "start": 1697445457.665,
+     "rows": 2189667
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 445.0,
+    "wash": 9126.2,
+    "spin": 955.1,
+    "drain": 422.0
+   },
+   "label_seconds": 10949,
+   "bytes": 29020513
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_40_4.csv",
+   "rows": 2198937,
+   "segments": [
+    {
+     "start": 1697708656.315,
+     "rows": 2198937
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 493.0,
+    "wash": 9123.5,
+    "spin": 884.1,
+    "drain": 494.1
+   },
+   "label_seconds": 10995,
+   "bytes": 29069350
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_40_6.csv",
+   "rows": 2139445,
+   "segments": [
+    {
+     "start": 1696837981.77,
+     "rows": 2139445
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 538.0,
+    "wash": 8390.0,
+    "spin": 1538.1,
+    "drain": 231.0
+   },
+   "label_seconds": 10698,
+   "bytes": 28024248
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_40_8.csv",
+   "rows": 2215724,
+   "segments": [
+    {
+     "start": 1699892826.38,
+     "rows": 2215724
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 572.0,
+    "wash": 9158.4,
+    "spin": 807.1,
+    "drain": 541.1
+   },
+   "label_seconds": 11079,
+   "bytes": 29007429
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_60_0.csv",
+   "rows": 2323934,
+   "segments": [
+    {
+     "start": 1695632855.325,
+     "rows": 2323934
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 441.0,
+    "wash": 9868.5,
+    "spin": 1013.1,
+    "drain": 297.0
+   },
+   "label_seconds": 11620,
+   "bytes": 29475547
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_60_10.csv",
+   "rows": 2395932,
+   "segments": [
+    {
+     "start": 1698920042.335,
+     "rows": 2395932
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 584.0,
+    "wash": 10040.5,
+    "spin": 819.1,
+    "drain": 536.1
+   },
+   "label_seconds": 11980,
+   "bytes": 31502676
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_60_11.csv",
+   "rows": 2363771,
+   "segments": [
+    {
+     "start": 1698693580.14,
+     "rows": 2363771
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 631.0,
+    "wash": 9656.7,
+    "spin": 1057.1,
+    "drain": 474.1
+   },
+   "label_seconds": 11819,
+   "bytes": 31130993
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_60_2.csv",
+   "rows": 2385456,
+   "segments": [
+    {
+     "start": 1697570241.72,
+     "rows": 2385456
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 1,
+   "seconds": {
+    "fill": 445.0,
+    "wash": 10318.1,
+    "spin": 831.1,
+    "drain": 333.1
+   },
+   "label_seconds": 11928,
+   "bytes": 30780472
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_60_4.csv",
+   "rows": 2365959,
+   "segments": [
+    {
+     "start": 1697792803.205,
+     "rows": 2365959
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 544.0,
+    "wash": 9806.6,
+    "spin": 1010.1,
+    "drain": 469.1
+   },
+   "label_seconds": 11830,
+   "bytes": 31602914
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_60_6.csv",
+   "rows": 2365863,
+   "segments": [
+    {
+     "start": 1698048740.685,
+     "rows": 2365863
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 565.0,
+    "wash": 10000.2,
+    "spin": 846.1,
+    "drain": 418.1
+   },
+   "label_seconds": 11830,
+   "bytes": 30657890
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_cotton_60_8.csv",
+   "rows": 2400753,
+   "segments": [
+    {
+     "start": 1697828180.23,
+     "rows": 2400753
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 566.0,
+    "wash": 10174.6,
+    "spin": 918.1,
+    "drain": 345.0
+   },
+   "label_seconds": 12004,
+   "bytes": 31686279
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_eco_40-60_0.csv",
+   "rows": 2086923,
+   "segments": [
+    {
+     "start": 1695668609.385,
+     "rows": 2086923
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 307.0,
+    "wash": 9261.5,
+    "spin": 638.0,
+    "drain": 228.0
+   },
+   "label_seconds": 10435,
+   "bytes": 26646543
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_eco_40-60_10.csv",
+   "rows": 2172385,
+   "segments": [
+    {
+     "start": 1699636762.07,
+     "rows": 2172385
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 489.0,
+    "wash": 9058.8,
+    "spin": 884.1,
+    "drain": 430.0
+   },
+   "label_seconds": 10863,
+   "bytes": 28971076
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_eco_40-60_11.csv",
+   "rows": 2267976,
+   "segments": [
+    {
+     "start": 1699006404.115,
+     "rows": 2267976
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 465.0,
+    "wash": 9547.7,
+    "spin": 928.1,
+    "drain": 399.0
+   },
+   "label_seconds": 11341,
+   "bytes": 30199101
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_eco_40-60_2.csv",
+   "rows": 2169702,
+   "segments": [
+    {
+     "start": 1698345173.49,
+     "rows": 2169702
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 252.0,
+    "wash": 9683.4,
+    "spin": 727.1,
+    "drain": 186.0
+   },
+   "label_seconds": 10849,
+   "bytes": 28663465
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_eco_40-60_4.csv",
+   "rows": 2185094,
+   "segments": [
+    {
+     "start": 1698138834.53,
+     "rows": 2185094
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 275.0,
+    "wash": 9725.4,
+    "spin": 638.0,
+    "drain": 287.0
+   },
+   "label_seconds": 10926,
+   "bytes": 28769625
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_eco_40-60_6.csv",
+   "rows": 2172451,
+   "segments": [
+    {
+     "start": 1699473894.745,
+     "rows": 2172451
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 289.0,
+    "wash": 9641.2,
+    "spin": 640.0,
+    "drain": 292.0
+   },
+   "label_seconds": 10863,
+   "bytes": 28241662
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_cold_eco_40-60_8.csv",
+   "rows": 2172284,
+   "segments": [
+    {
+     "start": 1699524195.58,
+     "rows": 2172284
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 455.0,
+    "wash": 9045.3,
+    "spin": 1064.1,
+    "drain": 297.0
+   },
+   "label_seconds": 10862,
+   "bytes": 28761999
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_0_0.csv",
+   "rows": 2142195,
+   "segments": [
+    {
+     "start": 1692643707.025,
+     "rows": 2142195
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 409.0,
+    "wash": 8890.8,
+    "spin": 1123.1,
+    "drain": 288.0
+   },
+   "label_seconds": 10712,
+   "bytes": 28492527
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_0_10.csv",
+   "rows": 2194897,
+   "segments": [
+    {
+     "start": 1692976202.075,
+     "rows": 2150783
+    },
+    {
+     "start": 1692986957.43,
+     "rows": 44114
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 641.1,
+    "wash": 8755.3,
+    "spin": 1031.1,
+    "drain": 547.0
+   },
+   "label_seconds": 10977,
+   "bytes": 29873550
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_0_11.csv",
+   "rows": 2203815,
+   "segments": [
+    {
+     "start": 1692699272.925,
+     "rows": 2203815
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 685.1,
+    "wash": 8751.9,
+    "spin": 1094.1,
+    "drain": 488.0
+   },
+   "label_seconds": 11020,
+   "bytes": 29841713
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_0_2.csv",
+   "rows": 2142839,
+   "segments": [
+    {
+     "start": 1692710840.805,
+     "rows": 2142839
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 420.0,
+    "wash": 8831.1,
+    "spin": 1066.0,
+    "drain": 397.0
+   },
+   "label_seconds": 10715,
+   "bytes": 29320470
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_0_4.csv",
+   "rows": 2242229,
+   "segments": [
+    {
+     "start": 1692724502.845,
+     "rows": 2242229
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 490.0,
+    "wash": 9233.0,
+    "spin": 1012.1,
+    "drain": 476.1
+   },
+   "label_seconds": 11212,
+   "bytes": 31191410
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_0_6.csv",
+   "rows": 2178047,
+   "segments": [
+    {
+     "start": 1692825556.76,
+     "rows": 2178047
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 563.0,
+    "wash": 8846.1,
+    "spin": 985.1,
+    "drain": 496.0
+   },
+   "label_seconds": 10891,
+   "bytes": 30186087
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_0_8.csv",
+   "rows": 2199275,
+   "segments": [
+    {
+     "start": 1692799811.625,
+     "rows": 2199275
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 538.0,
+    "wash": 9103.2,
+    "spin": 815.1,
+    "drain": 540.1
+   },
+   "label_seconds": 10997,
+   "bytes": 30138510
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_30_0.csv",
+   "rows": 2140749,
+   "segments": [
+    {
+     "start": 1693047845.255,
+     "rows": 2140749
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 447.0,
+    "wash": 8831.6,
+    "spin": 1131.1,
+    "drain": 294.0
+   },
+   "label_seconds": 10704,
+   "bytes": 28038785
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_30_10.csv",
+   "rows": 2239169,
+   "segments": [
+    {
+     "start": 1693416483.08,
+     "rows": 2239169
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 605.1,
+    "wash": 8961.7,
+    "spin": 1132.1,
+    "drain": 497.0
+   },
+   "label_seconds": 11197,
+   "bytes": 30477567
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_30_11.csv",
+   "rows": 2213772,
+   "segments": [
+    {
+     "start": 1693320975.14,
+     "rows": 2213772
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 648.0,
+    "wash": 8907.8,
+    "spin": 1025.1,
+    "drain": 488.0
+   },
+   "label_seconds": 11070,
+   "bytes": 30496942
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_30_2.csv",
+   "rows": 2162709,
+   "segments": [
+    {
+     "start": 1692879606.455,
+     "rows": 2162709
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 409.0,
+    "wash": 9054.4,
+    "spin": 944.1,
+    "drain": 406.0
+   },
+   "label_seconds": 10814,
+   "bytes": 30244582
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_30_4.csv",
+   "rows": 2175243,
+   "segments": [
+    {
+     "start": 1693236218.785,
+     "rows": 2175243
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 491.0,
+    "wash": 9093.0,
+    "spin": 874.1,
+    "drain": 418.1
+   },
+   "label_seconds": 10877,
+   "bytes": 29749870
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_30_6.csv",
+   "rows": 2178939,
+   "segments": [
+    {
+     "start": 1693216545.305,
+     "rows": 2178939
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 549.0,
+    "wash": 8993.5,
+    "spin": 868.1,
+    "drain": 484.1
+   },
+   "label_seconds": 10895,
+   "bytes": 29848334
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_30_8.csv",
+   "rows": 2240299,
+   "segments": [
+    {
+     "start": 1693492959.505,
+     "rows": 2240299
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 582.0,
+    "wash": 9334.4,
+    "spin": 827.0,
+    "drain": 458.0
+   },
+   "label_seconds": 11202,
+   "bytes": 30339068
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_40_0.csv",
+   "rows": 2133820,
+   "segments": [
+    {
+     "start": 1693387962.9,
+     "rows": 2133820
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 406.0,
+    "wash": 8978.9,
+    "spin": 983.1,
+    "drain": 301.1
+   },
+   "label_seconds": 10670,
+   "bytes": 28095889
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_40_10.csv",
+   "rows": 2451066,
+   "segments": [
+    {
+     "start": 1702895484.67,
+     "rows": 2451066
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 646.0,
+    "wash": 9998.1,
+    "spin": 1015.1,
+    "drain": 596.1
+   },
+   "label_seconds": 12256,
+   "bytes": 32607079
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_40_11.csv",
+   "rows": 2351254,
+   "segments": [
+    {
+     "start": 1693924654.925,
+     "rows": 2332941
+    },
+    {
+     "start": 1693936321.43,
+     "rows": 18313
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 742.1,
+    "wash": 10059.1,
+    "spin": 951.1,
+    "drain": 4.0
+   },
+   "label_seconds": 11759,
+   "bytes": 32010344
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_40_2.csv",
+   "rows": 2155570,
+   "segments": [
+    {
+     "start": 1702739928.135,
+     "rows": 2155570
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 416.0,
+    "wash": 9081.7,
+    "spin": 892.1,
+    "drain": 388.1
+   },
+   "label_seconds": 10779,
+   "bytes": 28404080
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_40_4.csv",
+   "rows": 2194911,
+   "segments": [
+    {
+     "start": 1693584538.445,
+     "rows": 2194911
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 451.0,
+    "wash": 9284.4,
+    "spin": 795.1,
+    "drain": 444.0
+   },
+   "label_seconds": 10975,
+   "bytes": 29199707
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_40_6.csv",
+   "rows": 2194857,
+   "segments": [
+    {
+     "start": 1693563105.715,
+     "rows": 2194857
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 598.0,
+    "wash": 8906.2,
+    "spin": 1006.0,
+    "drain": 464.0
+   },
+   "label_seconds": 10975,
+   "bytes": 29878872
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_40_8.csv",
+   "rows": 2235931,
+   "segments": [
+    {
+     "start": 1693837604.345,
+     "rows": 2235931
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 563.0,
+    "wash": 9786.5,
+    "spin": 825.1,
+    "drain": 5.0
+   },
+   "label_seconds": 11180,
+   "bytes": 30116150
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_60_0.csv",
+   "rows": 2308168,
+   "segments": [
+    {
+     "start": 1693402174.99,
+     "rows": 2308168
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 401.0,
+    "wash": 9788.7,
+    "spin": 1059.1,
+    "drain": 292.0
+   },
+   "label_seconds": 11542,
+   "bytes": 31091552
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_60_10.csv",
+   "rows": 2642266,
+   "segments": [
+    {
+     "start": 1694868378.67,
+     "rows": 2642266
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 716.1,
+    "wash": 10940.1,
+    "spin": 869.0,
+    "drain": 686.1
+   },
+   "label_seconds": 13212,
+   "bytes": 34633869
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_60_11.csv",
+   "rows": 2441752,
+   "segments": [
+    {
+     "start": 1694021383.235,
+     "rows": 2278134
+    },
+    {
+     "start": 1694032774.91,
+     "rows": 163618
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 699.0,
+    "wash": 10151.6,
+    "spin": 791.1,
+    "drain": 567.0
+   },
+   "label_seconds": 12210,
+   "bytes": 32488008
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_60_2.csv",
+   "rows": 2409473,
+   "segments": [
+    {
+     "start": 1702909296.69,
+     "rows": 2336191
+    },
+    {
+     "start": 1702920979.585,
+     "rows": 73282
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 479.1,
+    "wash": 10357.2,
+    "spin": 811.1,
+    "drain": 400.0
+   },
+   "label_seconds": 12050,
+   "bytes": 31788652
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_60_4.csv",
+   "rows": 2339765,
+   "segments": [
+    {
+     "start": 1694078570.175,
+     "rows": 2339765
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 497.0,
+    "wash": 9933.7,
+    "spin": 884.1,
+    "drain": 384.1
+   },
+   "label_seconds": 11699,
+   "bytes": 31195839
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_60_6.csv",
+   "rows": 2380668,
+   "segments": [
+    {
+     "start": 1694097083.635,
+     "rows": 2367394
+    },
+    {
+     "start": 1694108921.63,
+     "rows": 13274
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 551.0,
+    "wash": 9984.3,
+    "spin": 857.1,
+    "drain": 511.0
+   },
+   "label_seconds": 11905,
+   "bytes": 31680473
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_cotton_60_8.csv",
+   "rows": 2416118,
+   "segments": [
+    {
+     "start": 1694442030.36,
+     "rows": 2369202
+    },
+    {
+     "start": 1694453877.42,
+     "rows": 46916
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 614.0,
+    "wash": 9949.4,
+    "spin": 995.1,
+    "drain": 522.1
+   },
+   "label_seconds": 12082,
+   "bytes": 32951358
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_eco_40-60_0.csv",
+   "rows": 2142804,
+   "segments": [
+    {
+     "start": 1693992899.98,
+     "rows": 2142804
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 322.0,
+    "wash": 9584.0,
+    "spin": 616.0,
+    "drain": 192.0
+   },
+   "label_seconds": 10715,
+   "bytes": 28021405
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_eco_40-60_10.csv",
+   "rows": 2184909,
+   "segments": [
+    {
+     "start": 1695058049.455,
+     "rows": 2184909
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 477.0,
+    "wash": 9094.4,
+    "spin": 904.1,
+    "drain": 449.0
+   },
+   "label_seconds": 10925,
+   "bytes": 29426518
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_eco_40-60_11.csv",
+   "rows": 2788542,
+   "segments": [
+    {
+     "start": 1694786882.48,
+     "rows": 13001
+    },
+    {
+     "start": 1694786948.29,
+     "rows": 2775541
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 594.0,
+    "wash": 11634.5,
+    "spin": 1197.1,
+    "drain": 517.1
+   },
+   "label_seconds": 13943,
+   "bytes": 36865831
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_eco_40-60_2.csv",
+   "rows": 2138861,
+   "segments": [
+    {
+     "start": 1693908155.695,
+     "rows": 2138861
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 265.0,
+    "wash": 9741.2,
+    "spin": 688.0,
+    "drain": 0.0
+   },
+   "label_seconds": 10695,
+   "bytes": 28233237
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_eco_40-60_4.csv",
+   "rows": 2145645,
+   "segments": [
+    {
+     "start": 1694166750.775,
+     "rows": 2145645
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 275.0,
+    "wash": 9593.2,
+    "spin": 613.0,
+    "drain": 247.0
+   },
+   "label_seconds": 10729,
+   "bytes": 28300213
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_eco_40-60_6.csv",
+   "rows": 2164165,
+   "segments": [
+    {
+     "start": 1694509156.175,
+     "rows": 2164165
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 401.0,
+    "wash": 9269.7,
+    "spin": 816.1,
+    "drain": 334.0
+   },
+   "label_seconds": 10822,
+   "bytes": 28789511
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_hot_eco_40-60_8.csv",
+   "rows": 2184715,
+   "segments": [
+    {
+     "start": 1695134807.425,
+     "rows": 2184715
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 459.0,
+    "wash": 9198.5,
+    "spin": 865.1,
+    "drain": 401.0
+   },
+   "label_seconds": 10924,
+   "bytes": 29161780
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_20-deg_20_0.csv",
+   "rows": 693204,
+   "segments": [
+    {
+     "start": 1701880564.98,
+     "rows": 693204
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 322.0,
+    "wash": 1894.9,
+    "spin": 1016.1,
+    "drain": 233.0
+   },
+   "label_seconds": 3467,
+   "bytes": 8846025
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_20-deg_20_11.csv",
+   "rows": 748109,
+   "segments": [
+    {
+     "start": 1702656044.455,
+     "rows": 748109
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 661.1,
+    "wash": 1563.4,
+    "spin": 929.1,
+    "drain": 587.0
+   },
+   "label_seconds": 3742,
+   "bytes": 10654502
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_20-deg_20_2.csv",
+   "rows": 711435,
+   "segments": [
+    {
+     "start": 1702391511.825,
+     "rows": 711435
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 371.0,
+    "wash": 1802.0,
+    "spin": 955.1,
+    "drain": 429.1
+   },
+   "label_seconds": 3558,
+   "bytes": 9733830
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_20-deg_20_6.csv",
+   "rows": 735101,
+   "segments": [
+    {
+     "start": 1702567333.495,
+     "rows": 735101
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 570.1,
+    "wash": 1435.3,
+    "spin": 1296.1,
+    "drain": 374.0
+   },
+   "label_seconds": 3677,
+   "bytes": 10345778
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_delicate_30_0.csv",
+   "rows": 588895,
+   "segments": [
+    {
+     "start": 1701252794.525,
+     "rows": 588895
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 569.0,
+    "wash": 1624.4,
+    "spin": 374.0,
+    "drain": 377.0
+   },
+   "label_seconds": 2946,
+   "bytes": 7497088
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_delicate_30_11.csv",
+   "rows": 911870,
+   "segments": [
+    {
+     "start": 1702478793.65,
+     "rows": 911870
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 566.0,
+    "wash": 3152.3,
+    "spin": 377.0,
+    "drain": 464.0
+   },
+   "label_seconds": 4561,
+   "bytes": 12050700
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_delicate_30_2.csv",
+   "rows": 556260,
+   "segments": [
+    {
+     "start": 1702378106.7,
+     "rows": 556260
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 446.1,
+    "wash": 1722.2,
+    "spin": 218.0,
+    "drain": 395.1
+   },
+   "label_seconds": 2783,
+   "bytes": 7199501
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_delicate_30_6.csv",
+   "rows": 531363,
+   "segments": [
+    {
+     "start": 1702506789.18,
+     "rows": 531363
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 473.0,
+    "wash": 1570.7,
+    "spin": 199.0,
+    "drain": 414.0
+   },
+   "label_seconds": 2658,
+   "bytes": 6877357
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-15_0.csv",
+   "rows": 208220,
+   "segments": [
+    {
+     "start": 1694181222.895,
+     "rows": 208220
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 333.0,
+    "wash": 283.0,
+    "spin": 204.0,
+    "drain": 221.0
+   },
+   "label_seconds": 1043,
+   "bytes": 2950192
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-15_11.csv",
+   "rows": 249609,
+   "segments": [
+    {
+     "start": 1702726237.955,
+     "rows": 249609
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 317.0,
+    "wash": 597.0,
+    "spin": 111.0,
+    "drain": 223.0
+   },
+   "label_seconds": 1249,
+   "bytes": 3566363
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-15_2.csv",
+   "rows": 188148,
+   "segments": [
+    {
+     "start": 1702463706.26,
+     "rows": 188148
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 323.0,
+    "wash": 192.7,
+    "spin": 198.0,
+    "drain": 227.0
+   },
+   "label_seconds": 942,
+   "bytes": 2829093
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-15_6.csv",
+   "rows": 210464,
+   "segments": [
+    {
+     "start": 1702647081.675,
+     "rows": 210464
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 327.0,
+    "wash": 317.3,
+    "spin": 106.0,
+    "drain": 302.0
+   },
+   "label_seconds": 1054,
+   "bytes": 3192243
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-45_40_0.csv",
+   "rows": 542598,
+   "segments": [
+    {
+     "start": 1695891640.0,
+     "rows": 542598
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 290.0,
+    "wash": 1982.9,
+    "spin": 247.0,
+    "drain": 193.0
+   },
+   "label_seconds": 2714,
+   "bytes": 7047195
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-45_40_11.csv",
+   "rows": 586893,
+   "segments": [
+    {
+     "start": 1702387726.535,
+     "rows": 586893
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 386.0,
+    "wash": 1876.4,
+    "spin": 314.0,
+    "drain": 358.0
+   },
+   "label_seconds": 2936,
+   "bytes": 7947460
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-45_40_2.csv",
+   "rows": 510784,
+   "segments": [
+    {
+     "start": 1702289638.08,
+     "rows": 510784
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 202.0,
+    "wash": 1774.8,
+    "spin": 400.0,
+    "drain": 177.0
+   },
+   "label_seconds": 2555,
+   "bytes": 6757800
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_fast-45_40_6.csv",
+   "rows": 547122,
+   "segments": [
+    {
+     "start": 1702373932.39,
+     "rows": 547122
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 348.0,
+    "wash": 1827.5,
+    "spin": 239.0,
+    "drain": 321.0
+   },
+   "label_seconds": 2737,
+   "bytes": 7101388
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_jeans_60_0.csv",
+   "rows": 1384458,
+   "segments": [
+    {
+     "start": 1701354606.71,
+     "rows": 1384458
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 346.0,
+    "wash": 4951.1,
+    "spin": 1384.1,
+    "drain": 241.0
+   },
+   "label_seconds": 6923,
+   "bytes": 17499202
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_jeans_60_11.csv",
+   "rows": 1510201,
+   "segments": [
+    {
+     "start": 1702595215.995,
+     "rows": 1510201
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 761.1,
+    "wash": 5231.8,
+    "spin": 867.1,
+    "drain": 691.0
+   },
+   "label_seconds": 7552,
+   "bytes": 20774181
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_jeans_60_2.csv",
+   "rows": 1392440,
+   "segments": [
+    {
+     "start": 1702320600.795,
+     "rows": 1392440
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 358.0,
+    "wash": 5217.1,
+    "spin": 1175.1,
+    "drain": 212.0
+   },
+   "label_seconds": 6963,
+   "bytes": 18463159
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_jeans_60_6.csv",
+   "rows": 1421639,
+   "segments": [
+    {
+     "start": 1702333530.805,
+     "rows": 1421639
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 508.1,
+    "wash": 5073.1,
+    "spin": 1093.1,
+    "drain": 434.0
+   },
+   "label_seconds": 7109,
+   "bytes": 19817735
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_mix_40_0.csv",
+   "rows": 764943,
+   "segments": [
+    {
+     "start": 1701339963.285,
+     "rows": 764943
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 349.0,
+    "wash": 2462.6,
+    "spin": 774.0,
+    "drain": 239.0
+   },
+   "label_seconds": 3826,
+   "bytes": 9598105
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_mix_40_11.csv",
+   "rows": 824082,
+   "segments": [
+    {
+     "start": 1702210793.585,
+     "rows": 824082
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 616.0,
+    "wash": 2267.3,
+    "spin": 657.0,
+    "drain": 580.0
+   },
+   "label_seconds": 4122,
+   "bytes": 10910567
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_mix_40_2.csv",
+   "rows": 742531,
+   "segments": [
+    {
+     "start": 1702125404.345,
+     "rows": 742531
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 343.0,
+    "wash": 2332.5,
+    "spin": 652.0,
+    "drain": 385.0
+   },
+   "label_seconds": 3714,
+   "bytes": 9469391
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_mix_40_6.csv",
+   "rows": 799415,
+   "segments": [
+    {
+     "start": 1702142863.925,
+     "rows": 799415
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 459.0,
+    "wash": 2534.9,
+    "spin": 452.0,
+    "drain": 551.1
+   },
+   "label_seconds": 3998,
+   "bytes": 10710654
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_sport_40_0.csv",
+   "rows": 537162,
+   "segments": [
+    {
+     "start": 1695980179.19,
+     "rows": 537162
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 342.0,
+    "wash": 1548.7,
+    "spin": 557.0,
+    "drain": 238.0
+   },
+   "label_seconds": 2687,
+   "bytes": 6942093
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_sport_40_11.csv",
+   "rows": 833536,
+   "segments": [
+    {
+     "start": 1701884868.32,
+     "rows": 833536
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 530.0,
+    "wash": 2612.6,
+    "spin": 461.0,
+    "drain": 564.0
+   },
+   "label_seconds": 4169,
+   "bytes": 11370851
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_sport_40_2.csv",
+   "rows": 510844,
+   "segments": [
+    {
+     "start": 1701890742.78,
+     "rows": 510844
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 290.0,
+    "wash": 1510.1,
+    "spin": 536.0,
+    "drain": 218.0
+   },
+   "label_seconds": 2556,
+   "bytes": 6663597
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_sport_40_6.csv",
+   "rows": 519079,
+   "segments": [
+    {
+     "start": 1701946346.605,
+     "rows": 519079
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 327.0,
+    "wash": 1421.3,
+    "spin": 614.0,
+    "drain": 233.0
+   },
+   "label_seconds": 2597,
+   "bytes": 6899645
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_synthetic_0.csv",
+   "rows": 1965350,
+   "segments": [
+    {
+     "start": 1701870616.25,
+     "rows": 1965350
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 429.0,
+    "wash": 8386.6,
+    "spin": 725.1,
+    "drain": 286.0
+   },
+   "label_seconds": 9828,
+   "bytes": 24336473
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_synthetic_11.csv",
+   "rows": 2025004,
+   "segments": [
+    {
+     "start": 1702309766.98,
+     "rows": 2025004
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 707.1,
+    "wash": 8167.9,
+    "spin": 1007.1,
+    "drain": 243.0
+   },
+   "label_seconds": 10126,
+   "bytes": 26512694
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_synthetic_2.csv",
+   "rows": 1985866,
+   "segments": [
+    {
+     "start": 1702216991.67,
+     "rows": 1985866
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 421.0,
+    "wash": 8867.3,
+    "spin": 602.0,
+    "drain": 39.0
+   },
+   "label_seconds": 9930,
+   "bytes": 25283838
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_synthetic_6.csv",
+   "rows": 1974394,
+   "segments": [
+    {
+     "start": 1702233589.025,
+     "rows": 1974394
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 519.0,
+    "wash": 8287.9,
+    "spin": 959.0,
+    "drain": 106.0
+   },
+   "label_seconds": 9873,
+   "bytes": 26203907
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_wool_0.csv",
+   "rows": 817745,
+   "segments": [
+    {
+     "start": 1696236769.275,
+     "rows": 817745
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 615.0,
+    "wash": 2429.6,
+    "spin": 644.1,
+    "drain": 400.0
+   },
+   "label_seconds": 4090,
+   "bytes": 10348275
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_wool_11.csv",
+   "rows": 1036076,
+   "segments": [
+    {
+     "start": 1701968499.62,
+     "rows": 1036076
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 618.0,
+    "wash": 3468.2,
+    "spin": 565.0,
+    "drain": 529.1
+   },
+   "label_seconds": 5181,
+   "bytes": 13431561
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_wool_2.csv",
+   "rows": 794196,
+   "segments": [
+    {
+     "start": 1701960704.02,
+     "rows": 794196
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 529.0,
+    "wash": 2519.9,
+    "spin": 532.0,
+    "drain": 390.0
+   },
+   "label_seconds": 3972,
+   "bytes": 10031283
+  },
+  {
+   "file": "wm_becken-flt_BWM5381IX_warm_wool_6.csv",
+   "rows": 793086,
+   "segments": [
+    {
+     "start": 1702138108.57,
+     "rows": 793086
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 542.0,
+    "wash": 2504.3,
+    "spin": 421.0,
+    "drain": 498.0
+   },
+   "label_seconds": 3967,
+   "bytes": 10156822
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_0_0.csv",
+   "rows": 2147636,
+   "segments": [
+    {
+     "start": 1687600943.82,
+     "rows": 2147636
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 408.0,
+    "wash": 9063.0,
+    "spin": 994.1,
+    "drain": 273.0
+   },
+   "label_seconds": 10739,
+   "bytes": 26253787
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_0_10.csv",
+   "rows": 2176935,
+   "segments": [
+    {
+     "start": 1688721668.325,
+     "rows": 2176935
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 615.0,
+    "wash": 8727.5,
+    "spin": 1165.1,
+    "drain": 377.0
+   },
+   "label_seconds": 10885,
+   "bytes": 27673892
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_0_11.csv",
+   "rows": 2426853,
+   "segments": [
+    {
+     "start": 1689154282.735,
+     "rows": 2426853
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 202.0,
+    "wash": 11048.2,
+    "spin": 884.1,
+    "drain": 0.0
+   },
+   "label_seconds": 12135,
+   "bytes": 32050040
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_0_2.csv",
+   "rows": 2125282,
+   "segments": [
+    {
+     "start": 1687797871.59,
+     "rows": 2125282
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 432.0,
+    "wash": 8779.3,
+    "spin": 1166.1,
+    "drain": 249.0
+   },
+   "label_seconds": 10627,
+   "bytes": 27975545
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_0_4.csv",
+   "rows": 2182700,
+   "segments": [
+    {
+     "start": 1687885650.5,
+     "rows": 2182700
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 460.0,
+    "wash": 9211.4,
+    "spin": 883.1,
+    "drain": 359.0
+   },
+   "label_seconds": 10914,
+   "bytes": 28293701
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_0_6.csv",
+   "rows": 2443334,
+   "segments": [
+    {
+     "start": 1688062055.325,
+     "rows": 2443334
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 534.0,
+    "wash": 10254.5,
+    "spin": 951.1,
+    "drain": 477.0
+   },
+   "label_seconds": 12217,
+   "bytes": 32059470
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_0_8.csv",
+   "rows": 2601200,
+   "segments": [
+    {
+     "start": 1688389744.805,
+     "rows": 2128774
+    },
+    {
+     "start": 1688400389.84,
+     "rows": 327758
+    },
+    {
+     "start": 1688402030.565,
+     "rows": 26217
+    },
+    {
+     "start": 1688402163.135,
+     "rows": 34911
+    },
+    {
+     "start": 1688402339.285,
+     "rows": 83540
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 567.0,
+    "wash": 10789.4,
+    "spin": 1361.5,
+    "drain": 288.1
+   },
+   "label_seconds": 13013,
+   "bytes": 33978983
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_30_0.csv",
+   "rows": 2143470,
+   "segments": [
+    {
+     "start": 1687634208.65,
+     "rows": 2143470
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 402.0,
+    "wash": 9096.2,
+    "spin": 959.1,
+    "drain": 260.0
+   },
+   "label_seconds": 10718,
+   "bytes": 26309215
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_30_10.csv",
+   "rows": 2177350,
+   "segments": [
+    {
+     "start": 1688832062.245,
+     "rows": 2177350
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 593.0,
+    "wash": 8954.6,
+    "spin": 852.1,
+    "drain": 487.0
+   },
+   "label_seconds": 10887,
+   "bytes": 28220618
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_30_11.csv",
+   "rows": 2205920,
+   "segments": [
+    {
+     "start": 1689251059.4,
+     "rows": 2205920
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 601.1,
+    "wash": 9150.5,
+    "spin": 918.1,
+    "drain": 360.0
+   },
+   "label_seconds": 11030,
+   "bytes": 28111630
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_30_2.csv",
+   "rows": 2163175,
+   "segments": [
+    {
+     "start": 1687817457.125,
+     "rows": 2163175
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 405.0,
+    "wash": 9070.7,
+    "spin": 1089.1,
+    "drain": 251.0
+   },
+   "label_seconds": 10817,
+   "bytes": 28827922
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_30_4.csv",
+   "rows": 2380383,
+   "segments": [
+    {
+     "start": 1687905682.085,
+     "rows": 2380383
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 439.0,
+    "wash": 10180.8,
+    "spin": 904.1,
+    "drain": 378.0
+   },
+   "label_seconds": 11903,
+   "bytes": 31127903
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_30_6.csv",
+   "rows": 2634335,
+   "segments": [
+    {
+     "start": 1688118476.325,
+     "rows": 2634335
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 536.0,
+    "wash": 11115.5,
+    "spin": 1066.1,
+    "drain": 454.1
+   },
+   "label_seconds": 13172,
+   "bytes": 34392838
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_30_8.csv",
+   "rows": 2184655,
+   "segments": [
+    {
+     "start": 1688423330.725,
+     "rows": 2184655
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 552.0,
+    "wash": 9022.1,
+    "spin": 937.1,
+    "drain": 412.0
+   },
+   "label_seconds": 10924,
+   "bytes": 28326411
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_40_0.csv",
+   "rows": 2144270,
+   "segments": [
+    {
+     "start": 1687647337.65,
+     "rows": 2144270
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 405.0,
+    "wash": 9031.2,
+    "spin": 1011.1,
+    "drain": 274.0
+   },
+   "label_seconds": 10722,
+   "bytes": 26392068
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_40_10.csv",
+   "rows": 2124454,
+   "segments": [
+    {
+     "start": 1688982544.73,
+     "rows": 2124454
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 602.0,
+    "wash": 8692.1,
+    "spin": 947.1,
+    "drain": 381.1
+   },
+   "label_seconds": 10623,
+   "bytes": 26811772
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_40_11.csv",
+   "rows": 2569577,
+   "segments": [
+    {
+     "start": 1689354552.755,
+     "rows": 2302403
+    },
+    {
+     "start": 1689366065.805,
+     "rows": 210804
+    },
+    {
+     "start": 1689367121.15,
+     "rows": 56370
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 717.0,
+    "wash": 10769.6,
+    "spin": 740.0,
+    "drain": 621.2
+   },
+   "label_seconds": 12851,
+   "bytes": 33176786
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_40_2.csv",
+   "rows": 2129872,
+   "segments": [
+    {
+     "start": 1687785383.64,
+     "rows": 2129872
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 422.0,
+    "wash": 8977.3,
+    "spin": 948.1,
+    "drain": 302.0
+   },
+   "label_seconds": 10650,
+   "bytes": 27711591
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_40_4.csv",
+   "rows": 2460353,
+   "segments": [
+    {
+     "start": 1687942367.235,
+     "rows": 2460353
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 449.0,
+    "wash": 10463.6,
+    "spin": 929.1,
+    "drain": 460.1
+   },
+   "label_seconds": 12302,
+   "bytes": 32783258
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_40_6.csv",
+   "rows": 2182759,
+   "segments": [
+    {
+     "start": 1688134133.505,
+     "rows": 2161118
+    },
+    {
+     "start": 1688144941.795,
+     "rows": 21641
+    }
+   ],
+   "dropped_short": [
+    {
+     "start": 1688144940.754806,
+     "seconds": 0.0
+    }
+   ],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 540.0,
+    "wash": 9022.7,
+    "spin": 958.1,
+    "drain": 393.0
+   },
+   "label_seconds": 10917,
+   "bytes": 28641904
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_40_8.csv",
+   "rows": 2411206,
+   "segments": [
+    {
+     "start": 1688504401.97,
+     "rows": 2411206
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 543.0,
+    "wash": 10123.9,
+    "spin": 937.1,
+    "drain": 452.0
+   },
+   "label_seconds": 12057,
+   "bytes": 31388851
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_60_0.csv",
+   "rows": 2329595,
+   "segments": [
+    {
+     "start": 1687729623.025,
+     "rows": 2329595
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 411.0,
+    "wash": 9952.9,
+    "spin": 1011.1,
+    "drain": 273.0
+   },
+   "label_seconds": 11649,
+   "bytes": 29127750
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_60_10.csv",
+   "rows": 2359564,
+   "segments": [
+    {
+     "start": 1689011420.18,
+     "rows": 2359564
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 591.0,
+    "wash": 9794.7,
+    "spin": 1014.1,
+    "drain": 398.0
+   },
+   "label_seconds": 11798,
+   "bytes": 30775839
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_60_11.csv",
+   "rows": 2925457,
+   "segments": [
+    {
+     "start": 1689585092.715,
+     "rows": 2925457
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 702.0,
+    "wash": 12325.2,
+    "spin": 1020.1,
+    "drain": 580.0
+   },
+   "label_seconds": 14628,
+   "bytes": 38652020
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_60_2.csv",
+   "rows": 2371112,
+   "segments": [
+    {
+     "start": 1687858756.435,
+     "rows": 2371112
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 431.0,
+    "wash": 10169.4,
+    "spin": 906.1,
+    "drain": 349.0
+   },
+   "label_seconds": 11856,
+   "bytes": 30977952
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_60_4.csv",
+   "rows": 2354138,
+   "segments": [
+    {
+     "start": 1687967927.31,
+     "rows": 2354138
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 468.0,
+    "wash": 9933.5,
+    "spin": 1075.1,
+    "drain": 294.0
+   },
+   "label_seconds": 11771,
+   "bytes": 30855860
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_60_6.csv",
+   "rows": 2705483,
+   "segments": [
+    {
+     "start": 1688211919.585,
+     "rows": 2705483
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 490.0,
+    "wash": 11544.3,
+    "spin": 1052.1,
+    "drain": 441.0
+   },
+   "label_seconds": 13528,
+   "bytes": 36433387
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_cotton_60_8.csv",
+   "rows": 2385822,
+   "segments": [
+    {
+     "start": 1688636124.89,
+     "rows": 2385822
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 567.0,
+    "wash": 10075.0,
+    "spin": 837.1,
+    "drain": 450.0
+   },
+   "label_seconds": 11930,
+   "bytes": 30206174
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_eco_40-60_0.csv",
+   "rows": 2112295,
+   "segments": [
+    {
+     "start": 1687770594.525,
+     "rows": 2112295
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 307.0,
+    "wash": 9305.4,
+    "spin": 750.1,
+    "drain": 199.0
+   },
+   "label_seconds": 10562,
+   "bytes": 26361808
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_eco_40-60_10.csv",
+   "rows": 2827675,
+   "segments": [
+    {
+     "start": 1689081264.255,
+     "rows": 2725024
+    },
+    {
+     "start": 1689094890.745,
+     "rows": 102651
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 606.0,
+    "wash": 11831.6,
+    "spin": 1428.7,
+    "drain": 272.0
+   },
+   "label_seconds": 14140,
+   "bytes": 36376816
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_eco_40-60_11.csv",
+   "rows": 2385802,
+   "segments": [
+    {
+     "start": 1689682619.99,
+     "rows": 2385802
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 457.0,
+    "wash": 10609.9,
+    "spin": 611.0,
+    "drain": 251.0
+   },
+   "label_seconds": 11930,
+   "bytes": 30230873
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_eco_40-60_2.csv",
+   "rows": 2273720,
+   "segments": [
+    {
+     "start": 1687871446.4,
+     "rows": 2273720
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 262.0,
+    "wash": 10208.5,
+    "spin": 679.1,
+    "drain": 219.0
+   },
+   "label_seconds": 11369,
+   "bytes": 29461577
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_eco_40-60_4.csv",
+   "rows": 2201018,
+   "segments": [
+    {
+     "start": 1688031168.91,
+     "rows": 2201018
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 274.0,
+    "wash": 9763.0,
+    "spin": 792.1,
+    "drain": 176.0
+   },
+   "label_seconds": 11006,
+   "bytes": 28325770
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_eco_40-60_6.csv",
+   "rows": 2174284,
+   "segments": [
+    {
+     "start": 1688373448.575,
+     "rows": 2174284
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 384.0,
+    "wash": 9102.3,
+    "spin": 1202.1,
+    "drain": 183.0
+   },
+   "label_seconds": 10872,
+   "bytes": 27752928
+  },
+  {
+   "file": "wm_becken_BWM5381IX_cold_eco_40-60_8.csv",
+   "rows": 2170737,
+   "segments": [
+    {
+     "start": 1688654729.31,
+     "rows": 2170737
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 412.0,
+    "wash": 9028.5,
+    "spin": 1210.1,
+    "drain": 203.0
+   },
+   "label_seconds": 10854,
+   "bytes": 28164321
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_0_0.csv",
+   "rows": 2131083,
+   "segments": [
+    {
+     "start": 1684871804.58,
+     "rows": 2131083
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 384.0,
+    "wash": 8780.3,
+    "spin": 1265.1,
+    "drain": 226.0
+   },
+   "label_seconds": 10656,
+   "bytes": 25990091
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_0_10.csv",
+   "rows": 2171544,
+   "segments": [
+    {
+     "start": 1686918967.28,
+     "rows": 2171544
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 431.0,
+    "wash": 8299.6,
+    "spin": 1836.1,
+    "drain": 291.0
+   },
+   "label_seconds": 10858,
+   "bytes": 27741242
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_0_11.csv",
+   "rows": 2523656,
+   "segments": [
+    {
+     "start": 1687276987.72,
+     "rows": 2523656
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 667.1,
+    "wash": 10783.1,
+    "spin": 573.0,
+    "drain": 595.0
+   },
+   "label_seconds": 12619,
+   "bytes": 32693641
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_0_2.csv",
+   "rows": 2169589,
+   "segments": [
+    {
+     "start": 1685092790.055,
+     "rows": 2169589
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 439.0,
+    "wash": 9023.8,
+    "spin": 966.1,
+    "drain": 419.1
+   },
+   "label_seconds": 10849,
+   "bytes": 27449567
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_0_4.csv",
+   "rows": 2150610,
+   "segments": [
+    {
+     "start": 1685438525.945,
+     "rows": 2150610
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 456.0,
+    "wash": 8746.9,
+    "spin": 1280.1,
+    "drain": 270.0
+   },
+   "label_seconds": 10754,
+   "bytes": 27087090
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_0_6.csv",
+   "rows": 2279570,
+   "segments": [
+    {
+     "start": 1685560028.15,
+     "rows": 2279570
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 509.0,
+    "wash": 10153.8,
+    "spin": 594.0,
+    "drain": 141.0
+   },
+   "label_seconds": 11398,
+   "bytes": 29391871
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_0_8.csv",
+   "rows": 2150595,
+   "segments": [
+    {
+     "start": 1686680232.025,
+     "rows": 2150595
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 588.0,
+    "wash": 8331.8,
+    "spin": 1571.1,
+    "drain": 262.0
+   },
+   "label_seconds": 10754,
+   "bytes": 27441619
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_30_0.csv",
+   "rows": 2132817,
+   "segments": [
+    {
+     "start": 1684916266.915,
+     "rows": 2132817
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 388.0,
+    "wash": 8730.9,
+    "spin": 1290.1,
+    "drain": 255.0
+   },
+   "label_seconds": 10665,
+   "bytes": 26038640
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_30_10.csv",
+   "rows": 2533371,
+   "segments": [
+    {
+     "start": 1692532976.695,
+     "rows": 2244692
+    },
+    {
+     "start": 1692544201.6,
+     "rows": 288679
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 739.1,
+    "wash": 10492.7,
+    "spin": 838.1,
+    "drain": 597.0
+   },
+   "label_seconds": 12669,
+   "bytes": 33552240
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_30_11.csv",
+   "rows": 2221638,
+   "segments": [
+    {
+     "start": 1687335469.81,
+     "rows": 2221638
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 688.0,
+    "wash": 8911.0,
+    "spin": 990.1,
+    "drain": 519.0
+   },
+   "label_seconds": 11109,
+   "bytes": 28785579
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_30_2.csv",
+   "rows": 2205436,
+   "segments": [
+    {
+     "start": 1685114276.82,
+     "rows": 2205436
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 420.0,
+    "wash": 9415.1,
+    "spin": 778.1,
+    "drain": 414.0
+   },
+   "label_seconds": 11028,
+   "bytes": 27682887
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_30_4.csv",
+   "rows": 2168386,
+   "segments": [
+    {
+     "start": 1685452801.07,
+     "rows": 2168386
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 451.0,
+    "wash": 9131.8,
+    "spin": 872.1,
+    "drain": 387.0
+   },
+   "label_seconds": 10843,
+   "bytes": 27482347
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_30_6.csv",
+   "rows": 2198852,
+   "segments": [
+    {
+     "start": 1685611975.74,
+     "rows": 2198852
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 525.0,
+    "wash": 9146.1,
+    "spin": 980.1,
+    "drain": 343.0
+   },
+   "label_seconds": 10995,
+   "bytes": 28584832
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_30_8.csv",
+   "rows": 2170677,
+   "segments": [
+    {
+     "start": 1686733355.615,
+     "rows": 2170677
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 561.0,
+    "wash": 8884.3,
+    "spin": 927.1,
+    "drain": 481.0
+   },
+   "label_seconds": 10854,
+   "bytes": 27661466
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_40_0.csv",
+   "rows": 2147691,
+   "segments": [
+    {
+     "start": 1684934701.545,
+     "rows": 2147691
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 398.0,
+    "wash": 9223.3,
+    "spin": 836.1,
+    "drain": 281.0
+   },
+   "label_seconds": 10739,
+   "bytes": 26435822
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_40_10.csv",
+   "rows": 2186973,
+   "segments": [
+    {
+     "start": 1687090133.135,
+     "rows": 2186973
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 594.0,
+    "wash": 8988.7,
+    "spin": 865.1,
+    "drain": 487.0
+   },
+   "label_seconds": 10936,
+   "bytes": 28257380
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_40_11.csv",
+   "rows": 2473210,
+   "segments": [
+    {
+     "start": 1687383975.95,
+     "rows": 2473210
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 715.1,
+    "wash": 10065.9,
+    "spin": 990.1,
+    "drain": 595.0
+   },
+   "label_seconds": 12367,
+   "bytes": 31631576
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_40_2.csv",
+   "rows": 2205894,
+   "segments": [
+    {
+     "start": 1685352001.53,
+     "rows": 2205894
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 263.0,
+    "wash": 9120.3,
+    "spin": 1360.1,
+    "drain": 286.0
+   },
+   "label_seconds": 11030,
+   "bytes": 28284216
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_40_4.csv",
+   "rows": 2150694,
+   "segments": [
+    {
+     "start": 1685470605.53,
+     "rows": 2150694
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 455.0,
+    "wash": 8898.3,
+    "spin": 1074.1,
+    "drain": 326.1
+   },
+   "label_seconds": 10754,
+   "bytes": 26980664
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_40_6.csv",
+   "rows": 2171070,
+   "segments": [
+    {
+     "start": 1685644283.65,
+     "rows": 2171070
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 490.1,
+    "wash": 9048.2,
+    "spin": 917.1,
+    "drain": 400.0
+   },
+   "label_seconds": 10856,
+   "bytes": 27620572
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_40_8.csv",
+   "rows": 2583440,
+   "segments": [
+    {
+     "start": 1686770036.8,
+     "rows": 2583440
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 530.0,
+    "wash": 10899.8,
+    "spin": 924.1,
+    "drain": 563.3
+   },
+   "label_seconds": 12918,
+   "bytes": 32909740
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_60_0.csv",
+   "rows": 2325707,
+   "segments": [
+    {
+     "start": 1684946208.465,
+     "rows": 2325707
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 403.0,
+    "wash": 9986.4,
+    "spin": 963.1,
+    "drain": 276.0
+   },
+   "label_seconds": 11629,
+   "bytes": 29188042
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_60_10.csv",
+   "rows": 2354156,
+   "segments": [
+    {
+     "start": 1687163310.22,
+     "rows": 2354156
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 595.0,
+    "wash": 9870.6,
+    "spin": 820.1,
+    "drain": 485.0
+   },
+   "label_seconds": 11771,
+   "bytes": 30051400
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_60_11.csv",
+   "rows": 2944319,
+   "segments": [
+    {
+     "start": 1687458273.405,
+     "rows": 2944319
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 755.0,
+    "wash": 10413.3,
+    "spin": 2940.2,
+    "drain": 613.0
+   },
+   "label_seconds": 14722,
+   "bytes": 38588555
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_60_2.csv",
+   "rows": 2325573,
+   "segments": [
+    {
+     "start": 1685371466.13,
+     "rows": 2325573
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 410.0,
+    "wash": 9968.7,
+    "spin": 862.1,
+    "drain": 387.0
+   },
+   "label_seconds": 11628,
+   "bytes": 29826021
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_60_4.csv",
+   "rows": 2365343,
+   "segments": [
+    {
+     "start": 1685524021.28,
+     "rows": 2365343
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 475.0,
+    "wash": 10049.6,
+    "spin": 867.1,
+    "drain": 435.1
+   },
+   "label_seconds": 11827,
+   "bytes": 29965389
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_60_6.csv",
+   "rows": 2351081,
+   "segments": [
+    {
+     "start": 1685700203.595,
+     "rows": 2351081
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 540.0,
+    "wash": 9772.3,
+    "spin": 971.1,
+    "drain": 472.0
+   },
+   "label_seconds": 11756,
+   "bytes": 29720213
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_cotton_60_8.csv",
+   "rows": 2376147,
+   "segments": [
+    {
+     "start": 1686821917.26,
+     "rows": 2376147
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 577.0,
+    "wash": 9934.6,
+    "spin": 881.1,
+    "drain": 488.0
+   },
+   "label_seconds": 11881,
+   "bytes": 30284374
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_eco_40-60_0.csv",
+   "rows": 2101929,
+   "segments": [
+    {
+     "start": 1685039666.31,
+     "rows": 2101929
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 308.0,
+    "wash": 9311.5,
+    "spin": 676.1,
+    "drain": 214.0
+   },
+   "label_seconds": 10510,
+   "bytes": 26366312
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_eco_40-60_10.csv",
+   "rows": 2157377,
+   "segments": [
+    {
+     "start": 1687214975.11,
+     "rows": 2157377
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 449.0,
+    "wash": 9147.8,
+    "spin": 883.1,
+    "drain": 307.0
+   },
+   "label_seconds": 10788,
+   "bytes": 28926959
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_eco_40-60_11.csv",
+   "rows": 2812067,
+   "segments": [
+    {
+     "start": 1687541604.66,
+     "rows": 2812067
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 578.0,
+    "wash": 11715.1,
+    "spin": 1441.1,
+    "drain": 326.0
+   },
+   "label_seconds": 14061,
+   "bytes": 36192863
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_eco_40-60_2.csv",
+   "rows": 2133541,
+   "segments": [
+    {
+     "start": 1685386148.295,
+     "rows": 2133541
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 247.0,
+    "wash": 9505.6,
+    "spin": 734.1,
+    "drain": 181.0
+   },
+   "label_seconds": 10668,
+   "bytes": 27248191
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_eco_40-60_4.csv",
+   "rows": 2170368,
+   "segments": [
+    {
+     "start": 1685537428.3,
+     "rows": 2077869
+    },
+    {
+     "start": 1685547819.425,
+     "rows": 26988
+    },
+    {
+     "start": 1685547955.445,
+     "rows": 65511
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 269.0,
+    "wash": 9754.6,
+    "spin": 827.2,
+    "drain": 1.0
+   },
+   "label_seconds": 10855,
+   "bytes": 27841597
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_eco_40-60_6.csv",
+   "rows": 2153192,
+   "segments": [
+    {
+     "start": 1685729088.035,
+     "rows": 2153192
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 430.0,
+    "wash": 9013.8,
+    "spin": 1051.1,
+    "drain": 271.0
+   },
+   "label_seconds": 10767,
+   "bytes": 27830597
+  },
+  {
+   "file": "wm_becken_BWM5381IX_hot_eco_40-60_8.csv",
+   "rows": 2210699,
+   "segments": [
+    {
+     "start": 1686838280.505,
+     "rows": 2210699
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 401.0,
+    "wash": 9329.4,
+    "spin": 939.1,
+    "drain": 384.0
+   },
+   "label_seconds": 11054,
+   "bytes": 28740210
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_15-min_40_0.csv",
+   "rows": 198028,
+   "segments": [
+    {
+     "start": 1689783314.86,
+     "rows": 198028
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 305.0,
+    "wash": 276.1,
+    "spin": 217.0,
+    "drain": 192.0
+   },
+   "label_seconds": 992,
+   "bytes": 2759305
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_15-min_40_2.csv",
+   "rows": 188567,
+   "segments": [
+    {
+     "start": 1691576928.165,
+     "rows": 188567
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 322.0,
+    "wash": 291.8,
+    "spin": 108.0,
+    "drain": 221.0
+   },
+   "label_seconds": 944,
+   "bytes": 2840588
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_20-deg_20_0.csv",
+   "rows": 692011,
+   "segments": [
+    {
+     "start": 1689961841.94,
+     "rows": 692011
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 328.0,
+    "wash": 2036.9,
+    "spin": 866.1,
+    "drain": 229.1
+   },
+   "label_seconds": 3461,
+   "bytes": 8731052
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_20-deg_20_2.csv",
+   "rows": 717963,
+   "segments": [
+    {
+     "start": 1692179828.185,
+     "rows": 717963
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 358.0,
+    "wash": 1992.7,
+    "spin": 910.1,
+    "drain": 329.0
+   },
+   "label_seconds": 3591,
+   "bytes": 9702599
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_delicate_30_0.csv",
+   "rows": 574550,
+   "segments": [
+    {
+     "start": 1689930801.25,
+     "rows": 574550
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 540.0,
+    "wash": 1723.7,
+    "spin": 284.0,
+    "drain": 325.0
+   },
+   "label_seconds": 2874,
+   "bytes": 7211413
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_delicate_30_2.csv",
+   "rows": 534011,
+   "segments": [
+    {
+     "start": 1692007029.945,
+     "rows": 534011
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 437.0,
+    "wash": 1732.0,
+    "spin": 195.0,
+    "drain": 306.0
+   },
+   "label_seconds": 2671,
+   "bytes": 6783287
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_delicate_30_6.csv",
+   "rows": 780884,
+   "segments": [
+    {
+     "start": 1692464525.58,
+     "rows": 780884
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 491.0,
+    "wash": 2785.3,
+    "spin": 277.0,
+    "drain": 351.0
+   },
+   "label_seconds": 3906,
+   "bytes": 10122597
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_fast-45_40_0.csv",
+   "rows": 550992,
+   "segments": [
+    {
+     "start": 1689845685.04,
+     "rows": 550992
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 290.0,
+    "wash": 1957.9,
+    "spin": 317.0,
+    "drain": 190.0
+   },
+   "label_seconds": 2756,
+   "bytes": 6966724
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_fast-45_40_2.csv",
+   "rows": 516525,
+   "segments": [
+    {
+     "start": 1691579462.375,
+     "rows": 516525
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 200.0,
+    "wash": 1937.6,
+    "spin": 264.0,
+    "drain": 181.0
+   },
+   "label_seconds": 2584,
+   "bytes": 6887601
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_intensive_40_0.csv",
+   "rows": 2640352,
+   "segments": [
+    {
+     "start": 1689942877.37,
+     "rows": 2345004
+    },
+    {
+     "start": 1689954604.26,
+     "rows": 295348
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 369.0,
+    "wash": 11546.5,
+    "spin": 1054.2,
+    "drain": 232.0
+   },
+   "label_seconds": 13204,
+   "bytes": 32977954
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_intensive_40_2.csv",
+   "rows": 2639365,
+   "segments": [
+    {
+     "start": 1692032708.12,
+     "rows": 2639365
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 361.0,
+    "wash": 11608.7,
+    "spin": 919.1,
+    "drain": 308.0
+   },
+   "label_seconds": 13197,
+   "bytes": 32675779
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_mix_40_0.csv",
+   "rows": 764765,
+   "segments": [
+    {
+     "start": 1690024784.175,
+     "rows": 764765
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 326.0,
+    "wash": 2581.7,
+    "spin": 698.1,
+    "drain": 218.0
+   },
+   "label_seconds": 3825,
+   "bytes": 9498118
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_mix_40_2.csv",
+   "rows": 744687,
+   "segments": [
+    {
+     "start": 1692184743.56,
+     "rows": 744687
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 337.0,
+    "wash": 2529.3,
+    "spin": 528.0,
+    "drain": 329.0
+   },
+   "label_seconds": 3725,
+   "bytes": 9543208
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_sport_40_0.csv",
+   "rows": 540004,
+   "segments": [
+    {
+     "start": 1689856079.98,
+     "rows": 540004
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 326.0,
+    "wash": 1556.9,
+    "spin": 593.0,
+    "drain": 224.0
+   },
+   "label_seconds": 2701,
+   "bytes": 6825649
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_sport_40_2.csv",
+   "rows": 561122,
+   "segments": [
+    {
+     "start": 1691671858.39,
+     "rows": 561122
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 324.0,
+    "wash": 1651.5,
+    "spin": 523.0,
+    "drain": 307.0
+   },
+   "label_seconds": 2807,
+   "bytes": 7551001
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_sport_40_6.csv",
+   "rows": 575401,
+   "segments": [
+    {
+     "start": 1692379556.995,
+     "rows": 575401
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 399.0,
+    "wash": 1646.9,
+    "spin": 499.0,
+    "drain": 332.0
+   },
+   "label_seconds": 2878,
+   "bytes": 7596245
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_sterilization_0.csv",
+   "rows": 1687504,
+   "segments": [
+    {
+     "start": 1691424855.48,
+     "rows": 1687504
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 397.0,
+    "wash": 6819.4,
+    "spin": 945.1,
+    "drain": 276.0
+   },
+   "label_seconds": 8438,
+   "bytes": 21051999
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_sterilization_2.csv",
+   "rows": 1703483,
+   "segments": [
+    {
+     "start": 1692206251.36,
+     "rows": 1703483
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 458.1,
+    "wash": 6695.2,
+    "spin": 900.1,
+    "drain": 464.0
+   },
+   "label_seconds": 8518,
+   "bytes": 23074626
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_synthetic_40_0.csv",
+   "rows": 1948098,
+   "segments": [
+    {
+     "start": 1691508468.51,
+     "rows": 1948098
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 413.0,
+    "wash": 8221.4,
+    "spin": 824.1,
+    "drain": 282.0
+   },
+   "label_seconds": 9741,
+   "bytes": 24112126
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_synthetic_40_2.csv",
+   "rows": 2040284,
+   "segments": [
+    {
+     "start": 1692264734.55,
+     "rows": 2040284
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 433.0,
+    "wash": 8549.3,
+    "spin": 844.1,
+    "drain": 375.1
+   },
+   "label_seconds": 10202,
+   "bytes": 25899651
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_wool_40_0.csv",
+   "rows": 1023354,
+   "segments": [
+    {
+     "start": 1689869180.23,
+     "rows": 1023354
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 607.0,
+    "wash": 3677.7,
+    "spin": 469.0,
+    "drain": 363.0
+   },
+   "label_seconds": 5118,
+   "bytes": 12544945
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_wool_40_2.csv",
+   "rows": 963281,
+   "segments": [
+    {
+     "start": 1691774899.595,
+     "rows": 963281
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 517.0,
+    "wash": 3639.3,
+    "spin": 264.0,
+    "drain": 396.0
+   },
+   "label_seconds": 4818,
+   "bytes": 12160562
+  },
+  {
+   "file": "wm_becken_BWM5381IX_warm_wool_40_6.csv",
+   "rows": 1019920,
+   "segments": [
+    {
+     "start": 1692450308.4,
+     "rows": 1019920
+    }
+   ],
+   "dropped_short": [],
+   "glitches_removed": 0,
+   "seconds": {
+    "fill": 579.0,
+    "wash": 4054.5,
+    "spin": 0.0,
+    "drain": 466.0
+   },
+   "label_seconds": 5101,
+   "bytes": 12842491
+  }
+ ]
+}

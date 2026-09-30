@@ -1,0 +1,345 @@
+{
+ "seed": 20260928,
+ "allocation": {
+  "cotton": [
+   16,
+   6,
+   6
+  ],
+  "eco": [
+   4,
+   2,
+   1
+  ],
+  "other": [
+   14,
+   5,
+   4
+  ]
+ },
+ "library_unit": "becken_BWM5381IX",
+ "delivery_unit": "becken-flt_BWM5381IX",
+ "library": {
+  "15-min_40_2": [
+   "wm_becken_BWM5381IX_warm_15-min_40_2.csv"
+  ],
+  "20-deg_20_0": [
+   "wm_becken_BWM5381IX_warm_20-deg_20_0.csv"
+  ],
+  "cotton_0_0": [
+   "wm_becken_BWM5381IX_cold_cotton_0_0.csv",
+   "wm_becken_BWM5381IX_hot_cotton_0_0.csv"
+  ],
+  "cotton_0_11": [
+   "wm_becken_BWM5381IX_cold_cotton_0_11.csv",
+   "wm_becken_BWM5381IX_hot_cotton_0_11.csv"
+  ],
+  "cotton_0_4": [
+   "wm_becken_BWM5381IX_cold_cotton_0_4.csv",
+   "wm_becken_BWM5381IX_hot_cotton_0_4.csv"
+  ],
+  "cotton_0_6": [
+   "wm_becken_BWM5381IX_cold_cotton_0_6.csv",
+   "wm_becken_BWM5381IX_hot_cotton_0_6.csv"
+  ],
+  "cotton_30_0": [
+   "wm_becken_BWM5381IX_cold_cotton_30_0.csv",
+   "wm_becken_BWM5381IX_hot_cotton_30_0.csv"
+  ],
+  "cotton_30_11": [
+   "wm_becken_BWM5381IX_cold_cotton_30_11.csv",
+   "wm_becken_BWM5381IX_hot_cotton_30_11.csv"
+  ],
+  "cotton_30_6": [
+   "wm_becken_BWM5381IX_cold_cotton_30_6.csv",
+   "wm_becken_BWM5381IX_hot_cotton_30_6.csv"
+  ],
+  "cotton_30_8": [
+   "wm_becken_BWM5381IX_cold_cotton_30_8.csv",
+   "wm_becken_BWM5381IX_hot_cotton_30_8.csv"
+  ],
+  "cotton_40_10": [
+   "wm_becken_BWM5381IX_cold_cotton_40_10.csv",
+   "wm_becken_BWM5381IX_hot_cotton_40_10.csv"
+  ],
+  "cotton_40_4": [
+   "wm_becken_BWM5381IX_cold_cotton_40_4.csv",
+   "wm_becken_BWM5381IX_hot_cotton_40_4.csv"
+  ],
+  "cotton_40_6": [
+   "wm_becken_BWM5381IX_cold_cotton_40_6.csv",
+   "wm_becken_BWM5381IX_hot_cotton_40_6.csv"
+  ],
+  "cotton_40_8": [
+   "wm_becken_BWM5381IX_cold_cotton_40_8.csv",
+   "wm_becken_BWM5381IX_hot_cotton_40_8.csv"
+  ],
+  "cotton_60_11": [
+   "wm_becken_BWM5381IX_cold_cotton_60_11.csv",
+   "wm_becken_BWM5381IX_hot_cotton_60_11.csv"
+  ],
+  "cotton_60_4": [
+   "wm_becken_BWM5381IX_cold_cotton_60_4.csv",
+   "wm_becken_BWM5381IX_hot_cotton_60_4.csv"
+  ],
+  "cotton_60_6": [
+   "wm_becken_BWM5381IX_cold_cotton_60_6.csv",
+   "wm_becken_BWM5381IX_hot_cotton_60_6.csv"
+  ],
+  "cotton_60_8": [
+   "wm_becken_BWM5381IX_cold_cotton_60_8.csv",
+   "wm_becken_BWM5381IX_hot_cotton_60_8.csv"
+  ],
+  "delicate_30_0": [
+   "wm_becken_BWM5381IX_warm_delicate_30_0.csv"
+  ],
+  "delicate_30_6": [
+   "wm_becken_BWM5381IX_warm_delicate_30_6.csv"
+  ],
+  "eco_40-60_0": [
+   "wm_becken_BWM5381IX_cold_eco_40-60_0.csv",
+   "wm_becken_BWM5381IX_hot_eco_40-60_0.csv"
+  ],
+  "eco_40-60_10": [
+   "wm_becken_BWM5381IX_cold_eco_40-60_10.csv",
+   "wm_becken_BWM5381IX_hot_eco_40-60_10.csv"
+  ],
+  "eco_40-60_2": [
+   "wm_becken_BWM5381IX_cold_eco_40-60_2.csv",
+   "wm_becken_BWM5381IX_hot_eco_40-60_2.csv"
+  ],
+  "eco_40-60_8": [
+   "wm_becken_BWM5381IX_cold_eco_40-60_8.csv",
+   "wm_becken_BWM5381IX_hot_eco_40-60_8.csv"
+  ],
+  "intensive_40_0": [
+   "wm_becken_BWM5381IX_warm_intensive_40_0.csv"
+  ],
+  "intensive_40_2": [
+   "wm_becken_BWM5381IX_warm_intensive_40_2.csv"
+  ],
+  "mix_40_2": [
+   "wm_becken_BWM5381IX_warm_mix_40_2.csv"
+  ],
+  "sport_40_2": [
+   "wm_becken_BWM5381IX_warm_sport_40_2.csv"
+  ],
+  "sport_40_6": [
+   "wm_becken_BWM5381IX_warm_sport_40_6.csv"
+  ],
+  "sterilization_0": [
+   "wm_becken_BWM5381IX_warm_sterilization_0.csv"
+  ],
+  "sterilization_2": [
+   "wm_becken_BWM5381IX_warm_sterilization_2.csv"
+  ],
+  "synthetic_40_0": [
+   "wm_becken_BWM5381IX_warm_synthetic_40_0.csv"
+  ],
+  "synthetic_40_2": [
+   "wm_becken_BWM5381IX_warm_synthetic_40_2.csv"
+  ],
+  "wool_40_0": [
+   "wm_becken_BWM5381IX_warm_wool_40_0.csv"
+  ]
+ },
+ "validation": {
+  "15-min_40_0": [
+   "wm_becken_BWM5381IX_warm_15-min_40_0.csv"
+  ],
+  "cotton_0_2": [
+   "wm_becken_BWM5381IX_cold_cotton_0_2.csv",
+   "wm_becken_BWM5381IX_hot_cotton_0_2.csv"
+  ],
+  "cotton_30_2": [
+   "wm_becken_BWM5381IX_cold_cotton_30_2.csv",
+   "wm_becken_BWM5381IX_hot_cotton_30_2.csv"
+  ],
+  "cotton_30_4": [
+   "wm_becken_BWM5381IX_cold_cotton_30_4.csv",
+   "wm_becken_BWM5381IX_hot_cotton_30_4.csv"
+  ],
+  "cotton_40_0": [
+   "wm_becken_BWM5381IX_cold_cotton_40_0.csv",
+   "wm_becken_BWM5381IX_hot_cotton_40_0.csv"
+  ],
+  "cotton_40_11": [
+   "wm_becken_BWM5381IX_cold_cotton_40_11.csv",
+   "wm_becken_BWM5381IX_hot_cotton_40_11.csv"
+  ],
+  "cotton_60_2": [
+   "wm_becken_BWM5381IX_cold_cotton_60_2.csv",
+   "wm_becken_BWM5381IX_hot_cotton_60_2.csv"
+  ],
+  "eco_40-60_11": [
+   "wm_becken_BWM5381IX_cold_eco_40-60_11.csv",
+   "wm_becken_BWM5381IX_hot_eco_40-60_11.csv"
+  ],
+  "eco_40-60_4": [
+   "wm_becken_BWM5381IX_cold_eco_40-60_4.csv",
+   "wm_becken_BWM5381IX_hot_eco_40-60_4.csv"
+  ],
+  "fast-45_40_2": [
+   "wm_becken_BWM5381IX_warm_fast-45_40_2.csv"
+  ],
+  "mix_40_0": [
+   "wm_becken_BWM5381IX_warm_mix_40_0.csv"
+  ],
+  "sport_40_0": [
+   "wm_becken_BWM5381IX_warm_sport_40_0.csv"
+  ],
+  "wool_40_6": [
+   "wm_becken_BWM5381IX_warm_wool_40_6.csv"
+  ]
+ },
+ "test": {
+  "20-deg_20_2": [
+   "wm_becken_BWM5381IX_warm_20-deg_20_2.csv"
+  ],
+  "cotton_0_10": [
+   "wm_becken_BWM5381IX_cold_cotton_0_10.csv",
+   "wm_becken_BWM5381IX_hot_cotton_0_10.csv"
+  ],
+  "cotton_0_8": [
+   "wm_becken_BWM5381IX_cold_cotton_0_8.csv",
+   "wm_becken_BWM5381IX_hot_cotton_0_8.csv"
+  ],
+  "cotton_30_10": [
+   "wm_becken_BWM5381IX_cold_cotton_30_10.csv",
+   "wm_becken_BWM5381IX_hot_cotton_30_10.csv"
+  ],
+  "cotton_40_2": [
+   "wm_becken_BWM5381IX_cold_cotton_40_2.csv",
+   "wm_becken_BWM5381IX_hot_cotton_40_2.csv"
+  ],
+  "cotton_60_0": [
+   "wm_becken_BWM5381IX_cold_cotton_60_0.csv",
+   "wm_becken_BWM5381IX_hot_cotton_60_0.csv"
+  ],
+  "cotton_60_10": [
+   "wm_becken_BWM5381IX_cold_cotton_60_10.csv",
+   "wm_becken_BWM5381IX_hot_cotton_60_10.csv"
+  ],
+  "delicate_30_2": [
+   "wm_becken_BWM5381IX_warm_delicate_30_2.csv"
+  ],
+  "eco_40-60_6": [
+   "wm_becken_BWM5381IX_cold_eco_40-60_6.csv",
+   "wm_becken_BWM5381IX_hot_eco_40-60_6.csv"
+  ],
+  "fast-45_40_0": [
+   "wm_becken_BWM5381IX_warm_fast-45_40_0.csv"
+  ],
+  "wool_40_2": [
+   "wm_becken_BWM5381IX_warm_wool_40_2.csv"
+  ]
+ },
+ "delivery": [
+  "wm_becken-flt_BWM5381IX_cold_cotton_0_0.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_0_10.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_0_11.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_0_2.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_0_4.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_0_6.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_0_8.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_30_0.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_30_10.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_30_11.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_30_2.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_30_4.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_30_6.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_30_8.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_40_0.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_40_10.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_40_11.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_40_2.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_40_4.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_40_6.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_40_8.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_60_0.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_60_10.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_60_11.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_60_2.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_60_4.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_60_6.csv",
+  "wm_becken-flt_BWM5381IX_cold_cotton_60_8.csv",
+  "wm_becken-flt_BWM5381IX_cold_eco_40-60_0.csv",
+  "wm_becken-flt_BWM5381IX_cold_eco_40-60_10.csv",
+  "wm_becken-flt_BWM5381IX_cold_eco_40-60_11.csv",
+  "wm_becken-flt_BWM5381IX_cold_eco_40-60_2.csv",
+  "wm_becken-flt_BWM5381IX_cold_eco_40-60_4.csv",
+  "wm_becken-flt_BWM5381IX_cold_eco_40-60_6.csv",
+  "wm_becken-flt_BWM5381IX_cold_eco_40-60_8.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_0_0.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_0_10.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_0_11.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_0_2.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_0_4.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_0_6.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_0_8.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_30_0.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_30_10.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_30_11.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_30_2.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_30_4.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_30_6.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_30_8.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_40_0.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_40_10.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_40_11.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_40_2.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_40_4.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_40_6.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_40_8.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_60_0.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_60_10.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_60_11.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_60_2.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_60_4.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_60_6.csv",
+  "wm_becken-flt_BWM5381IX_hot_cotton_60_8.csv",
+  "wm_becken-flt_BWM5381IX_hot_eco_40-60_0.csv",
+  "wm_becken-flt_BWM5381IX_hot_eco_40-60_10.csv",
+  "wm_becken-flt_BWM5381IX_hot_eco_40-60_11.csv",
+  "wm_becken-flt_BWM5381IX_hot_eco_40-60_2.csv",
+  "wm_becken-flt_BWM5381IX_hot_eco_40-60_4.csv",
+  "wm_becken-flt_BWM5381IX_hot_eco_40-60_6.csv",
+  "wm_becken-flt_BWM5381IX_hot_eco_40-60_8.csv",
+  "wm_becken-flt_BWM5381IX_warm_20-deg_20_0.csv",
+  "wm_becken-flt_BWM5381IX_warm_20-deg_20_11.csv",
+  "wm_becken-flt_BWM5381IX_warm_20-deg_20_2.csv",
+  "wm_becken-flt_BWM5381IX_warm_20-deg_20_6.csv",
+  "wm_becken-flt_BWM5381IX_warm_delicate_30_0.csv",
+  "wm_becken-flt_BWM5381IX_warm_delicate_30_11.csv",
+  "wm_becken-flt_BWM5381IX_warm_delicate_30_2.csv",
+  "wm_becken-flt_BWM5381IX_warm_delicate_30_6.csv",
+  "wm_becken-flt_BWM5381IX_warm_fast-15_0.csv",
+  "wm_becken-flt_BWM5381IX_warm_fast-15_11.csv",
+  "wm_becken-flt_BWM5381IX_warm_fast-15_2.csv",
+  "wm_becken-flt_BWM5381IX_warm_fast-15_6.csv",
+  "wm_becken-flt_BWM5381IX_warm_fast-45_40_0.csv",
+  "wm_becken-flt_BWM5381IX_warm_fast-45_40_11.csv",
+  "wm_becken-flt_BWM5381IX_warm_fast-45_40_2.csv",
+  "wm_becken-flt_BWM5381IX_warm_fast-45_40_6.csv",
+  "wm_becken-flt_BWM5381IX_warm_jeans_60_0.csv",
+  "wm_becken-flt_BWM5381IX_warm_jeans_60_11.csv",
+  "wm_becken-flt_BWM5381IX_warm_jeans_60_2.csv",
+  "wm_becken-flt_BWM5381IX_warm_jeans_60_6.csv",
+  "wm_becken-flt_BWM5381IX_warm_mix_40_0.csv",
+  "wm_becken-flt_BWM5381IX_warm_mix_40_11.csv",
+  "wm_becken-flt_BWM5381IX_warm_mix_40_2.csv",
+  "wm_becken-flt_BWM5381IX_warm_mix_40_6.csv",
+  "wm_becken-flt_BWM5381IX_warm_sport_40_0.csv",
+  "wm_becken-flt_BWM5381IX_warm_sport_40_11.csv",
+  "wm_becken-flt_BWM5381IX_warm_sport_40_2.csv",
+  "wm_becken-flt_BWM5381IX_warm_sport_40_6.csv",
+  "wm_becken-flt_BWM5381IX_warm_synthetic_0.csv",
+  "wm_becken-flt_BWM5381IX_warm_synthetic_11.csv",
+  "wm_becken-flt_BWM5381IX_warm_synthetic_2.csv",
+  "wm_becken-flt_BWM5381IX_warm_synthetic_6.csv",
+  "wm_becken-flt_BWM5381IX_warm_wool_0.csv",
+  "wm_becken-flt_BWM5381IX_warm_wool_11.csv",
+  "wm_becken-flt_BWM5381IX_warm_wool_2.csv",
+  "wm_becken-flt_BWM5381IX_warm_wool_6.csv"
+ ]
+}
