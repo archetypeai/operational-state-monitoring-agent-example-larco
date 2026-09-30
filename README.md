@@ -1,12 +1,5 @@
 # Operational State Monitoring on washing machines (LARCO)
 
-A third OSM example, after [Volve](../osm-agent-example) (drilling
-activities) and [Paderborn](../osm-agent-example-2) (bearing faults). It uses
-the same platform and stages, on a dataset chosen to fix what those two could
-not: a licence that allows commercial use, states anyone recognises, and what
-looked in exploration like a case where frozen Omega embeddings do something a
-threshold cannot. In the pipeline, that last point hasn't held up (see Status).
-
 ## TL;DR
 
 - **What:** an OSM agent that labels each 2.56 s window of a washing machine's
