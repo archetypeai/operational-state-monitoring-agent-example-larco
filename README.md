@@ -915,12 +915,19 @@ All washing-machine data used here comes from the **LARCO** dataset, "Household
 - **No endorsement.** The authors are not involved in this example and do not
   endorse it.
 
-CC BY 4.0 requires saying what was changed. Once the stages exist, this section
-will list every transformation, as the Volve example does:
-- the resampling to 200 Hz;
-- the derived fill / wash / spin / drain labels (heating folded into its drum/water state);
-- z-scoring;
-- which cycles were selected.
+**What was changed** (as CC BY 4.0 requires):
+- **selection:** the 199 cycles of the two Becken BWM5381IX units that have
+  vibration; the 9 accelerometer channels only;
+- **resampling:** every cycle resampled to an exact 200 Hz grid (cubic spline),
+  with samples beyond ±2.2 g removed and cycles split at recording gaps;
+- **labels:** derived per second from the dataset's measurements: fill / wash
+  / spin / drain, with heating folded into its drum or water state;
+- **scaling:** every channel z-scored with the library cycles' statistics;
+- **layout:** assigned to roles (library, validation, test, delivery), the
+  library cut into one file per state, and the delivery labels held back in
+  separate files.
+
+The packed role files in `data/archives/` are these derived files.
 
 Code in this repository is Archetype AI's and carries no LARCO licence
 obligation; the attribution above applies to the data.
