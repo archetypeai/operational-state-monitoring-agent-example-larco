@@ -3,7 +3,7 @@
 
 The 122 delivery files (data/roles/delivery/, all 106 becken-flt cycles, whole) carry no
 labels. This uploads them (ids cached), creates one bundle from the Stage 5 blueprint
-osm-larco-w512-s512-cosine-k31-uniform (unchanged), runs it over the files in batches,
+(fit/out/test_state.json, unchanged), runs it over the files in batches,
 downloads every output and writes one predictions CSV per delivery file:
 
     fit/out/delivery/<file>.csv    the platform's output rows for that file
@@ -34,7 +34,6 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from atai import TERMINAL, agents, api_base, load_dotenv, request  # noqa: E402
 from optimize import OUT, ROLES, log, upload_all  # noqa: E402
-from test import KEY  # noqa: E402
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "prep"))
 from background import add_background_flag, maybe_detach  # noqa: E402
@@ -77,13 +76,20 @@ def fetch(filename):
 def start(files, per_run, jobs):
     paths = [os.path.join(ROLES, f["file"]) for f in files]
     ids = upload_all(paths, jobs)
+    test_state = os.path.join(OUT, "test_state.json")
+    if not os.path.exists(test_state):
+        sys.exit("no Stage 5 blueprint yet: run fit/test.py first")
+    ts = json.load(open(test_state))
+    if ts.get("endpoint") != api_base():
+        sys.exit(f"{test_state} is from {ts.get('endpoint', 'another deployment')}, not {api_base()}: run fit/test.py here first")
+    KEY = ts["blueprint"]["key"]
     bp = request("GET", f"{agents()}/blueprints/{KEY}")
     stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     bundle = request("POST", f"{agents()}/bundles", body={
         "blueprint": KEY, "name": f"LARCO delivery to becken-flt {stamp}",
         "description": "Stage 6: the Stage 5 model run over the unlabelled becken-flt cycles"})
     log(f"bundle {bundle['id']} from {KEY} ({bp['id']})")
-    state = {"bundle": bundle["id"], "blueprint": KEY, "runs": [],
+    state = {"endpoint": api_base(), "bundle": bundle["id"], "blueprint": KEY, "runs": [],
              "files": {f["file"]: dict(zip(("first_ms", "last_ms"), time_range(p))) for f, p in zip(files, paths)}}
     os.makedirs(DELIVERY, exist_ok=True)
     for i in range(0, len(paths), per_run):
@@ -208,6 +214,9 @@ def main():
         if not args.resume:
             log(f"{STATE} exists: collecting those runs (delete it to deliver again)")
         state = json.load(open(STATE))
+        if state.get("endpoint") != api_base():
+            sys.exit(f"{STATE} is from {state.get('endpoint', 'another deployment')}, not {api_base()}: "
+                     f"move fit/out/delivery/ aside to deliver on this deployment")
     else:
         files = json.load(open(os.path.join(ROLES, "manifest.json")))["delivery"]["files"]
         if args.only:

@@ -21,33 +21,49 @@ Writes fit/out/test_<eval id>.json per eval and fit/out/test.json (the summary).
 """
 import argparse
 import datetime
+import glob
 import json
 import os
 import sys
 import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from atai import TERMINAL, agents, load_dotenv, request, trial_setting  # noqa: E402
+from atai import TERMINAL, agents, api_base, load_dotenv, request, trial_setting  # noqa: E402
 from optimize import OUT, ROLES, log, upload_all  # noqa: E402
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "prep"))
 from background import add_background_flag, maybe_detach  # noqa: E402
 from states import STATES  # noqa: E402
 
-OPT = "opt_1dztapszen8n1a89jj08fcfwrr"     # Stage 4c: one trial, the chosen setting
-KEY = "osm-larco-w512-s512-cosine-k31-uniform"
+# On dev, Stage 4c was opt_1dztapszen8n1a89jj08fcfwrr. Each deployment runs its own: by
+# default the latest Stage 4c result in fit/out/ for this deployment (--optimization to pick one).
 SEEN = "wm_becken_BWM5381IX_cold_cotton_40_2.csv"   # seen in exploration (plan.md, split)
 STATE = os.path.join(OUT, "test_state.json")
 
 
-def blueprint(trial):
+def stage_4c():
+    """This deployment's latest Stage 4c optimization (--validation all, one trial) in fit/out/."""
+    runs = [r for r in (json.load(open(p)) for p in glob.glob(os.path.join(OUT, "optimize_opt_*.json")))
+            if r.get("endpoint") == api_base() and r.get("validation_set") == "all" and len(r["trials"]) == 1]
+    if not runs:
+        sys.exit(f"no Stage 4c result for {api_base()} in fit/out/: run Stage 4c (fit/optimize.py ... --validation all) first")
+    return max(runs, key=lambda r: r["optimization"]["created_at"])["optimization"]["id"]
+
+
+def key_for(trial):
+    w, st, k, metric, weights = trial_setting(trial)
+    return f"osm-larco-w{w}-s{st}-{metric}-k{k}-{weights}"
+
+
+def blueprint(opt, trial):
+    key = key_for(trial)
     try:
-        return request("GET", f"{agents()}/blueprints/{KEY}")
+        return request("GET", f"{agents()}/blueprints/{key}")
     except RuntimeError:
         pass  # not promoted yet
     w, st, k, metric, weights = trial_setting(trial)
-    bp = request("POST", f"{agents()}/optimizations/{OPT}/trials/{trial['id']}/promote", body={
-        "blueprint_key": KEY, "name": f"OSM LARCO washing machine (w{w}, s{st}, {metric}, k{k}, {weights})",
+    bp = request("POST", f"{agents()}/optimizations/{opt}/trials/{trial['id']}/promote", body={
+        "blueprint_key": key, "name": f"OSM LARCO washing machine (w{w}, s{st}, {metric}, k{k}, {weights})",
         "description": f"Stage 5 model: window {w}, step {st}, {metric}, k {k}, {weights}; "
                        f"library = 4 files, 400 windows per state, 54 becken cycles."})
     log(f"promoted {trial['id']} -> {bp['blueprint_key']} ({bp['id']})")
@@ -72,6 +88,7 @@ def scores(cm):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--optimization", metavar="OPT_ID", help="the Stage 4c optimization (default: the latest in fit/out/)")
     ap.add_argument("--upload-jobs", type=int, default=3)
     add_background_flag(ap, default_log="fit/out/test.log")
     args = ap.parse_args()
@@ -79,6 +96,12 @@ def main():
     load_dotenv()
     state = json.load(open(STATE)) if os.path.exists(STATE) else {}
     save = lambda: json.dump(state, open(STATE, "w"), indent=1)  # noqa: E731
+    if state and state.get("endpoint") != api_base():
+        sys.exit(f"{STATE} is from {state.get('endpoint', 'an earlier run on another deployment')}, not {api_base()}: "
+                 f"move fit/out/ aside (or delete that file) to test on this deployment")
+    state["endpoint"] = api_base()
+    OPT = state.get("optimization") or args.optimization or stage_4c()
+    state["optimization"] = OPT
 
     trials = request("GET", f"{agents()}/optimizations/{OPT}/trials")["data"]
     if len(trials) != 1 or trials[0]["status"] != "completed":
@@ -88,7 +111,7 @@ def main():
     log(f"model: {OPT} trial {trial['id']} (w {w}, step {st}, k {k}, {metric}, {weights}; "
         f"all-21 validation macro-F1 {trial['objective_value']:.4f})")
     if "blueprint" not in state:
-        bp = blueprint(trial)
+        bp = blueprint(OPT, trial)
         state["blueprint"] = {"id": bp["id"], "key": bp["blueprint_key"]}
         save()
 

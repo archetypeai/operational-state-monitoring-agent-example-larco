@@ -300,6 +300,13 @@ cp .env.example .env               # only needed from Stage 4b on (platform API 
 
 Stage 0 is stdlib-only; Stages 1a–1c need the packages above.
 
+**Switching deployment** (dev, staging, prod, Tokyo: set `ATAI_API_KEY` and
+`ATAI_API_ENDPOINT` in `.env`) needs nothing else. The `osm` blueprint is resolved by
+its key on each deployment, the upload cache is kept per deployment, and every result
+and state file in `fit/out/` records its endpoint: `test.py` only picks this
+deployment's Stage 4c result, and `test.py` and `deliver.py` refuse to resume another
+deployment's run. Move `fit/out/` aside first to start a deployment from scratch.
+
 ### Shortcut: skip Stages 0–3 with the packed role files
 
 The role files Stage 2 builds (`data/roles/`, 25.45 GB) are in the repo, packed as
@@ -734,10 +741,11 @@ python fit/baseline_bar.py --window 512 --step 512 --test   # the bar on the sam
 ```
 
 **What `fit/test.py` does** (platform only):
-1. Promotes the Stage 4c trial (`opt_1dztapszen8n1a89jj08fcfwrr`: 512 / 512,
-   k 31, cosine, uniform, trained on the 4 library files) to the blueprint
-   `osm-larco-w512-s512-cosine-k31-uniform`, or reuses it if it was already
-   promoted.
+1. Promotes the Stage 4c trial (this deployment's latest Stage 4c result in
+   `fit/out/`, or `--optimization opt_...`; on dev `opt_1dztapszen8n1a89jj08fcfwrr`:
+   512 / 512, k 31, cosine, uniform, trained on the 4 library files) to the
+   blueprint `osm-larco-w512-s512-cosine-k31-uniform` (named after its setting),
+   or reuses it if it was already promoted.
 2. Uploads the 23 test files (18 cycles, whole), 3 at a time.
 3. Submits two evals together: all 23 files (the test number), and the files
    of `cold_cotton_40_2` alone, the one test cycle seen in exploration. The
@@ -783,8 +791,8 @@ python fit/deliver.py --resume                           # if the poller died: c
 **What it does:**
 1. Uploads the 122 delivery files (all 106 becken-flt cycles, whole, no
    labels; about 15 GB), 3 at a time, cached.
-2. Creates one bundle from the Stage 5 blueprint
-   `osm-larco-w512-s512-cosine-k31-uniform`, unchanged.
+2. Creates one bundle from the Stage 5 blueprint (in `fit/out/test_state.json`;
+   `osm-larco-w512-s512-cosine-k31-uniform`), unchanged.
 3. Runs it over the files in batches (`--files-per-run`, default 25): the 122
    files, which are the 106 cycles (some split into segments at recording
    gaps, Stage 1b), go out as 5 runs of 25, 25, 25, 25 and 22 files. All five

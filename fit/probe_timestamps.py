@@ -45,7 +45,7 @@ VAL_ROWS = 200 * 240          # 4 min
 # The latest osm blueprint. It was pinned to blp_05h8jmsdcy8fra7f0rm5cerwsv while
 # the latest had a bug; after the fix both give identical results on this probe
 # (plan.md, Housekeeping). Pass --blueprint to pin a version.
-BLUEPRINT_ID = "blp_6kwmqaqvww8bj95jc1zxcqzbq8"
+BLUEPRINT_ID = "osm"     # the canonical blueprint's key: each deployment resolves it to its own blp_ id
 FORMATS = {
     "epoch_s": lambda ms: [f"{m // 1000}.{m % 1000:03d}" for m in ms],
     "epoch_ms": lambda ms: [str(m) for m in ms],

@@ -46,7 +46,7 @@ from states import CHANNELS  # noqa: E402
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CYCLE = "wm_becken_BWM5381IX_cold_cotton_40_4"
 OUT = os.path.join(ROOT, "fit", "out", "probe_gaps")
-BLUEPRINT_ID = "blp_6kwmqaqvww8bj95jc1zxcqzbq8"
+BLUEPRINT_ID = "osm"     # the canonical blueprint's key: each deployment resolves it to its own blp_ id
 W = 1024
 PIECES = 4                     # per library file
 LIB_STATES = ["fill", "wash", "spin"]

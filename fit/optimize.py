@@ -39,7 +39,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from atai import agents, load_dotenv, request, trial_f1, trial_setting, upload_file, wait_optimization  # noqa: E402
+from atai import agents, api_base, load_dotenv, request, trial_f1, trial_setting, upload_file, wait_optimization  # noqa: E402
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "prep"))
 from background import add_background_flag, maybe_detach  # noqa: E402
 from states import STATES  # noqa: E402
@@ -48,7 +48,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROLES = os.path.join(ROOT, "data", "roles")
 OUT = os.path.join(ROOT, "fit", "out")
 CACHE = os.path.join(OUT, "uploads.json")
-BLUEPRINT_ID = "blp_6kwmqaqvww8bj95jc1zxcqzbq8"      # latest osm blueprint (plan.md, Housekeeping)
+BLUEPRINT_ID = "osm"     # the canonical blueprint's key: each deployment resolves it to its own blp_ id
 # The exhaustive pool (plan.md, Stage 4b), limited to values known to work on the platform.
 FULL_POOL = {"windows": [256, 512, 1024], "steps": [256, 512, 1024], "k": [1, 3, 5, 7, 9, 15, 21, 31],
              "metrics": ["l1", "cosine"], "weights": ["uniform", "distance"]}
@@ -64,7 +64,8 @@ def upload_all(paths, jobs):
 
     def key(p):
         st = os.stat(p)
-        return f"{os.path.relpath(p, ROLES)}|{st.st_size}|{int(st.st_mtime)}"
+        # keyed by deployment too: file ids from one deployment don't exist on another
+        return f"{api_base()}|{os.path.relpath(p, ROLES)}|{st.st_size}|{int(st.st_mtime)}"
 
     todo = [p for p in paths if key(p) not in cache]
     stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
@@ -229,14 +230,14 @@ def main():
             "search_space": space, "budget": {"max_trials": args.max_trials or len(grid)},
             "training_examples": training, "validation_examples": validation_examples})
         opt_id = opt["id"]
-        log(f"optimization {opt_id} created (collect later with --resume {opt_id})")
+        log(f"optimization {opt_id} created (collect later with --resume {opt_id}) on {api_base()}")
 
     opt, trials = wait_optimization(opt_id, label="", every_s=60, log=log)
     rows, dup = summarize(opt, trials, val_files, lib_files)
     path = os.path.join(OUT, f"optimize_{opt_id}.json")
     with open(path, "w") as f:
         json.dump({"optimization": opt, "trials": trials, "summary": rows, "duplicates": dup,
-                   "search_space": space, "blueprint": args.blueprint, "allow_gaps": bool(args.allow_gaps),
+                   "endpoint": api_base(), "search_space": space, "blueprint": args.blueprint, "allow_gaps": bool(args.allow_gaps),
                    "validation_set": args.validation, "validation": [f["file"] for f in val_files]}, f, indent=1)
     log(f"results: {path}")
     log("to compare with a baseline (optional): python fit/compare_bar.py")
