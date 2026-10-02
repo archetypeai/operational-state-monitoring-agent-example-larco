@@ -1268,6 +1268,37 @@ validation (6 search cycles) 0.7547 / 0.7406 (+0.014); validation (all 21)
 consistently better on drain and consistently not better on spin.
 
 
+## Reproduced on production (2026-10-01)
+
+Stages 4b–7 rerun on production (`api.u1`), from an empty `fit/out/` (dev's
+outputs set aside in `fit/out-dev/`; the bar's files copied back, since the bar
+is local). First the scripts were made deployment-aware (`7fc5fae`): `osm`
+resolved by key, the upload cache keyed by endpoint, results and state tagged
+with their endpoint, Stage 5 taking this deployment's latest 4c result.
+
+| stage | dev | production |
+|---|---|---|
+| 4b, 16-trial search | `opt_4qggkyx4z487m86da5emyt7txw`, best 0.7547 (512 / 512, k 31), 8 trials beat the bar | `opt_4cc7qeq4jb9jzacp1k1y1rmjx5`, 3.6 h, a different draw: best 0.7557 (512 / 1024, k 15), 7 trials beat the bar |
+| 4c, all 21 validation cycles | 0.7562 | `opt_5nsfm6b2kv842ts1w4djf5ehn2`: 0.7562, identical to 16 digits, every state too |
+| 5, test | 0.7537 / 0.7481 without the seen cycle | `evl_69t9nc16jz9ekv24d5ee8s40mz`: 0.7537 / 0.7481; 1 of 67,585 windows differs |
+| 6, delivery | 365,414 windows, 2 h 50 min | `bnd_1jdn4s2xte982v8kxjrj7z6vn3`: 365,414 windows, 0 invalid, 1 h 33 min |
+| 7, delivery score | 0.7008 (bar 0.6927) | 0.7008 (bar 0.6927); 4 of 365,414 predictions differ |
+
+- **The search can't be compared trial for trial:** the platform's sampler
+  can't be seeded, so production drew its own 16 of the 288 settings. Only one
+  setting was in both draws (512 / 1024, k 3, l1, uniform): 0.70815 on both, to
+  16 digits. The pattern held: larger k better, every k 1 trial below the bar.
+- **5 of 432,999 test and delivery windows were predicted differently.** In
+  Stage 5 a wash window went to spin on dev, drain on production. Likely votes
+  on a knife-edge (k 31, uniform), tipped by floating-point differences between
+  the deployments' hardware: an inference, since the votes aren't visible. Every
+  reported number is unchanged at four decimals.
+- **Every delivery run reported `completed` before its last output was
+  written** (a known platform issue). `deliver.py` now waits until every file's
+  predictions reach the file's end (`d64b377`); each run's last file completed
+  about a minute after `completed`. Without that, 5 of 122 files would have been
+  saved short.
+
 ## Housekeeping
 
 - **Reproducing Stages 0–1c:** README, "Run it yourself", has one subsection
@@ -1281,8 +1312,9 @@ consistently better on drain and consistently not better on spin.
   those subsections in step with this plan whenever a stage's checks or
   outputs change.
 
-- **Blueprint: the latest osm blueprint, `blp_6kwmqaqvww8bj95jc1zxcqzbq8`**
-  (switched back 2026-09-29).
+- **Blueprint: the canonical `osm` blueprint, resolved by its key** on each
+  deployment (dev `blp_6kwmqaqvww8bj95jc1zxcqzbq8`, production
+  `blp_1ke4exx9w18w6s64wks23zdr04`; by key since 2026-10-01, `7fc5fae`).
   - **History:** it was pinned to `blp_05h8jmsdcy8fra7f0rm5cerwsv` while the
     latest had a bug colleagues were fixing. The only YAML difference is how
     the encoder is found.
@@ -1296,8 +1328,8 @@ consistently better on drain and consistently not better on spin.
   `--background [LOG]`. It relaunches under `nohup` + `caffeinate -i` (macOS)
   with output to LOG (`prep/background.py`). Asked for by the user,
   2026-09-29.
-- **API:** a dev key in `.env` (`ATAI_API_KEY`, `ATAI_API_ENDPOINT`),
-  verified 2026-09-28 against `GET <endpoint>/agents/blueprints/osm`.
+- **API:** a key and endpoint in `.env` (`ATAI_API_KEY`, `ATAI_API_ENDPOINT`), one
+  deployment at a time: dev until 2026-09-30, production from 2026-10-01.
   Platform routes are `<endpoint>/agents/...`; uploads are
   `<endpoint>/v0.5/files`.
 - **Omega for local checks:** the encoder-only agent

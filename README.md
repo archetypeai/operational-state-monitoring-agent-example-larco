@@ -26,8 +26,11 @@
   **weaker on spin,** most of all on the second unit. becken-flt spins harder,
   and Omega's spin falls to 0.55 while the loudness-based bar holds at 0.66.
 - **Heating was dropped as a state:** vibration can't tell it from wash.
-- **All stages (0–7) are done.** The plan, every decision and the
-  measurements are in [`plan.md`](plan.md).
+- **All stages (0–7) are done,** on dev, and **reproduced on production**
+  (Stages 4b–7, 2026-10-01): every number in the table above came out the same.
+  Of the 432,999 test and delivery windows, 5 were predicted differently (see
+  [Status](#status)). The plan, every decision and the measurements are in
+  [`plan.md`](plan.md).
 
 > **Licence: CC BY 4.0** (the data), so commercial use and redistribution are
 > allowed with attribution. See [Data attribution](#data-attribution).
@@ -51,6 +54,7 @@
 | 5: test once (Evals API) | **done** (`evl_56qkrrh93j8xmsasanhpzfks74`, 39 min): on the 18 test cycles Omega scores **0.7537**, against the bar's 0.7365 on the same 67,585 windows: **+0.017**, and spin 0.64 against 0.66. Without the exploration-seen cycle: 0.7481 against 0.7305. Omega wins drain (0.51 against 0.45) and fill (0.91 against 0.89), ties wash and loses spin |
 | 6: deliver to becken-flt (bundle) | **done** (`bnd_1vcrydgb9c96s9dgr11tfvhzf0`, 5 runs, 2 h 50 min): 122 of 122 files, 365,414 windows, 0 invalid |
 | 7: score the delivery against held-back labels | **done** (`fit/score_delivery.py`, `fit/baseline_bar.py --delivery`): on all 106 becken-flt cycles Omega scores **0.7008** against the bar's 0.6927 (**+0.008**). Omega wins drain (0.51 against 0.38) but loses spin badly (0.55 against 0.66). The bar's spin holds on the second unit and Omega's doesn't |
+| reproduced on production (`api.u1`) | **done** (2026-10-01, Stages 4b–7 from an empty `fit/out/`; dev's outputs set aside). **4b** (`opt_4cc7qeq4jb9jzacp1k1y1rmjx5`, 3.6 h): the platform drew its own 16 settings (its sampler can't be seeded); the one setting both draws share scored the same to 16 digits (0.70815), the best was 0.7557 (512 / 1024, k 15), and Omega beat the bar in 7 trials. **4c** (`opt_5nsfm6b2kv842ts1w4djf5ehn2`, 45 min): **0.7562**, identical to dev. **5** (`evl_69t9nc16jz9ekv24d5ee8s40mz`, 34 min): **0.7537** and 0.7481 without the seen cycle; 1 of 67,585 windows predicted differently (a wash window: spin on dev, drain here). **6** (`bnd_1jdn4s2xte982v8kxjrj7z6vn3`, 1 h 33 min): 122 of 122 files, 365,414 windows, 0 invalid; every run reported `completed` before its last output was written, and `deliver.py` waited for it. **7:** **0.7008** against the bar's 0.6927; 4 of 365,414 predictions differ from dev's |
 
 Numbered to match the Paderborn example: from Stage 2 on the numbers and
 meanings are the same there, and from Stage 4 on in Volve too. Stage 1's
@@ -253,7 +257,8 @@ Every decision, and what is still open, is in [`plan.md`](plan.md).
 
 ## Platform behaviour worth knowing
 
-Found while building this example on dev (details in `plan.md`):
+Found while building this example on dev, and reproducing it on production
+(details in `plan.md`):
 
 - **More than ~1,500 training files in one optimization never runs.** The
   platform puts the whole config in a Kubernetes ConfigMap (1 MiB max). Over
@@ -281,6 +286,16 @@ Found while building this example on dev (details in `plan.md`):
   8601,** all read to the millisecond at 200 Hz.
 - **Macro-F1 counts a state the model knows but the scored data lacks as
   F1 = 0.** Every scored set must contain every state.
+- **A run can report `completed` before its last output file is fully
+  written.** On production, all 5 delivery runs did: each one's last file was
+  still short at `completed`, and complete about a minute later.
+  `deliver.py` counts a run as completed only once every file's predictions
+  reach that file's end.
+- **Results reproduce across deployments, to a few windows in 100,000.** The
+  same setting on dev and production gave the same scores to the fourth
+  decimal at every stage, and the same window counts; 5 of 432,999 test and
+  delivery predictions differed. A random search (`--max-trials` below the
+  space) draws different settings on each run, though.
 
 ## Run it yourself
 
@@ -660,7 +675,8 @@ This is the run behind the results (`opt_4qggkyx4z487m86da5emyt7txw`): a
 | weights | `uniform`, `distance` |
 
 That's 288 configurations. With `--max-trials` below that, the platform
-samples: a random search.
+samples: a random search. The draw can't be seeded, so a rerun scores a
+different 16; any setting two draws share scores the same.
 - **Step > window** skips records, so it needs `--allow-gaps`.
 - **The default is one trial:** window 1,024, step 1,024, k 5, l1.
 - **If the poller dies,** the run carries on at the platform: collect it with
@@ -800,7 +816,10 @@ python fit/deliver.py --resume                           # if the poller died: c
    time: they finished 25–50 min apart, 2 h 50 min in all. Every run id is saved in `fit/out/delivery/runs.json` as soon as it
    starts. A rerun collects those runs instead of starting new ones.
 4. Downloads every run's output and writes one predictions CSV per delivery
-   file.
+   file. A run can report `completed` while its last output is still being
+   written, so a run counts as completed only once every file's predictions
+   reach that file's end: the log shows `platform: completed; outputs 24 of 25
+   complete (… still being written)`, then `completed: all 25 outputs complete`.
 
 A run's outputs don't name their inputs, so rows are matched to files by
 their finish timestamp: becken-flt's cycles never overlap in time. The log's
@@ -820,8 +839,9 @@ matched no file, and failed runs.
 - **Check first (optional):** `--only <cycle>` delivers just those cycles into
   `fit/out/delivery_check/`, never mixed with the real delivery. It's a cheap
   way to see the output format before the full run.
-- **Time:** upload about 9 min (15 GB); runs about 2 min per full cotton cycle,
-  2 h 50 min for all 122 files.
+- **Time:** upload about 7–9 min (15 GB); runs about 2 min per full cotton cycle,
+  2 h 50 min for all 122 files on dev and 1 h 33 min on production. It varies
+  with the platform's load.
 
 **Writes:** `fit/out/delivery/<file>.csv` (the platform's output rows:
 `finish_timestamp`, `predicted_state`, `invalid`, …) and
@@ -863,6 +883,9 @@ cycles macro-F1 0.6927 fill 0.79 wash 0.93 spin 0.66 drain 0.38`.
 - **A FAIL you have looked at and want to keep for now** goes in
   `prep/acknowledged.py`, with the reason. It is then still printed, but it
   no longer blocks the next stage.
+- **On another deployment,** expect the same numbers to the fourth decimal,
+  with a handful of windows predicted differently (5 of 432,999 on production),
+  and a different Stage 4b draw.
 - **Anything else that differs** from the expected results above means the
   inputs changed. Check `data/raw/` against `data/manifest.json`; Stage 1a's
   `files` check does exactly that.
