@@ -190,7 +190,7 @@ def family(cycle):
     return program if program in ("cotton", "eco") else "other"
 
 
-# cycles reported on their own lines (plan.md): the one test cycle seen in exploration, and
+# cycles reported on their own lines: the one test cycle seen in exploration, and
 # in delivery becken-flt's exploration cycle and its 42%-coverage cycle
 SEPARATE = {"test": ["wm_becken_BWM5381IX_cold_cotton_40_2.csv"],
             "delivery": ["wm_becken-flt_BWM5381IX_cold_cotton_40_2.csv", "wm_becken-flt_BWM5381IX_cold_cotton_30_4.csv"]}

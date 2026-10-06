@@ -6,7 +6,7 @@ each trial, the bar computed on that trial's window/step and cycles
 (fit/out/bar_validation_w<window>_s<step>.json, from fit/baseline_bar.py). Each trial is
 reported with its macro-F1 margin over the bar and its spin F1 next to the bar's, ranked
 by margin. There is no pass/fail threshold: the +0.05 criterion was dropped after all
-stages were scored (plan.md, "Success criterion dropped").
+stages were scored (README, "Why this dataset").
 
 The Optimize step never needs this: a user without a sensible baseline just reads the
 trial scores. Writes fit/out/compare_bar.json.

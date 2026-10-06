@@ -3,7 +3,7 @@
 
 Platform only (the bar on the same windows is fit/baseline_bar.py --test). The model is
 the Stage 4c trial: window 512, step 512, k 31, cosine, uniform, trained on the 4 library
-files (plan.md, Stage 4b decision). Steps, each recorded in fit/out/test_state.json so a
+files (README, Stage 4c). Steps, each recorded in fit/out/test_state.json so a
 rerun resumes where it stopped:
 
   1. promote that trial to a blueprint (its settings and fitted classifier attached),
@@ -37,7 +37,7 @@ from states import STATES  # noqa: E402
 
 # On dev, Stage 4c was opt_1dztapszen8n1a89jj08fcfwrr. Each deployment runs its own: by
 # default the latest Stage 4c result in fit/out/ for this deployment (--optimization to pick one).
-SEEN = "wm_becken_BWM5381IX_cold_cotton_40_2.csv"   # seen in exploration (plan.md, split)
+SEEN = "wm_becken_BWM5381IX_cold_cotton_40_2.csv"   # seen in exploration
 STATE = os.path.join(OUT, "test_state.json")
 
 

@@ -7,7 +7,7 @@ other programs one warm-room cycle each. Whole groups go to library,
 validation or test at random, stratified by family (cotton / eco / other),
 so no twin straddles two roles. becken-flt is delivery only.
 
-The seed is fixed in plan.md and never re-rolled. Writes data/split.json.
+The seed is fixed and never re-rolled. Writes data/split.json.
 
     python3 prep/split.py
 """
@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from larco import DATA, DELIVERY_UNIT, LIBRARY_UNIT, listing  # noqa: E402
 
 SEED = 20260928
-# groups per role and family: library / validation / test (plan.md)
+# groups per role and family: library / validation / test
 ALLOCATION = {"cotton": (16, 6, 6), "eco": (4, 2, 1), "other": (14, 5, 4)}
 ROLES = ("library", "validation", "test")
 

@@ -26,42 +26,12 @@
   **weaker on spin,** most of all on the second unit. becken-flt spins harder,
   and Omega's spin falls to 0.55 while the loudness-based bar holds at 0.66.
 - **Heating was dropped as a state:** vibration can't tell it from wash.
-- **All stages (0–7) are done,** on dev, and **reproduced on production**
-  (Stages 4b–7, 2026-10-01): every number in the table above came out the same.
-  Of the 432,999 test and delivery windows, 5 were predicted differently (see
-  [Status](#status)). The plan, every decision and the measurements are in
-  [`plan.md`](plan.md).
+- **Reproduced on a second deployment** (Stages 4b–7, from scratch): every number
+  in the table above came out the same, and 5 of the 432,999 test and delivery
+  windows were predicted differently.
 
 > **Licence: CC BY 4.0** (the data), so commercial use and redistribution are
 > allowed with attribution. See [Data attribution](#data-attribution).
-
-## Status
-
-| stage | status |
-|---|---|
-| dataset search and exploration | **done**, in `~/Downloads/demo/osm-candidates/` |
-| 0: split by setting group, then download | **done:** `data/split.json` (seed 20260928); 199 cycles × (label CSV + vibration parquet), 4.7 GB, every file matching the manifest |
-| 1a: preflight the raw cycles | **done, rerun for four states** (`prep/preflight_raw.py`, ~30 s): no blocking FAIL. One coverage FAIL (a delivery cycle with 42% vibration) is kept and acknowledged, to revisit. Findings and decisions (four states, labels kept as given) in `plan.md` |
-| 1b: prepare (200 Hz grid, one state per row) | **done, rerun for four states** (`prep/prepare.py`, ~80 s): cubic-spline resampling, glitches removed; 199 cycles → `data/prepared/`, 372M rows, 4.9 GB Parquet; 100% of becken's labelled seconds kept, 99.3% of becken-flt's |
-| 1c: preflight the prepared files | **done, rerun for four states** (`prep/preflight_prepared.py`, ~10–45 s): PASS. Exact 5 ms grid, and 0 state mismatches in 372M rows. 8 cycles warn on resampling (slow raw stretches); the one acknowledged coverage FAIL is carried over |
-| platform check: timestamps at 200 Hz | **done** (`fit/probe_timestamps.py`, on dev; identical on the pinned and the latest blueprint, which is now the default): fractional epoch seconds, epoch milliseconds and ISO 8601 all accepted, every window scored. Also found that macro-F1 counts a class missing from the validation set as 0 |
-| 2: build the role files | **done, rerun for four states** (`prep/build_roles.py`, ~4.5 min): 25.45 GB in `data/roles/`. Library as 4 files (one per state, 1,600 pieces), 400 windows per state; validation 25 files / 38,907 windows; test 23 / 33,787; delivery 122 / 182,672, labels held back |
-| 3: preflight the role files (platform contract) | **done, rerun for four states** (`prep/preflight_roles.py`, ~2 min): PASS on all 174 files and every role check, including all four states in validation (all 21 and the 6 search cycles), test and delivery |
-| 4a: the bar (threshold and FFT baselines) | **done on four states, all 9 window/step pairs** (`fit/baseline_bar.py`): the level baseline wins everywhere, macro-F1 **0.72–0.74** on the 6 search cycles (0.7285 at 1024 / 1024, spin 0.61). Drain (~0.4) and spin (~0.6) are the hard states. The five-state bars are in `fit/out/five_states/` |
-| 4b: Omega on the Optimize API | **done** (`opt_4qggkyx4z487m86da5emyt7txw`, 16 trials, ~3.5 h). Omega beat its bar in 8 trials. The best margin is +0.030 (0.7537 at 256 / 1024, k 21, cosine, distance). The highest score, 0.7547 (512 / 512, k 31, cosine, uniform), was carried forward by decision. Larger k is better throughout |
-| 4b, earlier: five states | **superseded.** Search 1 (`opt_59jf7w1yje8krt5wqr5z0zzex6`, 16 trials): the best, 0.5534, only tied its bar, and every trial mislabelled most wash as heating. `fit/diagnose_wash_heating.py` showed vibration can't tell heating from wash, so heating was folded into wash (`plan.md`, "Labels"). Its outputs are in `fit/out/five_states/` |
-| 4c: confirm on all 21 validation cycles | **done** (`opt_1dztapszen8n1a89jj08fcfwrr`, 44 min): trial #7's setting (512 / 512, k 31, cosine, uniform) scored **0.7562** on all 21, against the bar's 0.7511 (+0.0051; spin 0.64 against 0.66). On the 15 cycles the search never saw, Omega scored 0.7566 and the bar 0.7553: a tie. Omega is better on drain, worse on fill and spin |
-| 5: test once (Evals API) | **done** (`evl_56qkrrh93j8xmsasanhpzfks74`, 39 min): on the 18 test cycles Omega scores **0.7537**, against the bar's 0.7365 on the same 67,585 windows: **+0.017**, and spin 0.64 against 0.66. Without the exploration-seen cycle: 0.7481 against 0.7305. Omega wins drain (0.51 against 0.45) and fill (0.91 against 0.89), ties wash and loses spin |
-| 6: deliver to becken-flt (bundle) | **done** (`bnd_1vcrydgb9c96s9dgr11tfvhzf0`, 5 runs, 2 h 50 min): 122 of 122 files, 365,414 windows, 0 invalid |
-| 7: score the delivery against held-back labels | **done** (`fit/score_delivery.py`, `fit/baseline_bar.py --delivery`): on all 106 becken-flt cycles Omega scores **0.7008** against the bar's 0.6927 (**+0.008**). Omega wins drain (0.51 against 0.38) but loses spin badly (0.55 against 0.66). The bar's spin holds on the second unit and Omega's doesn't |
-| reproduced on production (`api.u1`) | **done** (2026-10-01, Stages 4b–7 from an empty `fit/out/`; dev's outputs set aside). **4b** (`opt_4cc7qeq4jb9jzacp1k1y1rmjx5`, 3.6 h): the platform drew its own 16 settings (its sampler can't be seeded); the one setting both draws share scored the same to 16 digits (0.70815), the best was 0.7557 (512 / 1024, k 15), and Omega beat the bar in 7 trials. **4c** (`opt_5nsfm6b2kv842ts1w4djf5ehn2`, 45 min): **0.7562**, identical to dev. **5** (`evl_69t9nc16jz9ekv24d5ee8s40mz`, 34 min): **0.7537** and 0.7481 without the seen cycle; 1 of 67,585 windows predicted differently (a wash window: spin on dev, drain here). **6** (`bnd_1jdn4s2xte982v8kxjrj7z6vn3`, 1 h 33 min): 122 of 122 files, 365,414 windows, 0 invalid; every run reported `completed` before its last output was written, and `deliver.py` waited for it. **7:** **0.7008** against the bar's 0.6927; 4 of 365,414 predictions differ from dev's |
-
-Numbered to match the Paderborn example: from Stage 2 on the numbers and
-meanings are the same there, and from Stage 4 on in Volve too. Stage 1's
-three steps check and prepare the data.
-
-Each preflight is a step of its own. It is read-only, prints PASS / WARN /
-FAIL per check, and the next stage will not run while any check FAILs.
 
 ## The scenario
 
@@ -77,8 +47,8 @@ Two things about the second unit to keep in mind:
 - **The dataset marks becken-flt as faulty,** without saying what the fault
   is. It never informs any choice here, so its delivery score is the
   cleanest "machine the model has never seen" number.
-- **The test number is weaker than Volve's:** new settings of the same
-  machine, not a new machine. Both numbers are reported side by side.
+- **The test is the weaker of the two:** new settings of the same machine, not
+  a new machine. Both numbers are reported side by side.
 
 **The model sees only the 9 vibration channels.** The dataset also records
 power, water flow, temperatures and more at 1 Hz. But the labels are derived
@@ -105,9 +75,9 @@ stratified by family, so no twin can land on both sides:
 | test | 11 (6 / 1 / 4) | 18 |
 | delivery | all of becken-flt | 106 |
 
-The seed was fixed before any download and is never re-rolled.
-[`plan.md`](plan.md) has the draw, and the one test cycle already seen in
-exploration (reported on its own line).
+The seed was fixed before any download and is never re-rolled; the draw is in
+`data/split.json`. One test cycle, `cold_cotton_40_2`, was already seen in
+exploration, so it is also reported on its own line.
 
 ### What each role's files are
 
@@ -157,15 +127,14 @@ exploration (reported on its own line).
 - **Heating is not a state.** The heater (`heating_label`, ~1.7 kW, 8% of the time) runs while the
   drum washes, often in short thermostat bursts, and vibration can't tell it apart from
   wash: held-out cycles scored balanced accuracy 0.62, where 0.5 is chance. Its seconds take their drum/water state, almost always
-  `wash`. It was a fifth state until the first search showed this; see `plan.md`,
-  "Four states".
+  `wash`. It was a fifth state until the first search showed this: every trial
+  mislabelled most wash as heating.
 - **Expected hard pairs:**
   - **drain vs its neighbours:** its runs are short;
   - **the soft edges around spin:** a loud 2–3 minute pre-spin phase is
     labelled wash or drain, and the spin label starts quietly. **The labels
     are kept as the dataset gives them** (no guard band), so every score here
-    includes these windows, roughly 5% of each cycle. See `plan.md`, Stage 1a
-    findings.
+    includes these windows, roughly 5% of each cycle.
 - **No "idle" state:** inside a recorded cycle the drum never rests for more
   than about a minute. The pauses between tumbles are part of `wash`.
 
@@ -198,7 +167,7 @@ normalisation fitted on the training unit.
   embeddings only, so the pipeline cannot use that combination.
 
 **Normalisation: global.** Every file is z-scored with the library unit's
-per-channel statistics, as in the Volve example. This is the setup that lost
+per-channel statistics. This is the setup that lost
 `spin` in exploration, in the becken → becken-flt direction. That failure can
 only show up in the delivery score (Stage 7), and it will be reported as it
 comes out. Per-unit scaling (label-free) is a follow-up, reported separately if
@@ -230,11 +199,11 @@ the bar's, and well below it on the second unit:
 >   and so was the pass/fail verdict. No stage met it, and it never had a basis.
 >
 > The tables above show every margin, so the result reads the same either
-> way. See `plan.md`, "Success criterion dropped".
+> way.
 
 ## What your data needs
 
-These are the same platform rules as the Volve example, applied here:
+The platform's rules, and how this example meets them:
 
 | requirement | here |
 |---|---|
@@ -253,49 +222,8 @@ Zenodo ─> 0 split + download ─> 1a preflight ─> 1b prepare ─> 1c preflig
    (held-back labels)    (bundle, unlabelled)    (Evals API)   (all 21 val.)   (Optimize API)   (threshold, FFT)
 ```
 
-Every decision, and what is still open, is in [`plan.md`](plan.md).
-
-## Platform behaviour worth knowing
-
-Found while building this example on dev, and reproducing it on production
-(details in `plan.md`):
-
-- **More than ~1,500 training files in one optimization never runs.** The
-  platform puts the whole config in a Kubernetes ConfigMap (1 MiB max). Over
-  that, the job is retried forever while the API shows `running` / `pending`,
-  with no error. Hence this example's library is a few files, one per state.
-- **Training files may contain time gaps, but windows across a gap are
-  silently dropped.** A library file made of separate stretches, with forward
-  jumps between them, trains fine. Any window that crosses a jump fails the
-  sampling-rate check and is skipped without being counted, so the model
-  trains only on windows within a stretch. This example puts every jump on a
-  whole-window boundary, and its bar cuts windows the same way.
-- **Scored files may not contain gaps, unless every jump falls on a window
-  boundary.** In a validation or test file, a single window across a jump
-  fails the whole trial or eval: "eval-mode test data must not contain
-  windows a validation node rejected". This is deliberate (ground truth is
-  only scored on data expected to be valid), though the platform team
-  regards failing the whole run as a bug. So validation, test and delivery
-  files are one continuous file per recording segment.
-- **`sample_rate_interval_tolerance` is relative to the window's mean
-  interval.** The default is 0.05. One jump inside a 1,024-row window
-  deviates by ~1,000×, so loosening to 10 (as tried) doesn't pass it; it
-  would take roughly the window size. The search space can't set it to
-  `null` or "warn", so the check can't be switched off per run.
-- **Timestamps may be fractional epoch seconds, epoch milliseconds or ISO
-  8601,** all read to the millisecond at 200 Hz.
-- **Macro-F1 counts a state the model knows but the scored data lacks as
-  F1 = 0.** Every scored set must contain every state.
-- **A run can report `completed` before its last output file is fully
-  written.** On production, all 5 delivery runs did: each one's last file was
-  still short at `completed`, and complete about a minute later.
-  `deliver.py` counts a run as completed only once every file's predictions
-  reach that file's end.
-- **Results reproduce across deployments, to a few windows in 100,000.** The
-  same setting on dev and production gave the same scores to the fourth
-  decimal at every stage, and the same window counts; 5 of 432,999 test and
-  delivery predictions differed. A random search (`--max-trials` below the
-  space) draws different settings on each run, though.
+Each preflight is a step of its own. It is read-only, prints PASS / WARN /
+FAIL per check, and the next stage will not run while any check FAILs.
 
 ## Run it yourself
 
@@ -305,8 +233,8 @@ re-run: it overwrites its own outputs and nothing else.
 ### Setup (once)
 
 ```sh
-git clone https://github.com/archetypeai/osm-agent-example-larco.git   # needs Git LFS (brew install git-lfs)
-cd osm-agent-example-larco
+git clone https://github.com/archetypeai/operational-state-monitoring-agent-example-larco.git   # needs Git LFS (brew install git-lfs)
+cd operational-state-monitoring-agent-example-larco
 python3 -m venv .venv
 source .venv/bin/activate          # every later command assumes this
 pip install -r requirements.txt    # numpy, pandas, pyarrow (Parquet), scipy (the resampling spline)
@@ -315,8 +243,8 @@ cp .env.example .env               # only needed from Stage 4b on (platform API 
 
 Stage 0 is stdlib-only; Stages 1a–1c need the packages above.
 
-**Switching deployment** (dev, staging, prod, Tokyo: set `ATAI_API_KEY` and
-`ATAI_API_ENDPOINT` in `.env`) needs nothing else. The `osm` blueprint is resolved by
+**Switching deployment** (set `ATAI_API_KEY` and `ATAI_API_ENDPOINT` in `.env`)
+needs nothing else. The `osm` blueprint is resolved by
 its key on each deployment, the upload cache is kept per deployment, and every result
 and state file in `fit/out/` records its endpoint: `test.py` only picks this
 deployment's Stage 4c result, and `test.py` and `deliver.py` refuse to resume another
@@ -735,7 +663,8 @@ search didn't pick a setting that only suits the six. It runs before the test,
 so the test stays untouched.
 - **The chosen setting:** four-state search trial #7 (512 / 512, k 31, cosine,
   uniform), the highest score on the 6 search cycles, 0.7547. It was carried
-  forward by decision. See `plan.md`.
+  forward by decision; the largest margin over the bar was another setting's
+  (+0.030 at 256 / 1024, k 21, cosine, distance).
 - **Uploads:** the 19 files not yet on the platform (2.56 GB).
   `--upload-jobs 3` keeps the uplink from saturating (see Stage 4b).
 - **Time:** one trial; ours took 44 minutes.
@@ -892,8 +821,6 @@ cycles macro-F1 0.6927 fill 0.79 wash 0.93 spin 0.66 drain 0.38`.
 
 ## Repo layout
 
-Following the Volve example:
-
 | path | what it is |
 |---|---|
 | `prep/larco.py` | where LARCO's files are on Zenodo, and reading single members of its remote zips |
@@ -903,7 +830,7 @@ Following the Volve example:
 | `prep/states.py` | the four states and the per-second priority rule, shared by every stage |
 | `prep/prepare.py` | Stage 1b: 200 Hz grid + state per row → `data/prepared/<cycle>.parquet`, `data/prepare_report.json` |
 | `prep/preflight_prepared.py` | Stage 1c: prepared-file preflight, including a resampling tone test → `data/preflight_prepared.json` |
-| `prep/preflight_common.py`, `prep/acknowledged.py` | the shared PASS / WARN / FAIL report, and the FAILs the user chose to keep |
+| `prep/preflight_common.py`, `prep/acknowledged.py` | the shared PASS / WARN / FAIL report, and the FAILs kept on purpose |
 | `prep/build_roles.py` | Stage 2: role files → `data/roles/` (library, validation, test, delivery, delivery_labels, `zscore_stats.json`, `manifest.json`) |
 | `prep/preflight_roles.py` | Stage 3: role-file preflight against the platform's rules → `data/preflight_roles.json` |
 | `fit/atai.py` | stdlib platform helpers: requests, file uploads, polling optimizations |
@@ -919,16 +846,13 @@ Following the Volve example:
 | `fit/test.py` | Stage 5: promote the Stage 4c trial, test once with the Evals API → `fit/out/test.json` |
 | `fit/deliver.py` | Stage 6: bundle from the Stage 5 blueprint, runs over becken-flt in batches → `fit/out/delivery/<file>.csv` |
 | `fit/score_delivery.py` | Stage 7: the delivered predictions against the held-back labels → `fit/out/delivery/scores.json` |
-| `fit/out/five_states/` | the superseded five-state bars, search results and logs |
 | `data/` | the listing, split, licence, metadata and downloaded cycles (`data/raw/` gitignored) |
-| `plan.md` | the plan and its decisions |
 
-The exploration code and data are in `~/Downloads/demo/osm-candidates/`:
-- `larco_baseline.py` and `larco_omega.py`: the exploration scripts;
-- `larco/raw/`: one cycle per lab machine;
-- `larco/emb/`: cached Omega embeddings;
-- `larco/zip_range_get.py`: pulls single files out of the 13.5 GB
-  vibration archive.
+## Licence
+
+The code is under the [Apache License 2.0](LICENSE). The LARCO data, and the files
+derived from it in `data/`, stay under the dataset's own licence: see
+[Data attribution](#data-attribution).
 
 ## Data attribution
 
@@ -958,7 +882,49 @@ All washing-machine data used here comes from the **LARCO** dataset, "Household
   library cut into one file per state, and the delivery labels held back in
   separate files.
 
-The packed role files in `data/archives/` are these derived files.
+The packed role files in `data/archives/` are these derived files. Three of the
+dataset's own files are included unchanged: `data/LICENCE.txt`,
+`data/aggregated_data.csv` and `data/metadata.xlsx` (from `general.zip`).
 
-Code in this repository is Archetype AI's and carries no LARCO licence
-obligation; the attribution above applies to the data.
+The code is under its own licence: see [Licence](#licence).
+
+## Platform behaviour worth knowing
+
+Found while building this example, and reproducing it on a second deployment:
+
+- **More than ~1,500 training files in one optimization never runs.** The
+  platform stores the whole config in one object of at most 1 MiB. Over
+  that, the job is retried forever while the API shows `running` / `pending`,
+  with no error. Hence this example's library is a few files, one per state.
+- **Training files may contain time gaps, but windows across a gap are
+  silently dropped.** A library file made of separate stretches, with forward
+  jumps between them, trains fine. Any window that crosses a jump fails the
+  sampling-rate check and is skipped without being counted, so the model
+  trains only on windows within a stretch. This example puts every jump on a
+  whole-window boundary, and its bar cuts windows the same way.
+- **Scored files may not contain gaps, unless every jump falls on a window
+  boundary.** In a validation or test file, a single window across a jump
+  fails the whole trial or eval: "eval-mode test data must not contain
+  windows a validation node rejected". This is deliberate (ground truth is
+  only scored on data expected to be valid), though the platform team
+  regards failing the whole run as a bug. So validation, test and delivery
+  files are one continuous file per recording segment.
+- **`sample_rate_interval_tolerance` is relative to the window's mean
+  interval.** The default is 0.05. One jump inside a 1,024-row window
+  deviates by ~1,000×, so loosening to 10 (as tried) doesn't pass it; it
+  would take roughly the window size. The search space can't set it to
+  `null` or "warn", so the check can't be switched off per run.
+- **Timestamps may be fractional epoch seconds, epoch milliseconds or ISO
+  8601,** all read to the millisecond at 200 Hz.
+- **Macro-F1 counts a state the model knows but the scored data lacks as
+  F1 = 0.** Every scored set must contain every state.
+- **A run can report `completed` before its last output file is fully
+  written.** On production, all 5 delivery runs did: each one's last file was
+  still short at `completed`, and complete about a minute later.
+  `deliver.py` counts a run as completed only once every file's predictions
+  reach that file's end.
+- **Results reproduce across deployments, to a few windows in 100,000.** The
+  same setting on dev and production gave the same scores to the fourth
+  decimal at every stage, and the same window counts; 5 of 432,999 test and
+  delivery predictions differed. A random search (`--max-trials` below the
+  space) draws different settings on each run, though.

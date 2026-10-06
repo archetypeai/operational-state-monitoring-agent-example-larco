@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Probe: which CSV timestamp format does the platform accept at 200 Hz?
 
-Volve only ever sent whole epoch seconds (5 s rows). LARCO needs 5 ms steps,
+Earlier OSM data used whole epoch seconds (5 s rows). LARCO needs 5 ms steps,
 so this sends the same tiny data three ways and runs one 1-trial optimization
 per format on the Optimize API (they run in parallel):
 
@@ -42,9 +42,7 @@ CYCLE = "wm_becken_BWM5381IX_cold_cotton_40_4"
 OUT = os.path.join(ROOT, "fit", "out", "probe_timestamps")
 LIB_ROWS = 200 * 120          # 2 min
 VAL_ROWS = 200 * 240          # 4 min
-# The latest osm blueprint. It was pinned to blp_05h8jmsdcy8fra7f0rm5cerwsv while
-# the latest had a bug; after the fix both give identical results on this probe
-# (plan.md, Housekeeping). Pass --blueprint to pin a version.
+# Pass --blueprint to pin a version.
 BLUEPRINT_ID = "osm"     # the canonical blueprint's key: each deployment resolves it to its own blp_ id
 FORMATS = {
     "epoch_s": lambda ms: [f"{m // 1000}.{m % 1000:03d}" for m in ms],

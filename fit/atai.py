@@ -1,4 +1,4 @@
-"""Archetype AI platform helpers, stdlib only (adapted from the Volve example's run_osm_example.py).
+"""Archetype AI platform helpers, stdlib only.
 
 Reads ATAI_API_KEY and ATAI_API_ENDPOINT from .env. Platform routes are
 <endpoint>/agents/...; file uploads go to <endpoint>/v0.5/files.

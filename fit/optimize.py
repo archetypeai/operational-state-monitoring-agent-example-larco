@@ -49,7 +49,7 @@ ROLES = os.path.join(ROOT, "data", "roles")
 OUT = os.path.join(ROOT, "fit", "out")
 CACHE = os.path.join(OUT, "uploads.json")
 BLUEPRINT_ID = "osm"     # the canonical blueprint's key: each deployment resolves it to its own blp_ id
-# The exhaustive pool (plan.md, Stage 4b), limited to values known to work on the platform.
+# The exhaustive pool (Stage 4b), limited to values known to work on the platform.
 FULL_POOL = {"windows": [256, 512, 1024], "steps": [256, 512, 1024], "k": [1, 3, 5, 7, 9, 15, 21, 31],
              "metrics": ["l1", "cosine"], "weights": ["uniform", "distance"]}
 
@@ -96,7 +96,7 @@ def windows_in(rows, window, step):
 
 def library_windows(lib_files, window, step):
     """Training windows the platform keeps: those within a piece. Any window across the time
-    jump between two pieces fails the sampling-rate check and is skipped (plan.md, gap probe)."""
+    jump between two pieces fails the sampling-rate check and is skipped (fit/probe_gaps.py)."""
     return sum(windows_in(p["rows"], window, step) for f in lib_files for p in (f.get("pieces") or [f]))
 
 
@@ -156,7 +156,7 @@ def main():
     ap.add_argument("--weights", nargs="+", default=["uniform"])
     ap.add_argument("--max-trials", type=int)
     ap.add_argument("--allow-gaps", action="store_true",
-                    help="allow step > window (skips the records between windows; plan.md, Stage 4b)")
+                    help="allow step > window (skips the records between windows)")
     ap.add_argument("--blueprint", default=BLUEPRINT_ID)
     ap.add_argument("--validation", choices=["search", "all"], default="search",
                     help="score on the 6 search cycles (Stage 4b) or all 21 validation cycles (Stage 4c)")

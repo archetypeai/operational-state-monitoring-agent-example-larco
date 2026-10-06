@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Probe: how the Optimizations and Evals APIs treat time gaps inside CSV files, and whether loosening helps.
 
-Option A for the ConfigMap limit (plan.md, Stage 4b) puts each state's library windows into
+Option A for the 1 MiB config limit (Stage 4b) puts each state's library windows into
 one file, with real timestamps, so the file has forward jumps between 1,024-row pieces. This
 tests that before anything is rebuilt. Tiny files from one library cycle; each library state
 is its own file, so a rejected file shows up as a state that is never predicted.
@@ -18,8 +18,8 @@ is its own file, so a rejected file shows up as a state that is never predicted.
          promoted trial's values)
 
 "Loosened" = sample_rate_interval_tolerance 10.0 and max_temporal_gap 10.0 as single-point
-float_range values (as the Volve example did); validate_monotonic_timestamps is a boolean,
-which the search space can't set (Volve), and forward jumps are still increasing anyway.
+float_range values; validate_monotonic_timestamps is a boolean,
+which the search space can't set, and forward jumps are still increasing anyway.
 Window 1024, k 5, l1. Writes the files to fit/out/probe_gaps/ and results to
 fit/out/probe_gaps_<blueprint>.json.
 

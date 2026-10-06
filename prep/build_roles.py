@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """Stage 2: build the role files the platform receives, from the prepared cycles.
 
-Layout follows the Volve example (data/roles/):
+Layout (data/roles/):
   zscore_stats.json   per-channel mean/std over the library cycles only (global normalisation)
   library/            one file per state, <state>__library.csv: 400 windows per state, spread
                       evenly across the library cycles that have it and evenly spaced within
                       each, as continuous pieces in time order with real timestamps (jumps only
                       between pieces, at whole-window boundaries); the manifest lists every piece
   validation/         the 21 validation cycles, one continuous file per segment, `label` column;
-                      the manifest marks the 6 search-validation cycles (plan.md, Stage 2)
+                      the manifest marks the 6 search-validation cycles
   test/               the 18 test cycles, same format
   delivery/           the 106 becken-flt cycles, one file per segment, no label column
   delivery_labels/    the held-back labels for delivery: timestamp, label
@@ -46,7 +46,7 @@ WINDOW = 1024
 PER_STATE = 400
 SEED = 20260928
 DECIMALS = 4
-# fixed by rule before any scoring (plan.md, Stage 2)
+# fixed by rule before any scoring
 SEARCH_VALIDATION = ["wm_becken_BWM5381IX_cold_cotton_0_2.csv", "wm_becken_BWM5381IX_hot_cotton_40_11.csv",
                      "wm_becken_BWM5381IX_hot_cotton_60_2.csv", "wm_becken_BWM5381IX_cold_eco_40-60_11.csv",
                      "wm_becken_BWM5381IX_warm_fast-45_40_2.csv", "wm_becken_BWM5381IX_warm_mix_40_0.csv"]
@@ -173,7 +173,7 @@ def write_library(draw, mean, std, workers):
 
     Jumps between pieces fall on whole-window boundaries, never inside a piece. One
     training example per state keeps the optimization config far under the platform's
-    1 MiB ConfigMap limit, which 1,990 separate files exceeded (plan.md, Stage 4b).
+    1 MiB config limit, which 1,990 separate files exceeded (Stage 4b).
     Training files tolerate such jumps, even where a window crosses one
     (fit/probe_gaps.py, runs O1-O3).
     """

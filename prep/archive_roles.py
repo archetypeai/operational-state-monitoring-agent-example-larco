@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Pack data/roles/ into Git LFS archives, or unpack them, so Stages 4-7 can run without 0-3.
 
-data/roles/ is 25.45 GB of CSV (Stage 2), too big for git. It is packed, as in the Volve
-example, into tar.xz archives split into 900 MB parts under data/archives/ (tracked by Git
-LFS; about 5x smaller). Two archives, so a colleague can fetch only what they need:
+data/roles/ is 25.45 GB of CSV (Stage 2), too big for git. It is packed into tar.xz archives split into 900 MB parts under data/archives/ (tracked by Git
+LFS; about 5x smaller). Two archives, so you can fetch only what you need:
 
   roles_core      library, validation, test, manifest.json, zscore_stats.json   Stages 4-5
   roles_delivery  delivery, delivery_labels                                      Stages 6-7
