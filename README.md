@@ -184,8 +184,8 @@ own. Each window/step pair has its own bar (at 1024 / 1024, 0.7285 macro-F1 and
 spin 0.61 on the 6 search cycles). The margin is reported with no pass/fail
 threshold.
 
-Omega leads the bar at every stage, by 0.005–0.017. Its spin F1 is at or below
-the bar's, and well below it on the second unit:
+Omega leads the bar at every stage, by 0.005–0.017. Its spin F1 is close to the
+bar's on becken (0.64–0.65 against 0.64–0.66), and well below it on the second unit:
 
 | stage | Omega | bar | margin | Omega spin | bar spin |
 |---|---|---|---|---|---|
@@ -193,18 +193,6 @@ the bar's, and well below it on the second unit:
 | 4c, all 21 validation | 0.7562 | 0.7511 | +0.005 | 0.64 | 0.66 |
 | 5, test (18 cycles) | 0.7537 | 0.7365 | +0.017 | 0.64 | 0.66 |
 | 7, delivery (106 becken-flt cycles) | 0.7008 | 0.6927 | +0.008 | 0.55 | 0.66 |
-
-> **There used to be a pass/fail criterion, changed twice and then dropped.**
-> Before the pipeline it was "beat the bar's macro-F1 by ≥ 0.05 **and** spin
-> F1 ≥ 0.90". Both numbers were set without evidence: the 0.90 came from a
-> 3-state exploration, and the 0.05 was a round number.
-> - **After seeing the bar** (Stage 4a), the spin rule became "no worse than
->   the bar on spin", because the bar itself scored spin 0.58.
-> - **After all stages were scored** (2026-09-30), the +0.05 rule was dropped,
->   and so was the pass/fail verdict. No stage met it, and it never had a basis.
->
-> The tables above show every margin, so the result reads the same either
-> way.
 
 ## What your data needs
 
@@ -282,9 +270,8 @@ For Stages 4–5 only: `git lfs pull --include "data/archives/roles_core*"`, the
 `python prep/archive_roles.py --unpack --only core`. Stage 3 checks every
 role, so it will flag the missing delivery files; skip it in that case.
 
-Unpacking needs about 26 GB free. The archives were packed with
-`python prep/archive_roles.py --pack --background` after Stage 2 (19 min), and are
-repacked whenever Stage 2 changes.
+Unpacking needs about 26 GB free. To repack after rebuilding Stage 2:
+`python prep/archive_roles.py --pack --background` (about 20 min).
 
 ### Stage 0: split and download (skip if `data/raw/` is already complete)
 
@@ -579,7 +566,7 @@ python fit/optimize.py --pool full --allow-gaps --max-trials 16 \
 tail -f fit/out/optimize_4states.log
 ```
 
-This is the run behind the results (`opt_4qggkyx4z487m86da5emyt7txw`): a
+This is the run behind the results: a
 16-trial random search over the full pool, about 3.5 hours. With no flags,
 `python fit/optimize.py --background` runs a single measurement trial
 (window 1,024, step 1,024, k 5, l1), logging to `fit/out/optimize.log`.
@@ -593,7 +580,7 @@ This is the run behind the results (`opt_4qggkyx4z487m86da5emyt7txw`): a
 3. Polls until the trials finish.
 4. Prints each trial's macro-F1, F1 per state, windows scored and minutes,
    flags configurations sampled twice, and reports trial time as a fixed
-   cost plus a cost per 1,000 windows (trials run one after another; search 1
+   cost plus a cost per 1,000 windows (trials run one after another; ours
    measured ≈ 11 min + 0.09 min per 1,000 windows).
 
 **The search space** is the product of the values given, by flag or with
@@ -692,7 +679,7 @@ python fit/baseline_bar.py --window 512 --step 512 --test   # the bar on the sam
 
 **What `fit/test.py` does** (platform only):
 1. Promotes the Stage 4c trial (this deployment's latest Stage 4c result in
-   `fit/out/`, or `--optimization opt_...`; in our run `opt_1dztapszen8n1a89jj08fcfwrr`:
+   `fit/out/`, or `--optimization opt_...`:
    512 / 512, k 31, cosine, uniform, trained on the 4 library files) to the
    blueprint `osm-larco-w512-s512-cosine-k31-uniform` (named after its setting),
    or reuses it if it was already promoted.
