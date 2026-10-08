@@ -39,7 +39,7 @@ import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "prep"))
-from atai import agents, list_trials, load_dotenv, request, trial_f1, upload_file, wait_optimization  # noqa: E402
+from atai import agents, list_trials, load_dotenv, request, states_override, trial_f1, upload_file, wait_optimization  # noqa: E402
 from background import add_background_flag, maybe_detach  # noqa: E402
 from states import CHANNELS  # noqa: E402
 
@@ -141,7 +141,7 @@ def space(step, loose):
     return {"parameters": p}
 
 
-def run_opt(name, ids, blueprint_id, stamp):
+def run_opt(name, ids, bp, stamp):
     lib, val, step, loose = RUNS[name]
     training = [{"name": f"{name}-{s}", "inputs": [{"type": "file", "id": ids[f"lib_{lib}_{s}"], "format": "csv"}],
                  "ground_truth": {"state": {"from": {"constant": s}}}} for s in LIB_STATES]
@@ -149,9 +149,9 @@ def run_opt(name, ids, blueprint_id, stamp):
                    "ground_truth": {"state": {"from": {"column": "label"}, "downsampling": "last_record"}}}]
     try:
         opt = request("POST", f"{agents()}/optimizations", body={
-            "name": f"LARCO gap probe {name} {stamp}", "blueprint_id": blueprint_id, "objective": "macro_f1",
+            "name": f"LARCO gap probe {name} {stamp}", "blueprint_id": bp["id"], "objective": "macro_f1",
             "search_space": space(step, loose), "budget": {"max_trials": 1},
-            "training_examples": training, "validation_examples": validation})
+            "training_examples": training, "validation_examples": validation, **states_override(bp, training)})
     except RuntimeError as e:
         log(f"[{name}] create rejected: {e}")
         return {"run": name, "create_error": str(e)}
@@ -215,10 +215,11 @@ def main():
     stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     ids = {k: upload_file(p, rename=f"larco-probe-gaps-{os.path.basename(p)[:-4]}-{stamp}.csv")["file_id"]
            for k, p in files.items()}
-    blueprint_id = request("GET", f"{agents()}/blueprints/{args.blueprint}")["id"]
+    bp = request("GET", f"{agents()}/blueprints/{args.blueprint}")
+    blueprint_id = bp["id"]
     log(f"uploaded {len(ids)} files; blueprint {blueprint_id}")
     with ThreadPoolExecutor(len(RUNS)) as pool:
-        opts = dict(zip(RUNS, pool.map(lambda n: run_opt(n, ids, blueprint_id, stamp), RUNS)))
+        opts = dict(zip(RUNS, pool.map(lambda n: run_opt(n, ids, bp, stamp), RUNS)))
     evals = {}
     if not args.no_evals:
         with ThreadPoolExecutor(len(EVALS)) as pool:

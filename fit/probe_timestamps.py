@@ -33,7 +33,7 @@ import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "prep"))
-from atai import agents, load_dotenv, request, upload_file, wait_optimization  # noqa: E402
+from atai import agents, load_dotenv, request, states_override, upload_file, wait_optimization  # noqa: E402
 from states import CHANNELS  # noqa: E402
 from background import add_background_flag, maybe_detach  # noqa: E402
 
@@ -80,7 +80,7 @@ def write(df, path, fmt, label):
     out.to_csv(path, index=False, float_format="%.4f")
 
 
-def run_format(fmt, files, stamp, blueprint_id):
+def run_format(fmt, files, stamp, bp):
     ids = {k: upload_file(p, rename=f"larco-probe-{fmt}-{os.path.basename(p)[:-4]}-{stamp}.csv")["file_id"]
            for k, p in files.items()}
     training = [{"name": f"{fmt}-{st}", "inputs": [{"type": "file", "id": ids[st], "format": "csv"}],
@@ -96,9 +96,9 @@ def run_format(fmt, files, stamp, blueprint_id):
         "weights": {"kind": "fitting", "spec": one("uniform")},
     }}
     opt = request("POST", f"{agents()}/optimizations", body={
-        "name": f"LARCO timestamp probe {fmt} {stamp}", "blueprint_id": blueprint_id,
+        "name": f"LARCO timestamp probe {fmt} {stamp}", "blueprint_id": bp["id"],
         "objective": "macro_f1", "search_space": space, "budget": {"max_trials": 1},
-        "training_examples": training, "validation_examples": validation})
+        "training_examples": training, "validation_examples": validation, **states_override(bp, training)})
     print(f"[{fmt}] optimization {opt['id']} created", flush=True)
     opt, trials = wait_optimization(opt["id"], label=f"[{fmt}]", log=lambda m: print(m, flush=True))
     return {"format": fmt, "file_ids": ids, "optimization": opt, "trials": trials}
@@ -133,11 +133,12 @@ def main():
         return
 
     load_dotenv()
-    blueprint_id = request("GET", f"{agents()}/blueprints/{args.blueprint}")["id"]
+    bp = request("GET", f"{agents()}/blueprints/{args.blueprint}")
+    blueprint_id = bp["id"]
     print(f"blueprint {blueprint_id}")
     stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     with ThreadPoolExecutor(len(FORMATS)) as pool:
-        results = list(pool.map(lambda f: run_format(f, files[f], stamp, blueprint_id), FORMATS))
+        results = list(pool.map(lambda f: run_format(f, files[f], stamp, bp), FORMATS))
 
     path = os.path.join(ROOT, "fit", "out", f"probe_timestamps_{blueprint_id}.json")
     with open(path, "w") as f:
