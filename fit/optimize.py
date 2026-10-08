@@ -39,7 +39,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from atai import agents, api_base, load_dotenv, request, trial_f1, trial_setting, upload_file, wait_optimization  # noqa: E402
+from atai import agents, api_base, load_dotenv, request, states_override, trial_f1, trial_setting, upload_file, wait_optimization  # noqa: E402
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "prep"))
 from background import add_background_flag, maybe_detach  # noqa: E402
 from states import STATES  # noqa: E402
@@ -223,12 +223,13 @@ def main():
                                 "inputs": [{"type": "file", "id": ids[p], "format": "csv"}],
                                 "ground_truth": {"state": {"from": {"column": "label"}, "downsampling": "last_record"}}}
                                for p in validation]
-        blueprint_id = request("GET", f"{agents()}/blueprints/{args.blueprint}")["id"]
+        bp = request("GET", f"{agents()}/blueprints/{args.blueprint}")
         stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
         opt = request("POST", f"{agents()}/optimizations", body={
-            "name": f"{args.name} {stamp}", "blueprint_id": blueprint_id, "objective": "macro_f1",
+            "name": f"{args.name} {stamp}", "blueprint_id": bp["id"], "objective": "macro_f1",
             "search_space": space, "budget": {"max_trials": args.max_trials or len(grid)},
-            "training_examples": training, "validation_examples": validation_examples})
+            "training_examples": training, "validation_examples": validation_examples,
+            **states_override(bp, training)})
         opt_id = opt["id"]
         log(f"optimization {opt_id} created (collect later with --resume {opt_id}) on {api_base()}")
 
