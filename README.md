@@ -213,6 +213,8 @@ Zenodo ─> 0 split + download ─> 1a preflight ─> 1b prepare ─> 1c preflig
                                                                                                     │
  7 score delivery <─ 6 deliver to becken-flt <─ 5 test once <─ 4c confirm <─ 4b Omega search <─ 4a the bar
    (held-back labels)    (bundle, unlabelled)    (Evals API)   (all 21 val.)   (Optimize API)   (threshold, FFT)
+                                 │
+                                 └─> 8 serve (/query, Dev only): a window per query, checked against Stage 6
 ```
 
 Each preflight is a step of its own. It is read-only, prints PASS / WARN /
@@ -800,6 +802,104 @@ cycles macro-F1 0.6927 fill 0.79 wash 0.93 spin 0.66 drain 0.38`.
 
 **Writes:** `fit/out/delivery/scores.json`, `fit/out/bar_delivery_w512_s512.json`.
 
+### Stage 8: serve it, one window per query (Dev only)
+
+```sh
+python fit/serve.py                          # the quickstart's 5 becken-flt cycles, every window (~25 min)
+python fit/serve.py --files cold_cotton_0_0  # delivery files whose name contains these
+python fit/serve.py --all --max-windows 20   # the first 20 windows of each of the 122 files
+python fit/serve.py --windows-per-query 8    # up to 8 consecutive windows a query
+```
+
+Stage 6 delivers in batch: upload the files, run agents, download the outputs when
+they're done. **Agent serving** keeps an agent loaded and answers a window in one
+round trip, with no upload, queue or polling: what the machine's controller would
+call every 2.56 s with the latest 512 readings. It is on Dev only, for first
+internal tests, with 3 serving workers shared by everyone; the
+[agent-serving example](https://github.com/archetypeai/agent-serving-example) has
+the calls and their limits. So Stages 4b–6 must have run on Dev (`fit/out/`
+records the endpoint).
+
+1. **Served blueprint:** a copy of Stage 5's (`<key>-served-records`, made once):
+   the same classifier, encoder and values, with the CSV source and sink swapped
+   for an `atai-records` serving endpoint.
+2. **Serving agent:** a bundle of it, run with `{"mode": "serving"}`.
+3. **Delivery files replayed a window at a time.** Every query carries one window,
+   512 rows of the 9 channels, one list per channel, and gets one record back:
+
+   ```json
+   {"finish_timestamp": 511, "invalid": "false", "p_drain": 0, "p_fill": 0.6451613, "p_spin": 0,
+    "p_wash": 0.3548387, "predicted_state": "fill", "start_timestamp": 0}
+   ```
+
+   A served agent keeps nothing between queries, so a query must hold the whole
+   window. The timestamps are row indices within the query, not times. By default
+   the 5 short cycles the quickstart delivers (3,178 windows), so the two examples'
+   replays can be compared; `--all` replays all 122 files (365,414 windows, about
+   two days at one window a query).
+4. **Every answer against Stage 6:** `predicted_state` and the four probabilities
+   (to within 10⁻⁴), and the macro-F1 against the held-back labels, served and
+   batch.
+5. **Cleanup:** the agent is cancelled and deleted, and the bundle deleted, however
+   the replay ends (Ctrl-C, SIGTERM and SIGHUP included); the ids stay in
+   `fit/out/serve_state.json` until then.
+
+**What you should see** (Dev, 2026-10-16):
+
+```
+served 3,178 windows of 5 file(s) in 3,178 queries, 1754 s
+  against the delivery (batch): predicted_state identical in 3,176/3,178, probabilities within 1e-4 in 3,170/3,178 (max difference 3.2e-02); invalid 0
+  latency per query: median 521 ms, p95 773 ms, max 2011 ms
+  served  macro-F1 0.7966  fill 0.90  wash 0.87  spin 0.69  drain 0.73
+  batch   macro-F1 0.7962  fill 0.90  wash 0.87  spin 0.69  drain 0.74
+  -> fit/out/serving/serve_5files_wpq1.csv / .json
+```
+
+- **Served is batch, but for a neighbour now and then.** 3,170 of the 3,178 windows
+  answer exactly as Stage 6, every probability included. Each of the other 8 differs
+  by one vote of the 31 neighbours (a probability 1/31 = 0.032 off): one neighbour
+  swapped, most likely by the tiny float difference between served and batch
+  embeddings. 6 of them keep their state; 2 sat at a near-tie (12 votes against 12,
+  and 13 against 12) and changed it, for a macro-F1 0.0004 higher. It's the same kind
+  of difference as between two deployments (5 of 432,999 windows). The quickstart's
+  k 5 model, served the same way, answered all 3,178 windows exactly as batch.
+- **About 0.55 s a window** (0.5–0.7 s median, depending on Dev's load), so the 5
+  cycles take 25–35 minutes, about 4 times faster than the data, which arrives a
+  window every 2.56 s. `--windows-per-query 4` took 1.5 s a query (0.38 s a window),
+  but waits for 4 windows before it asks.
+- `fit/serve.py` exits 1 only if more than 0.1% of the states differ.
+
+**Writes:** `fit/out/serving/serve_5files_wpq1.csv` (a row per window) and `.json`
+(the summary).
+
+### Cleanup
+
+```sh
+python fit/cleanup.py            # what would be deleted, and what stays
+python fit/cleanup.py --yes      # delete it
+```
+
+It deletes, from the ids in `fit/out/`, Stage 6's delivery agents and their bundle
+(the bundle's own listing also finds the runs a rerun replaced; the outputs are
+already in `fit/out/delivery/`), and Stage 8's serving agent and bundle if
+`fit/serve.py` was killed before it could (`kill -9`, a closed laptop). A running
+serving agent holds one of Dev's 3 serving workers until it is deleted, or released
+after 20 minutes idle. Agents go first, since a bundle that still has one answers 409.
+**What stays:** the promoted blueprint and its served copy (deleting a blueprint takes
+an org admin's key), and the optimizations and evals. After a cleanup,
+`fit/deliver.py --resume` can't collect again.
+
+To see whether a serving agent is still running (yours or anyone's):
+
+```sh
+set -a; source .env; set +a
+curl -s "$ATAI_API_ENDPOINT/agents/instances?status=running&limit=100" -H "Authorization: Bearer $ATAI_API_KEY" \
+  | jq -c '.data[] | select(.mode=="serving") | {id, blueprint, name, created_at}'
+```
+
+`status=running` filters on the server; `mode=serving` is ignored there, so `jq`
+picks the serving agents. `fit/serve.py`'s agent is named `LARCO serve`.
+
 ### If a result differs
 
 - **A FAIL you have looked at and want to keep for now** goes in
@@ -891,6 +991,16 @@ Found while building this example, and reproducing it on a second deployment:
   decimal at every stage, and the same window counts; 5 of 432,999 test and
   delivery predictions differed. A random search (`--max-trials` below the
   space) draws different settings on each run, though.
+- **Served answers are batch's** (agent serving, Dev, 2026-10-16): on the 3,178 windows of 5 cycles,
+  every state and probability matched Stage 6's but 8 windows a neighbour's vote off
+  (k 31; 2 of them changed state at a near-tie), and the quickstart's k 5 model matched
+  on all 3,178.
+  A served agent keeps nothing between queries, so each query carries the whole
+  512-row window, and it numbers the rows itself (0–511). An agent left without a
+  query for 20 minutes is released, and a query to it then answers 409.
+- **A bundle that still has agents can't be deleted** (409), even when they're
+  cancelled: delete its agents first. `GET /agents/instances?bundle_id=<bnd_…>`
+  lists every agent a bundle ran, including the attempts a rerun replaced.
 
 ## Repo layout
 
@@ -919,4 +1029,6 @@ Found while building this example, and reproducing it on a second deployment:
 | `fit/test.py` | Stage 5: promote the Stage 4c trial, test once with the Evals API → `fit/out/test.json` |
 | `fit/deliver.py` | Stage 6: bundle from the Stage 5 blueprint, runs over becken-flt in batches → `fit/out/delivery/<file>.csv` |
 | `fit/score_delivery.py` | Stage 7: the delivered predictions against the held-back labels → `fit/out/delivery/scores.json` |
+| `fit/serve.py` | Stage 8 (Dev only): a serving agent of the Stage 5 blueprint, a window per query, against Stage 6 → `fit/out/serving/` |
+| `fit/cleanup.py` | delete the agents and bundles of Stages 6 and 8, from the ids in `fit/out/` |
 | `data/` | the listing, split, licence, metadata and downloaded cycles (`data/raw/` gitignored) |
