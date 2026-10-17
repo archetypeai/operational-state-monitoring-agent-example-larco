@@ -243,7 +243,18 @@ needs nothing else. The `osm` blueprint is resolved by
 its key on each deployment, the upload cache is kept per deployment, and every result
 and state file in `fit/out/` records its endpoint: `test.py` only picks this
 deployment's Stage 4c result, and `test.py` and `deliver.py` refuse to resume another
-deployment's run. Move `fit/out/` aside first to start a deployment from scratch.
+deployment's run. To start a deployment from scratch (Stages 4b–8), move `fit/out/`
+aside and keep two things: the bar's results, which are local and the same on every
+deployment, and the upload cache, which saves re-uploading what this deployment
+already has (the delivery alone is 15 GB):
+
+```sh
+mv fit/out fit/out-prod-1001          # any name
+mkdir fit/out && cp fit/out-prod-1001/bar_*.json fit/out-prod-1001/uploads.json fit/out/
+```
+
+Then run Stages 4b, 4c, 5, 6, 7 and 8 as below. Give the optimizations a name that
+says which run they belong to (`--name "LARCO Stage 4b four states (dev 1017)"`).
 
 ### Shortcut: skip Stages 0–3 with the packed role files
 
