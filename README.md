@@ -215,6 +215,7 @@ Zenodo ─> 0 split + download ─> 1a preflight ─> 1b prepare ─> 1c preflig
    (held-back labels)    (bundle, unlabelled)    (Evals API)   (all 21 val.)   (Optimize API)   (threshold, FFT)
                                  │
                                  └─> 8 serve (/query, Dev only): a window per query, checked against Stage 6
+                                                └─> 9 the app (app-serving/): the same, live in a browser
 ```
 
 Each preflight is a step of its own. It is read-only, prints PASS / WARN /
@@ -883,6 +884,33 @@ served 3,178 windows of 5 file(s) in 3,178 queries, 1754 s
 **Writes:** `fit/out/serving/serve_5files_wpq1.csv` (a row per window) and `.json`
 (the summary).
 
+### Stage 9: watch it in a browser (Dev only)
+
+```sh
+python fit/library_embeddings.py     # once: the library's embeddings, for the app's embedding space
+cd app-serving && npm install && npm run dev     # http://localhost:5182
+```
+
+Stage 8 in a browser: [`app-serving/`](app-serving/README.md) replays a becken-flt
+cycle at 200 Hz, a 512-row window every 2.56 s, through a serving agent of the
+Stage 5 model, and shows the state it calls (the machine drawn filling, washing,
+spinning or draining), the four probabilities, a timeline of the cycle, the
+embedding space, and every answer against Stage 6's batch output for the same
+window. Any of the 122 delivery files can be replayed; the held-back labels show
+only when you reveal them, or at the end of the cycle.
+
+- **`fit/library_embeddings.py`:** the model is a registry artifact, so the library
+  it compares windows with can't be read back. This runs the 4 library files
+  through the promoted blueprint in batch with `output_embeddings: true` and writes
+  PCA 1-2 of their 3,200 windows to `app-serving/static/library-view.{json,bin}`.
+  Ids go to `fit/out/library_state.json`.
+- **The app** holds one of Dev's 3 serving workers while it runs. It deletes its
+  agent and bundle when it stops (Ctrl-C or `npm run stop`); the ids sit in
+  `fit/out/app_serving_state.json` until then.
+
+Needs Node 20+ and mosquitto (`brew install mosquitto`). The app's README has the
+architecture, the settings and the ports.
+
 ### Cleanup
 
 ```sh
@@ -892,8 +920,10 @@ python fit/cleanup.py --yes      # delete it
 
 It deletes, from the ids in `fit/out/`, Stage 6's delivery agents and their bundle
 (the bundle's own listing also finds the runs a rerun replaced; the outputs are
-already in `fit/out/delivery/`), and Stage 8's serving agent and bundle if
-`fit/serve.py` was killed before it could (`kill -9`, a closed laptop). A running
+already in `fit/out/delivery/`), Stage 8's serving agent and bundle if
+`fit/serve.py` was killed before it could (`kill -9`, a closed laptop), and Stage 9's:
+the app's serving agents and bundle if its bridge was killed the same way, and the
+library-embedding runs and their bundle. A running
 serving agent holds one of Dev's 3 serving workers until it is deleted, or released
 after 20 minutes idle. Agents go first, since a bundle that still has one answers 409.
 **What stays:** the promoted blueprint and its served copy (deleting a blueprint takes
@@ -1041,5 +1071,7 @@ Found while building this example, and reproducing it on a second deployment:
 | `fit/deliver.py` | Stage 6: bundle from the Stage 5 blueprint, runs over becken-flt in batches → `fit/out/delivery/<file>.csv` |
 | `fit/score_delivery.py` | Stage 7: the delivered predictions against the held-back labels → `fit/out/delivery/scores.json` |
 | `fit/serve.py` | Stage 8 (Dev only): a serving agent of the Stage 5 blueprint, a window per query, against Stage 6 → `fit/out/serving/` |
-| `fit/cleanup.py` | delete the agents and bundles of Stages 6 and 8, from the ids in `fit/out/` |
+| `fit/library_embeddings.py` | Stage 9, once: the library through the promoted blueprint with embeddings on, PCA 1-2 → `app-serving/static/library-view.{json,bin}` |
+| `app-serving/` | Stage 9 (Dev only): the browser app, with a serving bridge and a replayer ([its README](app-serving/README.md)) |
+| `fit/cleanup.py` | delete the agents and bundles of Stages 6, 8 and 9, from the ids in `fit/out/` |
 | `data/` | the listing, split, licence, metadata and downloaded cycles (`data/raw/` gitignored) |
