@@ -1,0 +1,71 @@
+{
+ "note": "PCA 1-2 of the Stage 5 model's library, recomputed: the 4 library files through the promoted blueprint in batch with output_embeddings on (fit/library_embeddings.py). For drawing only.",
+ "blueprint": "osm-larco-w512-s512-cosine-k31-uniform",
+ "channels": [
+  "back.x",
+  "back.y",
+  "back.z",
+  "side.x",
+  "side.y",
+  "side.z",
+  "top.x",
+  "top.y",
+  "top.z"
+ ],
+ "states": [
+  "fill",
+  "wash",
+  "spin",
+  "drain"
+ ],
+ "embeddingDim": 768,
+ "totalDim": 6912,
+ "nReference": 3200,
+ "perState": {
+  "fill": 800,
+  "wash": 800,
+  "spin": 800,
+  "drain": 800
+ },
+ "windowSize": 512,
+ "stepSize": 512,
+ "whiten": true,
+ "explainedVariance": [
+  0.0846,
+  0.0833
+ ],
+ "layout": {
+  "ref": {
+   "offset": 0,
+   "shape": [
+    3200,
+    2
+   ]
+  },
+  "state": {
+   "offset": 25600,
+   "shape": [
+    3200
+   ]
+  },
+  "mean": {
+   "offset": 38400,
+   "shape": [
+    6912
+   ]
+  },
+  "pc0": {
+   "offset": 66048,
+   "shape": [
+    6912
+   ]
+  },
+  "pc1": {
+   "offset": 93696,
+   "shape": [
+    6912
+   ]
+  }
+ },
+ "dtype": "float32-le"
+}
