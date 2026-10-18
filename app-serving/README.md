@@ -4,8 +4,7 @@ A browser workbench that replays one becken-flt cycle, the faulty second unit
 the model never saw a cycle of, at 200 Hz, and shows the state a **serving
 agent** on the Archetype AI platform calls for each 2.56 s window: fill, wash,
 spin or drain. It is Stage 8 (`fit/serve.py`) made visible: the same served
-blueprint, the same queries, and each answer checked against Stage 6's batch
-output for the same window, as it arrives.
+blueprint and the same queries, one window at a time, as it arrives.
 
 > **Dev only.** Agent serving is on `https://api.dev.u1.archetypeai.app`, with 3
 > serving workers shared by everyone. The app holds one while it runs and gives it
@@ -16,26 +15,23 @@ output for the same window, as it arrives.
   minutes. Any of the 122 delivery files can be picked; the quickstart's five short
   cycles come first.
 - **Output:** the machine drawn in the called state (water in, the drum rocking,
-  spinning, water out), the four probabilities, a timeline of the whole cycle
-  (the agent's calls; after a reveal, the held-back labels under them), how many
-  windows match Stage 6's batch output, the embedding space and a log of state
-  changes.
-- **The labels stay hidden** until you reveal them in Settings, or the cycle ends.
-  Then the timeline gets a Truth row and the panel a macro-F1, served and batch.
+  spinning, water out), the four probabilities, a timeline of the whole cycle, the
+  embedding space and a log of state changes. All of it is the agent's answer: the
+  page shows no labels and no batch output (Stage 8 is where served is checked
+  against batch).
 
 ## Architecture
 
 ```
-  data/roles/delivery/<cycle>.csv          fit/out/delivery/<cycle>.csv (Stage 6)
-  data/roles/delivery_labels/<cycle>.csv           │
-                 │                                 │
-                 ▼                                 ▼
+  data/roles/delivery/<cycle>.csv
+                 │
+                 ▼
         ┌──────────────────┐  larco/sensors   ┌───────────┐  larco/sensors  ┌────────────────┐  POST /query  ┌───────────────┐
         │ replayer (node)  │ ───────────────► │ mosquitto │ ──────────────► │ serving bridge │ ────────────► │ serving agent │
         │ a 512-row window │ ◄─────────────── │ tcp :1892 │ ◄────────────── │ (node)         │ ◄──────────── │ platform, Dev │
         │ every 2.56 s     │  larco/control   │ ws  :9010 │  larco/results  │ holds the key  │               └───────────────┘
         └──────────────────┘  larco/results   └───────────┘  larco/agent    └────────────────┘
-                  │ larco/raw · status · truth      ▲   │
+                  │ larco/raw · status              ▲   │
                   └─────────────────────────────────┘   │ WebSockets
                                                         ▼
                                               web app (this page, :5182)
@@ -43,8 +39,7 @@ output for the same window, as it arrives.
 
 - **The replayer** (`scripts/replayer.js`) reads one delivery file a window at a
   time: 512 rows, z-scored as the model was fitted, to `larco/sensors`. For the page
-  it sends each window's level and a decimated trace in g, and Stage 6's batch answer
-  for the same window when `fit/out/delivery/` has the file. It sends a window every
+  it sends each window's level and a decimated trace in g. It sends a window every
   2.56 s divided by the speed, but never more than a few ahead of the agent's
   answers, and none while the bridge has no running agent.
 - **The serving bridge** (`scripts/serving-bridge.js`) is the only process that
@@ -60,15 +55,14 @@ output for the same window, as it arrives.
 
 **The served agent is the batch model.** Stage 8 measured 3,176 of 3,178 states
 and 3,171 of 3,178 probability sets identical to Stage 6's, at 1 and at 8 windows a
-query. A window near a tie can differ by one of the 31 neighbours' votes. Settings →
-This cycle counts the same thing live.
+query. A window near a tie can differ by one of the 31 neighbours' votes.
 
 ## The embedding space
 
 The Embedding tab draws the library the model compares each window with: its
-3,200 windows (about 800 a state, window 512, step 512) in PCA 1-2 of their Omega
-embeddings, one density per state, with the last minute or two of the cycle as a
-trail, each point in the state the agent called. The model is a registry artifact
+3,200 windows (about 800 a state, window 512, step 512) on the two directions of their Omega
+embeddings, a dot each and a density per state, with the last minute or two of the
+cycle as a trail, each point in the state the agent called. The model is a registry artifact
 with no download route, so the library's embeddings were recomputed on the
 platform, and the result ships with the repo: `static/library-view.{json,bin}`
 (about 120 KB), from the promoted model (k 31, cosine) on Dev, 2026-10-18. The page
@@ -82,14 +76,19 @@ python fit/library_embeddings.py      # 4 batch runs, one per library file, then
 The runs and their bundle go in `fit/out/library_state.json`, so a rerun resumes
 and `python fit/cleanup.py --yes` deletes them.
 
+The two directions are the ones that best separate the four states (each
+embedding at unit length, as the model compares by cosine; PCA to 50 dimensions;
+linear discriminant analysis to 2). PCA 1-2 alone mixed fill and wash. `python
+fit/library_embeddings.py --view` redraws them from the saved outputs in
+`fit/out/library_embeddings/`, with no platform calls.
+
 It is a cross-section, not the model: the kNN compares all 6,912 dimensions
-(cosine), and two are drawn, so a window can sit in one state's field here and still
+(cosine), and two directions are drawn, so a window can sit in one state's field here and still
 be called another.
 
 ## Run it
 
-Needs Stages 4b–6 run on Dev (`fit/out/test_state.json` and, for the batch
-comparison, `fit/out/delivery/`), the role files in `data/roles/`, Node 20+ and
+Needs Stage 5 run on Dev (`fit/out/test_state.json`), the role files in `data/roles/`, Node 20+ and
 mosquitto (`brew install mosquitto`).
 
 ```sh
@@ -143,7 +142,7 @@ it: run one at a time.
 | path                                                     | what it is                                                                              |
 | -------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | `scripts/serving-bridge.js`                              | the bridge: the served blueprint, the serving agent, queries, release and cleanup       |
-| `scripts/replayer.js`                                    | the replay: windows, pace, the labels and Stage 6's answers                             |
+| `scripts/replayer.js`                                    | the replay: windows and pace |
 | `scripts/common.js`                                      | the repo path, the broker, the two `.env` files                                         |
 | `scripts/run-broker.sh`, `scripts/stop.sh`, `mosquitto/` | the broker; stop everything and check the ports                                         |
 | `src/lib/api/larco.svelte.js`                            | the page's MQTT store                                                                   |
