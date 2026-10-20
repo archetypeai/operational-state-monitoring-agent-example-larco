@@ -14,7 +14,7 @@ is its own file, so a rejected file shows up as a state that is never predicted.
   O4   continuous  seams       1024  default    aligned seams in validation
   O5   continuous  seams       512   default    validation windows that cross a seam
   O6   continuous  seams       512   loosened   ... loosened
-  E4-E6  promote O4-O6, then POST /agents/evals on the seamed validation file (Evals inherit the
+  E4-E6  promote O4-O6, then POST /api/agents/evals on the seamed validation file (Evals inherit the
          promoted trial's values)
 
 "Loosened" = sample_rate_interval_tolerance 10.0 and max_temporal_gap 10.0 as single-point
