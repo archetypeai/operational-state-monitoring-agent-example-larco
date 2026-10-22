@@ -580,7 +580,7 @@ tail -f fit/out/optimize_4states.log
 ```
 
 This is the run behind the results: a
-16-trial random search over the full pool, about 3.5 hours. With no flags,
+16-trial random search over the full pool, about 3.5 hours (1.0 h on Dev on 2026-10-17). With no flags,
 `python fit/optimize.py --background` runs a single measurement trial
 (window 1,024, step 1,024, k 5, l1), logging to `fit/out/optimize.log`.
 
@@ -594,7 +594,8 @@ This is the run behind the results: a
 4. Prints each trial's macro-F1, F1 per state, windows scored and minutes,
    flags configurations sampled twice, and reports trial time as a fixed
    cost plus a cost per 1,000 windows (trials run one after another; ours
-   measured ≈ 11 min + 0.09 min per 1,000 windows).
+   measured ≈ 11 min + 0.09 min per 1,000 windows; on Dev on 2026-10-17,
+   ≈ 1.8 min + 0.10 min per 1,000 windows).
 
 **The search space** is the product of the values given, by flag or with
 `--pool full`:
@@ -673,6 +674,8 @@ so the test stays untouched.
 - **Uploads:** the 19 files not yet on the platform (2.56 GB).
   `--upload-jobs 3` keeps the uplink from saturating (see Stage 4b).
 - **Time:** one trial; ours took 44 minutes.
+- **Run it once.** A second launch is a second optimization, not a resume.
+  `fit/test.py` takes the latest all-21 result on this deployment.
 - **`fit/compare_bar.py`** reads the run's `validation_set` and compares it with
   the bar's all-21 score at the same window/step (0.7511 at 512 / 512).
 
@@ -775,7 +778,8 @@ matched no file, and failed runs.
   `fit/out/delivery_check/`, never mixed with the real delivery. It's a cheap
   way to see the output format before the full run.
 - **Time:** upload about 7–9 min (15 GB); runs about 2 min per full cotton cycle,
-  2 h 50 min for all 122 files in our first run and 1 h 33 min in our second.
+  2 h 50 min for all 122 files in our first run, 1 h 33 min in our second and
+  1 h 14 min on Dev on 2026-10-17.
   It varies with the platform's load.
 
 **Writes:** `fit/out/delivery/<file>.csv` (the platform's output rows:
@@ -866,6 +870,19 @@ served 3,178 windows of 5 file(s) in 3,178 queries, 1754 s
   -> fit/out/serving/serve_5files_wpq1.csv / .json
 ```
 
+On Dev on 2026-10-17, the same run took 1,608 s (median 433 ms, max 22 s) and
+matched in 3,171 windows instead of 3,170, with the same macro-F1s. With
+`--windows-per-query 8`, the same day:
+
+```
+served 3,178 windows of 5 file(s) in 399 queries, 827 s
+  against the delivery (batch): predicted_state identical in 3,176/3,178, probabilities within 1e-4 in 3,171/3,178 (max difference 3.2e-02); invalid 0
+  latency per query: median 1856 ms, p95 3200 ms, max 4936 ms
+  served  macro-F1 0.7966  fill 0.90  wash 0.87  spin 0.69  drain 0.73
+  batch   macro-F1 0.7962  fill 0.90  wash 0.87  spin 0.69  drain 0.74
+  -> fit/out/serving/serve_5files_wpq8.csv / .json
+```
+
 - **Served is batch, but for a neighbour now and then.** 3,170 of the 3,178 windows
   answer exactly as Stage 6, every probability included. Each of the other 8 differs
   by one vote of the 31 neighbours (a probability 1/31 = 0.032 off): one neighbour
@@ -876,8 +893,12 @@ served 3,178 windows of 5 file(s) in 3,178 queries, 1754 s
   k 5 model, served the same way, answered all 3,178 windows exactly as batch.
 - **About 0.55 s a window** (0.5–0.7 s median, depending on Dev's load), so the 5
   cycles take 25–35 minutes, about 4 times faster than the data, which arrives a
-  window every 2.56 s. `--windows-per-query 4` took 1.5 s a query (0.38 s a window),
-  but waits for 4 windows before it asks.
+  window every 2.56 s. More windows a query cost less per window, but the query
+  waits for them: `--windows-per-query 4` took 1.5 s a query (0.38 s a window), and
+  8 took 1.9 s (0.26 s a window, half the time of one a query), with the same answers.
+- **One `fit/serve.py` at a time.** Every run keeps its ids in
+  `fit/out/serve_state.json`, so a second run at once overwrites the first's, and
+  either's cleanup cancels the other's agent.
 - `fit/serve.py` exits 1 only if more than 0.1% of the states differ.
 
 **Writes:** `fit/out/serving/serve_5files_wpq1.csv` (a row per window) and `.json`
@@ -917,8 +938,11 @@ picks the serving agents. `fit/serve.py`'s agent is named `LARCO serve`.
   `prep/acknowledged.py`, with the reason. It is then still printed, but it
   no longer blocks the next stage.
 - **On another deployment,** expect the same numbers to the fourth decimal,
-  with a handful of windows predicted differently (5 of 432,999 in our second run),
-  and a different Stage 4b draw.
+  with a handful of windows predicted differently (5 of 432,999 in our second run,
+  4 of 365,414 delivery windows on Dev on 2026-10-17), and a different Stage 4b draw.
+  Dev's draw on 2026-10-17 picked the same setting (0.7547); it also drew
+  256 / 1024, k 31, l1, uniform at 0.7559, whose margin over the bar (+0.032) is
+  larger than the chosen setting's (+0.014).
 - **Anything else that differs** from the expected results above means the
   inputs changed. Check `data/raw/` against `data/manifest.json`; Stage 1a's
   `files` check does exactly that.
@@ -996,7 +1020,12 @@ Found while building this example, and reproducing it on a second deployment:
   written.** In our second run, all 5 delivery runs did: each one's last file was
   still short at `completed`, and complete about a minute later.
   `deliver.py` counts a run as completed only once every file's predictions
-  reach that file's end.
+  reach that file's end. On Dev on 2026-10-17, two runs went further: they reported
+  `completed` with no error after 3.5 and 12 min, with outputs for only 1.4 and 4.8
+  of their 25 files, which never grew (`agt_3jyyxs6mbg9sx9te384g3tph66` /
+  `job_3m57dtapr4957vdbwa2t16bre0`, `agt_3j6zwkjj4z8rx8p5xbb9rs7twb` /
+  `job_1t185avc508mfr7xb6arbt62a8`). `deliver.py` warns after 10 minutes of waiting;
+  moving `fit/out/delivery/` aside and running again delivered all 5 runs in full.
 - **Results reproduce across deployments, to a few windows in 100,000.** The
   same setting on two deployments gave the same scores to the fourth
   decimal at every stage, and the same window counts; 5 of 432,999 test and
@@ -1005,7 +1034,7 @@ Found while building this example, and reproducing it on a second deployment:
 - **Served answers are batch's** (agent serving, Dev, 2026-10-16): on the 3,178 windows of 5 cycles,
   every state and probability matched Stage 6's but 8 windows a neighbour's vote off
   (k 31; 2 of them changed state at a near-tie), and the quickstart's k 5 model matched
-  on all 3,178.
+  on all 3,178. A rerun on 2026-10-17 matched in 3,171, at 1 and at 8 windows a query.
   A served agent keeps nothing between queries, so each query carries the whole
   512-row window, and it numbers the rows itself (0–511). An agent left without a
   query for 20 minutes is released, and a query to it then answers 409.
