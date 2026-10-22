@@ -28,7 +28,7 @@ import sys
 import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from atai import TERMINAL, agents, api_base, load_dotenv, request, trial_setting  # noqa: E402
+from atai import TERMINAL, agents, api_base, load_dotenv, request, same_deployment, trial_setting  # noqa: E402
 from optimize import OUT, ROLES, log, upload_all  # noqa: E402
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "prep"))
@@ -44,7 +44,7 @@ STATE = os.path.join(OUT, "test_state.json")
 def stage_4c():
     """This deployment's latest Stage 4c optimization (--validation all, one trial) in fit/out/."""
     runs = [r for r in (json.load(open(p)) for p in glob.glob(os.path.join(OUT, "optimize_opt_*.json")))
-            if r.get("endpoint") == api_base() and r.get("validation_set") == "all" and len(r["trials"]) == 1]
+            if same_deployment(r) and r.get("validation_set") == "all" and len(r["trials"]) == 1]
     if not runs:
         sys.exit(f"no Stage 4c result for {api_base()} in fit/out/: run Stage 4c (fit/optimize.py ... --validation all) first")
     return max(runs, key=lambda r: r["optimization"]["created_at"])["optimization"]["id"]
@@ -96,8 +96,8 @@ def main():
     load_dotenv()
     state = json.load(open(STATE)) if os.path.exists(STATE) else {}
     save = lambda: json.dump(state, open(STATE, "w"), indent=1)  # noqa: E731
-    if state and state.get("endpoint") != api_base():
-        sys.exit(f"{STATE} is from {state.get('endpoint', 'an earlier run on another deployment')}, not {api_base()}: "
+    if state and not same_deployment(state):
+        sys.exit(f"{STATE} is from {state.get('endpoint', 'an earlier run')}, a different deployment from {api_base()}: "
                  f"move fit/out/ aside (or delete that file) to test on this deployment")
     state["endpoint"] = api_base()
     OPT = state.get("optimization") or args.optimization or stage_4c()
