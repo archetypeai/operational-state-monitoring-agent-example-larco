@@ -3,12 +3,13 @@
 A browser workbench that replays one becken-flt cycle, the faulty second unit
 the model never saw a cycle of, at 200 Hz, and shows the state a **serving
 agent** on the Archetype AI platform calls for each 2.56 s window: fill, wash,
-spin or drain. It is Stage 8 (`fit/serve.py`) made visible: the same served
-blueprint and the same queries, one window at a time, as it arrives.
+spin or drain. It is Stage 8 (`fit/serve.py`) made visible: the same bundle of
+the promoted blueprint and the same queries, one window at a time, as it arrives.
 
-> **Dev only.** Agent serving is on Dev (`https://platform.dev.u1.archetypeai.app`), with 3
-> serving workers shared by everyone. The app holds one while it runs and gives it
-> back when it stops ([Stop and clean up](#stop-and-clean-up)).
+> **Dev and Staging.** Agent serving is on Dev (`https://platform.dev.u1.archetypeai.app`), with 3
+> serving workers shared by everyone, and Staging (`https://platform.stage.u1.archetypeai.app`);
+> not prod. The app holds a worker while it runs and gives it back when it stops
+> ([Stop and clean up](#stop-and-clean-up)).
 
 - **Input:** the cycle's nine accelerometer channels (back, side and top, x/y/z):
   each window's trace, its vibration level in g, and the level over the last
@@ -28,7 +29,7 @@ blueprint and the same queries, one window at a time, as it arrives.
                  ▼
         ┌──────────────────┐  larco/sensors   ┌───────────┐  larco/sensors  ┌────────────────┐  POST /query  ┌───────────────┐
         │ replayer (node)  │ ───────────────► │ mosquitto │ ──────────────► │ serving bridge │ ────────────► │ serving agent │
-        │ a 512-row window │ ◄─────────────── │ tcp :1892 │ ◄────────────── │ (node)         │ ◄──────────── │ platform, Dev │
+        │ a 512-row window │ ◄─────────────── │ tcp :1892 │ ◄────────────── │ (node)         │ ◄──────────── │ the platform  │
         │ every 2.56 s     │  larco/control   │ ws  :9010 │  larco/results  │ holds the key  │               └───────────────┘
         └──────────────────┘  larco/results   └───────────┘  larco/agent    └────────────────┘
                   │ larco/raw · status              ▲   │
@@ -44,9 +45,9 @@ blueprint and the same queries, one window at a time, as it arrives.
   answers, and none while the bridge has no running agent.
 - **The serving bridge** (`scripts/serving-bridge.js`) is the only process that
   talks to the platform, with the key from the repo's `.env`; the browser never
-  sees it. At start it finds (or makes) Stage 8's served blueprint,
-  `<promoted>-served-records`, creates a bundle of it with `output_embeddings: true`,
-  and runs it in serving mode. Each query carries 1 to 8 whole consecutive windows
+  sees it. At start it creates a bundle of the promoted blueprint, as Stage 8 does
+  (`data_columns`, `timestamp_column: "timestamp"`), with `output_embeddings: true`,
+  and runs it in serving mode; the platform supplies the serving connectors. Each query carries 1 to 8 whole consecutive windows
   (Settings → Windows per query), and each record goes back to `larco/results` with
   its window's cycle, index and timestamps (the served agent numbers rows within the
   query). `larco/agent` (retained) says what it is doing: starting, running,
@@ -88,7 +89,7 @@ be called another.
 
 ## Run it
 
-Needs Stage 5 run on Dev (`fit/out/test_state.json`), the role files in `data/roles/`, Node 20+ and
+Needs Stage 5 run on Dev or Staging (`fit/out/test_state.json`), the role files in `data/roles/`, Node 20+ and
 mosquitto (`brew install mosquitto`).
 
 ```sh
@@ -124,7 +125,7 @@ ls ../fit/out/app_serving_state.json      # gone once the bridge cleaned up
 
 If it is still there (a `kill -9`, a closed laptop), the bridge couldn't finish:
 `python fit/cleanup.py --yes` from the repo deletes what it lists. A serving agent
-left running holds one of Dev's 3 workers until it is deleted, or released after
+left running holds a worker (one of Dev's 3) until it is deleted, or released after
 20 minutes without a query. The bridge refuses to start while the file is there.
 
 ## Ports
@@ -141,7 +142,7 @@ it: run one at a time.
 
 | path                                                     | what it is                                                                              |
 | -------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| `scripts/serving-bridge.js`                              | the bridge: the served blueprint, the serving agent, queries, release and cleanup       |
+| `scripts/serving-bridge.js`                              | the bridge: the bundle, the serving agent, queries, release and cleanup                 |
 | `scripts/replayer.js`                                    | the replay: windows and pace |
 | `scripts/common.js`                                      | the repo path, the broker, the two `.env` files                                         |
 | `scripts/run-broker.sh`, `scripts/stop.sh`, `mosquitto/` | the broker; stop everything and check the ports                                         |
