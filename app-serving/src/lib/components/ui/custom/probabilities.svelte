@@ -2,7 +2,7 @@
 	/**
 	 * The latest window's four probabilities: the share of its k nearest library
 	 * windows (k from the promoted model: 31 here, 5 in the quickstart) in each state. A state at 0.55 against
-	 * 0.45 is a near-tie, and the one place served and batch can disagree.
+	 * 0.45 is a near-tie.
 	 */
 	import { larco } from '$lib/api/larco.svelte.js';
 	import { STATES, STATE_META } from '$lib/states.js';
