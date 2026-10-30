@@ -213,6 +213,9 @@ Zenodo ─> 0 split + download ─> 1a preflight ─> 1b prepare ─> 1c preflig
                                                                                                     │
  7 score delivery <─ 6 deliver to becken-flt <─ 5 test once <─ 4c confirm <─ 4b Omega search <─ 4a the bar
    (held-back labels)    (bundle, unlabelled)    (Evals API)   (all 21 val.)   (Optimize API)   (threshold, FFT)
+                                 │
+                                 └─> 8 serve (/query, Dev, Staging): a window per query, checked against Stage 6
+                                                └─> 9 the app (app-serving/): the same, live in a browser
 ```
 
 Each preflight is a step of its own. It is read-only, prints PASS / WARN /
@@ -241,7 +244,18 @@ needs nothing else. The `osm` blueprint is resolved by
 its key on each deployment, the upload cache is kept per deployment, and every result
 and state file in `fit/out/` records its endpoint: `test.py` only picks this
 deployment's Stage 4c result, and `test.py` and `deliver.py` refuse to resume another
-deployment's run. Move `fit/out/` aside first to start a deployment from scratch.
+deployment's run. To start a deployment from scratch (Stages 4b–8), move `fit/out/`
+aside and keep two things: the bar's results, which are local and the same on every
+deployment, and the upload cache, which saves re-uploading what this deployment
+already has (the delivery alone is 15 GB):
+
+```sh
+mv fit/out fit/out-prod-1001          # any name
+mkdir fit/out && cp fit/out-prod-1001/bar_*.json fit/out-prod-1001/uploads.json fit/out/
+```
+
+Then run Stages 4b, 4c, 5, 6, 7 and 8 as below. Give the optimizations a name that
+says which run they belong to (`--name "LARCO Stage 4b four states (dev 1017)"`).
 
 ### Shortcut: skip Stages 0–3 with the packed role files
 
@@ -567,7 +581,7 @@ tail -f fit/out/optimize_4states.log
 ```
 
 This is the run behind the results: a
-16-trial random search over the full pool, about 3.5 hours. With no flags,
+16-trial random search over the full pool, about 3.5 hours (1.0 h on Dev on 2026-10-17). With no flags,
 `python fit/optimize.py --background` runs a single measurement trial
 (window 1,024, step 1,024, k 5, l1), logging to `fit/out/optimize.log`.
 
@@ -581,7 +595,8 @@ This is the run behind the results: a
 4. Prints each trial's macro-F1, F1 per state, windows scored and minutes,
    flags configurations sampled twice, and reports trial time as a fixed
    cost plus a cost per 1,000 windows (trials run one after another; ours
-   measured ≈ 11 min + 0.09 min per 1,000 windows).
+   measured ≈ 11 min + 0.09 min per 1,000 windows; on Dev on 2026-10-17,
+   ≈ 1.8 min + 0.10 min per 1,000 windows).
 
 **The search space** is the product of the values given, by flag or with
 `--pool full`:
@@ -660,6 +675,8 @@ so the test stays untouched.
 - **Uploads:** the 19 files not yet on the platform (2.56 GB).
   `--upload-jobs 3` keeps the uplink from saturating (see Stage 4b).
 - **Time:** one trial; ours took 44 minutes.
+- **Run it once.** A second launch is a second optimization, not a resume.
+  `fit/test.py` takes the latest all-21 result on this deployment.
 - **`fit/compare_bar.py`** reads the run's `validation_set` and compares it with
   the bar's all-21 score at the same window/step (0.7511 at 512 / 512).
 
@@ -762,7 +779,8 @@ matched no file, and failed runs.
   `fit/out/delivery_check/`, never mixed with the real delivery. It's a cheap
   way to see the output format before the full run.
 - **Time:** upload about 7–9 min (15 GB); runs about 2 min per full cotton cycle,
-  2 h 50 min for all 122 files in our first run and 1 h 33 min in our second.
+  2 h 50 min for all 122 files in our first run, 1 h 33 min in our second and
+  1 h 14 min on Dev on 2026-10-17.
   It varies with the platform's load.
 
 **Writes:** `fit/out/delivery/<file>.csv` (the platform's output rows:
@@ -800,14 +818,167 @@ cycles macro-F1 0.6927 fill 0.79 wash 0.93 spin 0.66 drain 0.38`.
 
 **Writes:** `fit/out/delivery/scores.json`, `fit/out/bar_delivery_w512_s512.json`.
 
+### Stage 8: serve it, one window per query (Dev and Staging)
+
+```sh
+python fit/serve.py                          # the quickstart's 5 becken-flt cycles, every window (~25 min)
+python fit/serve.py --files cold_cotton_0_0  # delivery files whose name contains these
+python fit/serve.py --all --max-windows 20   # the first 20 windows of each of the 122 files
+python fit/serve.py --windows-per-query 8    # up to 8 consecutive windows a query
+```
+
+Stage 6 delivers in batch: upload the files, run agents, download the outputs when
+they're done. **Agent serving** keeps an agent loaded and answers a window in one
+round trip, with no upload, queue or polling: what the machine's controller would
+call every 2.56 s with the latest 512 readings. It is on Dev
+(`https://platform.dev.u1.archetypeai.app`, 3 serving workers shared by everyone)
+and Staging (`https://platform.stage.u1.archetypeai.app`), for first internal
+tests, not prod; the
+[agent-serving example](https://github.com/archetypeai/agent-serving-example) has
+the calls and their limits. So Stages 4b–6 must have run on Dev or Staging
+(`fit/out/` records the endpoint).
+
+1. **Bundle:** of Stage 5's promoted blueprint itself, with `data_columns` (the 9
+   channels) and `timestamp_column: "timestamp"` as values: its source takes them
+   from the CSV header in batch, and a served query has none. The platform supplies
+   the `atai-records` serving connectors in place of the CSV source and sink.
+2. **Serving agent:** the bundle, run with `{"mode": "serving"}`.
+3. **Delivery files replayed a window at a time.** Every query carries one window,
+   512 rows of the 9 channels, one list per channel, and gets one record back:
+
+   ```json
+   {"finish_timestamp": 511, "invalid": "false", "p_drain": 0, "p_fill": 0.6451613, "p_spin": 0,
+    "p_wash": 0.3548387, "predicted_state": "fill", "start_timestamp": 0}
+   ```
+
+   A served agent keeps nothing between queries, so a query must hold the whole
+   window. The timestamps are row indices within the query, not times. By default
+   the 5 short cycles the quickstart delivers (3,178 windows), so the two examples'
+   replays can be compared; `--all` replays all 122 files (365,414 windows, about
+   two days at one window a query).
+4. **Every answer against Stage 6:** `predicted_state` and the four probabilities
+   (to within 10⁻⁴), and the macro-F1 against the held-back labels, served and
+   batch.
+5. **Cleanup:** the agent is cancelled and deleted, and the bundle deleted, however
+   the replay ends (Ctrl-C, SIGTERM and SIGHUP included); the ids stay in
+   `fit/out/serve_state.json` until then.
+
+**What you should see** (Dev, 2026-10-16):
+
+```
+served 3,178 windows of 5 file(s) in 3,178 queries, 1754 s
+  against the delivery (batch): predicted_state identical in 3,176/3,178, probabilities within 1e-4 in 3,170/3,178 (max difference 3.2e-02); invalid 0
+  latency per query: median 521 ms, p95 773 ms, max 2011 ms
+  served  macro-F1 0.7966  fill 0.90  wash 0.87  spin 0.69  drain 0.73
+  batch   macro-F1 0.7962  fill 0.90  wash 0.87  spin 0.69  drain 0.74
+  -> fit/out/serving/serve_5files_wpq1.csv / .json
+```
+
+On Dev on 2026-10-17, the same run took 1,608 s (median 433 ms, max 22 s) and
+matched in 3,171 windows instead of 3,170, with the same macro-F1s. With
+`--windows-per-query 8`, the same day:
+
+```
+served 3,178 windows of 5 file(s) in 399 queries, 827 s
+  against the delivery (batch): predicted_state identical in 3,176/3,178, probabilities within 1e-4 in 3,171/3,178 (max difference 3.2e-02); invalid 0
+  latency per query: median 1856 ms, p95 3200 ms, max 4936 ms
+  served  macro-F1 0.7966  fill 0.90  wash 0.87  spin 0.69  drain 0.73
+  batch   macro-F1 0.7962  fill 0.90  wash 0.87  spin 0.69  drain 0.74
+  -> fit/out/serving/serve_5files_wpq8.csv / .json
+```
+
+- **Served is batch, but for a neighbour now and then.** 3,170 of the 3,178 windows
+  answer exactly as Stage 6, every probability included. Each of the other 8 differs
+  by one vote of the 31 neighbours (a probability 1/31 = 0.032 off): one neighbour
+  swapped, most likely by the tiny float difference between served and batch
+  embeddings. 6 of them keep their state; 2 sat at a near-tie (12 votes against 12,
+  and 13 against 12) and changed it, for a macro-F1 0.0004 higher. It's the same kind
+  of difference as between two deployments (5 of 432,999 windows). The quickstart's
+  k 5 model, served the same way, answered all 3,178 windows exactly as batch.
+- **About 0.55 s a window** (0.5–0.7 s median, depending on Dev's load), so the 5
+  cycles take 25–35 minutes, about 4 times faster than the data, which arrives a
+  window every 2.56 s. More windows a query cost less per window, but the query
+  waits for them: `--windows-per-query 4` took 1.5 s a query (0.38 s a window), and
+  8 took 1.9 s (0.26 s a window, half the time of one a query), with the same answers.
+- **One `fit/serve.py` at a time.** Every run keeps its ids in
+  `fit/out/serve_state.json`, so a second run at once overwrites the first's, and
+  either's cleanup cancels the other's agent.
+- `fit/serve.py` exits 1 only if more than 0.1% of the states differ.
+
+**Writes:** `fit/out/serving/serve_5files_wpq1.csv` (a row per window) and `.json`
+(the summary).
+
+### Stage 9: watch it in a browser (Dev and Staging)
+
+```sh
+python fit/library_embeddings.py     # once: the library's embeddings, for the app's embedding space
+cd app-serving && npm install && npm run dev     # http://localhost:5182
+```
+
+Stage 8 in a browser: [`app-serving/`](app-serving/README.md) replays a becken-flt
+cycle at 200 Hz, a 512-row window every 2.56 s, through a serving agent of the
+Stage 5 model, and shows the state it calls (the machine drawn filling, washing,
+spinning or draining), the four probabilities, a timeline of the cycle, the
+embedding space and a log of state changes. Any of the 122 delivery files can be
+replayed.
+
+- **`fit/library_embeddings.py`:** the model is a registry artifact, so the library
+  it compares windows with can't be read back. This runs the 4 library files
+  through the promoted blueprint in batch with `output_embeddings: true` and writes
+  their 3,200 windows, on the 2 directions that best separate the four states, to
+  `app-serving/static/library-view.{json,bin}`.
+  Ids go to `fit/out/library_state.json`. The repo ships the view (from this
+  README's model), so run it again only after promoting another model.
+- **The app** holds a serving worker (one of Dev's 3) while it runs. It deletes its
+  agent and bundle when it stops (Ctrl-C or `npm run stop`); the ids sit in
+  `fit/out/app_serving_state.json` until then.
+
+Needs Node 20+ and mosquitto (`brew install mosquitto`). The app's README has the
+architecture, the settings and the ports.
+
+### Cleanup
+
+```sh
+python fit/cleanup.py            # what would be deleted, and what stays
+python fit/cleanup.py --yes      # delete it
+```
+
+It deletes, from the ids in `fit/out/`, Stage 6's delivery agents and their bundle
+(the bundle's own listing also finds the runs a rerun replaced; the outputs are
+already in `fit/out/delivery/`), Stage 8's serving agent and bundle if
+`fit/serve.py` was killed before it could (`kill -9`, a closed laptop), and Stage 9's:
+the app's serving agents and bundle if its bridge was killed the same way, and the
+library-embedding runs and their bundle. A running
+serving agent holds a serving worker (one of Dev's 3) until it is deleted, or released
+after 20 minutes idle. Agents go first, since a bundle that still has one answers 409,
+then bundles, then a served copy of the Stage 5 blueprint (`<key>-served-records`), if
+an earlier version made one. One object that won't delete doesn't stop the rest:
+they're listed at the end. **What stays:** the promoted blueprint (deleting it needs
+the admin role), and the optimizations and evals. After a cleanup,
+`fit/deliver.py --resume` can't collect again.
+
+To see whether a serving agent is still running (yours or anyone's):
+
+```sh
+set -a; source .env; set +a
+curl -s "$ATAI_API_ENDPOINT/agents/instances?status=running&limit=100" -H "Authorization: Bearer $ATAI_API_KEY" \
+  | jq -c '.data[] | select(.mode=="serving") | {id, blueprint, name, created_at}'
+```
+
+`status=running` filters on the server; `mode=serving` is ignored there, so `jq`
+picks the serving agents. `fit/serve.py`'s agent is named `LARCO serve`.
+
 ### If a result differs
 
 - **A FAIL you have looked at and want to keep for now** goes in
   `prep/acknowledged.py`, with the reason. It is then still printed, but it
   no longer blocks the next stage.
 - **On another deployment,** expect the same numbers to the fourth decimal,
-  with a handful of windows predicted differently (5 of 432,999 in our second run),
-  and a different Stage 4b draw.
+  with a handful of windows predicted differently (5 of 432,999 in our second run,
+  4 of 365,414 delivery windows on Dev on 2026-10-17), and a different Stage 4b draw.
+  Dev's draw on 2026-10-17 picked the same setting (0.7547); it also drew
+  256 / 1024, k 31, l1, uniform at 0.7559, whose margin over the bar (+0.032) is
+  larger than the chosen setting's (+0.014).
 - **Anything else that differs** from the expected results above means the
   inputs changed. Check `data/raw/` against `data/manifest.json`; Stage 1a's
   `files` check does exactly that.
@@ -885,12 +1056,27 @@ Found while building this example, and reproducing it on a second deployment:
   written.** In our second run, all 5 delivery runs did: each one's last file was
   still short at `completed`, and complete about a minute later.
   `deliver.py` counts a run as completed only once every file's predictions
-  reach that file's end.
+  reach that file's end. On Dev on 2026-10-17, two runs went further: they reported
+  `completed` with no error after 3.5 and 12 min, with outputs for only 1.4 and 4.8
+  of their 25 files, which never grew (`agt_3jyyxs6mbg9sx9te384g3tph66` /
+  `job_3m57dtapr4957vdbwa2t16bre0`, `agt_3j6zwkjj4z8rx8p5xbb9rs7twb` /
+  `job_1t185avc508mfr7xb6arbt62a8`). `deliver.py` warns after 10 minutes of waiting;
+  moving `fit/out/delivery/` aside and running again delivered all 5 runs in full.
 - **Results reproduce across deployments, to a few windows in 100,000.** The
   same setting on two deployments gave the same scores to the fourth
   decimal at every stage, and the same window counts; 5 of 432,999 test and
   delivery predictions differed. A random search (`--max-trials` below the
   space) draws different settings on each run, though.
+- **Served answers are batch's** (agent serving, Dev, 2026-10-16): on the 3,178 windows of 5 cycles,
+  every state and probability matched Stage 6's but 8 windows a neighbour's vote off
+  (k 31; 2 of them changed state at a near-tie), and the quickstart's k 5 model matched
+  on all 3,178. A rerun on 2026-10-17 matched in 3,171, at 1 and at 8 windows a query.
+  A served agent keeps nothing between queries, so each query carries the whole
+  512-row window, and it numbers the rows itself (0–511). An agent left without a
+  query for 20 minutes is released, and a query to it then answers 409.
+- **A bundle that still has agents can't be deleted** (409), even when they're
+  cancelled: delete its agents first. `GET /agents/instances?bundle_id=<bnd_…>`
+  lists every agent a bundle ran, including the attempts a rerun replaced.
 
 ## Repo layout
 
@@ -919,4 +1105,8 @@ Found while building this example, and reproducing it on a second deployment:
 | `fit/test.py` | Stage 5: promote the Stage 4c trial, test once with the Evals API → `fit/out/test.json` |
 | `fit/deliver.py` | Stage 6: bundle from the Stage 5 blueprint, runs over becken-flt in batches → `fit/out/delivery/<file>.csv` |
 | `fit/score_delivery.py` | Stage 7: the delivered predictions against the held-back labels → `fit/out/delivery/scores.json` |
+| `fit/serve.py` | Stage 8 (Dev, Staging): a serving agent of the Stage 5 blueprint, a window per query, against Stage 6 → `fit/out/serving/` |
+| `fit/library_embeddings.py` | Stage 9, once: the library through the promoted blueprint with embeddings on, PCA 1-2 → `app-serving/static/library-view.{json,bin}` |
+| `app-serving/` | Stage 9 (Dev, Staging): the browser app, with a serving bridge and a replayer ([its README](app-serving/README.md)) |
+| `fit/cleanup.py` | delete the agents and bundles of Stages 6, 8 and 9, from the ids in `fit/out/` |
 | `data/` | the listing, split, licence, metadata and downloaded cycles (`data/raw/` gitignored) |
