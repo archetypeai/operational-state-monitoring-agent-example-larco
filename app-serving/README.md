@@ -6,10 +6,9 @@ agent** on the Archetype AI platform calls for each 2.56 s window: fill, wash,
 spin or drain. It is Stage 8 (`fit/serve.py`) made visible: the same bundle of
 the promoted blueprint and the same queries, one window at a time, as it arrives.
 
-> **Dev and Staging.** Agent serving is on Dev (`https://platform.dev.u1.archetypeai.app`), with 3
-> serving workers shared by everyone, and Staging (`https://platform.stage.u1.archetypeai.app`);
-> not prod. The app holds a worker while it runs and gives it back when it stops
-> ([Stop and clean up](#stop-and-clean-up)).
+> **Prod, Dev and Staging.** Verified on prod (`https://platform.u1.archetypeai.app`) on
+> 2026-10-30; Dev has 3 serving workers shared by everyone. The app holds a worker while it
+> runs and gives it back when it stops ([Stop and clean up](#stop-and-clean-up)).
 
 - **Input:** the cycle's nine accelerometer channels (back, side and top, x/y/z):
   each window's trace, its vibration level in g, and the level over the last
@@ -89,7 +88,7 @@ be called another.
 
 ## Run it
 
-Needs Stage 5 run on Dev or Staging (`fit/out/test_state.json`), the role files in `data/roles/`, Node 20+ and
+Needs Stage 5 run on the same deployment (`fit/out/test_state.json`), the role files in `data/roles/`, Node 20+ and
 mosquitto (`brew install mosquitto`).
 
 ```sh
