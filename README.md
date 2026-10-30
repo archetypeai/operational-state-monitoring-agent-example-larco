@@ -214,7 +214,7 @@ Zenodo ─> 0 split + download ─> 1a preflight ─> 1b prepare ─> 1c preflig
  7 score delivery <─ 6 deliver to becken-flt <─ 5 test once <─ 4c confirm <─ 4b Omega search <─ 4a the bar
    (held-back labels)    (bundle, unlabelled)    (Evals API)   (all 21 val.)   (Optimize API)   (threshold, FFT)
                                  │
-                                 └─> 8 serve (/query, Dev, Staging): a window per query, checked against Stage 6
+                                 └─> 8 serve (/query): a window per query, checked against Stage 6
                                                 └─> 9 the app (app-serving/): the same, live in a browser
 ```
 
@@ -818,7 +818,7 @@ cycles macro-F1 0.6927 fill 0.79 wash 0.93 spin 0.66 drain 0.38`.
 
 **Writes:** `fit/out/delivery/scores.json`, `fit/out/bar_delivery_w512_s512.json`.
 
-### Stage 8: serve it, one window per query (Dev and Staging)
+### Stage 8: serve it, one window per query
 
 ```sh
 python fit/serve.py                          # the quickstart's 5 becken-flt cycles, every window (~25 min)
@@ -830,12 +830,11 @@ python fit/serve.py --windows-per-query 8    # up to 8 consecutive windows a que
 Stage 6 delivers in batch: upload the files, run agents, download the outputs when
 they're done. **Agent serving** keeps an agent loaded and answers a window in one
 round trip, with no upload, queue or polling: what the machine's controller would
-call every 2.56 s with the latest 512 readings. It is on Dev
-(`https://platform.dev.u1.archetypeai.app`, 3 serving workers shared by everyone)
-and Staging (`https://platform.stage.u1.archetypeai.app`), for first internal
-tests, not prod; the
+call every 2.56 s with the latest 512 readings. It runs on prod
+(`https://platform.u1.archetypeai.app`), Dev (3 serving workers shared by everyone)
+and Staging; the
 [agent-serving example](https://github.com/archetypeai/agent-serving-example) has
-the calls and their limits. So Stages 4b–6 must have run on Dev or Staging
+the calls and their limits. Serve on the deployment Stages 4b–6 ran on
 (`fit/out/` records the endpoint).
 
 1. **Bundle:** of Stage 5's promoted blueprint itself, with `data_columns` (the 9
@@ -875,7 +874,10 @@ served 3,178 windows of 5 file(s) in 3,178 queries, 1754 s
 ```
 
 On Dev on 2026-10-17, the same run took 1,608 s (median 433 ms, max 22 s) and
-matched in 3,171 windows instead of 3,170, with the same macro-F1s. With
+matched in 3,171 windows instead of 3,170, with the same macro-F1s. On prod on
+2026-10-30, after Stages 4c–7 there gave this README's numbers: 1,721 s (median
+524 ms, p95 663 ms, max 1,573 ms), the state identical in 3,177/3,178 and the
+probabilities in 3,171, and served and batch both at macro-F1 0.7966. With
 `--windows-per-query 8`, the same day:
 
 ```
@@ -895,7 +897,7 @@ served 3,178 windows of 5 file(s) in 399 queries, 827 s
   and 13 against 12) and changed it, for a macro-F1 0.0004 higher. It's the same kind
   of difference as between two deployments (5 of 432,999 windows). The quickstart's
   k 5 model, served the same way, answered all 3,178 windows exactly as batch.
-- **About 0.55 s a window** (0.5–0.7 s median, depending on Dev's load), so the 5
+- **About 0.55 s a window** (0.4–0.6 s median on Dev and prod, depending on load), so the 5
   cycles take 25–35 minutes, about 4 times faster than the data, which arrives a
   window every 2.56 s. More windows a query cost less per window, but the query
   waits for them: `--windows-per-query 4` took 1.5 s a query (0.38 s a window), and
@@ -908,7 +910,7 @@ served 3,178 windows of 5 file(s) in 399 queries, 827 s
 **Writes:** `fit/out/serving/serve_5files_wpq1.csv` (a row per window) and `.json`
 (the summary).
 
-### Stage 9: watch it in a browser (Dev and Staging)
+### Stage 9: watch it in a browser
 
 ```sh
 python fit/library_embeddings.py     # once: the library's embeddings, for the app's embedding space
@@ -1070,7 +1072,8 @@ Found while building this example, and reproducing it on a second deployment:
 - **Served answers are batch's** (agent serving, Dev, 2026-10-16): on the 3,178 windows of 5 cycles,
   every state and probability matched Stage 6's but 8 windows a neighbour's vote off
   (k 31; 2 of them changed state at a near-tie), and the quickstart's k 5 model matched
-  on all 3,178. A rerun on 2026-10-17 matched in 3,171, at 1 and at 8 windows a query.
+  on all 3,178. A rerun on 2026-10-17 matched in 3,171, at 1 and at 8 windows a query,
+  and prod on 2026-10-30 in 3,171 (the state in 3,177).
   A served agent keeps nothing between queries, so each query carries the whole
   512-row window, and it numbers the rows itself (0–511). An agent left without a
   query for 20 minutes is released, and a query to it then answers 409.
@@ -1105,8 +1108,8 @@ Found while building this example, and reproducing it on a second deployment:
 | `fit/test.py` | Stage 5: promote the Stage 4c trial, test once with the Evals API → `fit/out/test.json` |
 | `fit/deliver.py` | Stage 6: bundle from the Stage 5 blueprint, runs over becken-flt in batches → `fit/out/delivery/<file>.csv` |
 | `fit/score_delivery.py` | Stage 7: the delivered predictions against the held-back labels → `fit/out/delivery/scores.json` |
-| `fit/serve.py` | Stage 8 (Dev, Staging): a serving agent of the Stage 5 blueprint, a window per query, against Stage 6 → `fit/out/serving/` |
+| `fit/serve.py` | Stage 8: a serving agent of the Stage 5 blueprint, a window per query, against Stage 6 → `fit/out/serving/` |
 | `fit/library_embeddings.py` | Stage 9, once: the library through the promoted blueprint with embeddings on, PCA 1-2 → `app-serving/static/library-view.{json,bin}` |
-| `app-serving/` | Stage 9 (Dev, Staging): the browser app, with a serving bridge and a replayer ([its README](app-serving/README.md)) |
+| `app-serving/` | Stage 9: the browser app, with a serving bridge and a replayer ([its README](app-serving/README.md)) |
 | `fit/cleanup.py` | delete the agents and bundles of Stages 6, 8 and 9, from the ids in `fit/out/` |
 | `data/` | the listing, split, licence, metadata and downloaded cycles (`data/raw/` gitignored) |
