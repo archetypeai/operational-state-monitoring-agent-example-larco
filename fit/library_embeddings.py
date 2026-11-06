@@ -63,7 +63,8 @@ def embeddings_blueprint(test, state, save):
     if state.get("embeddings_blueprint"):
         return state["embeddings_blueprint"]
     if not state.get("embeddings_optimization"):
-        opt, tid = test["model"]["optimization"], test["model"]["trial"]
+        model = json.load(open(os.path.join(OUT, "test.json")))["model"]   # test_state.json has no trial id
+        opt, tid = model["optimization"], model["trial"]
         w, st, k, metric, weights = trial_setting(next(t for t in list_trials(opt) if t["id"] == tid))
         base = json.load(open(os.path.join(OUT, "project_state.json")))["base"]
         bp = request("GET", f"{agents()}/blueprints/{base['id']}")
