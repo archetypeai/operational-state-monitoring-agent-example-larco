@@ -199,9 +199,24 @@ The numbers in the [README](README.md) were measured with bundles, on production
 On this branch, Stage 4b was rerun from scratch on a deployment that serves the new
 calls: its 16-trial search (a new random draw) scored 0.68–0.76 on the 6 search cycles,
 best 0.7562 (window 512, step 1,024, k 31, cosine), against 0.7547 for the README's best.
-Stages 4c–9 run the same code as the quickstart, whose rerun reproduced every bundle
-number. They will be rerun here, and this section filled in, when production serves the
-new calls.
+Stages 4c–9 were then rerun on the same deployment, at the README's point (window 512,
+step 512, k 31, cosine, uniform):
+
+| Stage | README (bundles) | This branch |
+|---|---|---|
+| 4c, all 21 validation cycles | 0.7562, bar 0.7511 | 0.7562, bar 0.7511 |
+| 5, test, all 18 cycles | 0.7537, bar 0.7365 | 0.7537 (67,585 windows), bar 0.7365 |
+| 5, without `cold_cotton_40_2` / that cycle alone | 0.7481 / 0.8584 | 0.7481 / 0.8584 |
+| 6, delivery | 122 files | 122/122 files, 365,414 windows, 0 invalid |
+| 7, delivery score | 0.7008, bar 0.6927 | 0.7008, bar 0.6927 |
+| 8, served vs batch: state identical / probabilities within 1e-4 | 3,176 / 3,170 of 3,178 | 3,178 / 3,172 of 3,178 |
+| 8, macro-F1 served / batch | 0.7966 / 0.7962 | 0.7966 / 0.7966 |
+| 8, latency median / p95 / max | 521 / 773 / 2,011 ms | 414 / 486 / 629 ms |
+| 9, library view | 3,200 windows, 79% nearest their own state's centre | the same, every value within 3e-5 |
+
+Stage 8's few differing windows vary from run to run with bundles too (3,176–3,177 and
+3,170–3,171 in the README's runs). The app ran end to end on the new embeddings
+blueprint and removed its session, deployment and package when stopped.
 
 ## Moving your own scripts
 
