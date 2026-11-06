@@ -2,13 +2,12 @@
 
 A browser workbench that replays one becken-flt cycle, the faulty second unit
 the model never saw a cycle of, at 200 Hz, and shows the state a **serving
-agent** on the Archetype AI platform calls for each 2.56 s window: fill, wash,
-spin or drain. It is Stage 8 (`fit/serve.py`) made visible: the same bundle of
-the promoted blueprint and the same queries, one window at a time, as it arrives.
+session** on the Archetype AI platform calls for each 2.56 s window: fill, wash,
+spin or drain. It is Stage 8 (`fit/serve.py`) made visible: the same promoted
+blueprint and the same queries, one window at a time, as it arrives.
 
-> **Prod, Dev and Staging.** Verified on prod (`https://platform.u1.archetypeai.app`) on
-> 2026-10-30; Dev has 3 serving workers shared by everyone. The app holds a worker while it
-> runs and gives it back when it stops ([Stop and clean up](#stop-and-clean-up)).
+> The app holds a serving deployment while it runs and deletes it when it stops
+> ([Stop and clean up](#stop-and-clean-up)).
 
 - **Input:** the cycle's nine accelerometer channels (back, side and top, x/y/z):
   each window's trace, its vibration level in g, and the level over the last
@@ -41,16 +40,20 @@ the promoted blueprint and the same queries, one window at a time, as it arrives
   time: 512 rows, z-scored as the model was fitted, to `larco/sensors`. For the page
   it sends each window's level and a decimated trace in g. It sends a window every
   2.56 s divided by the speed, but never more than a few ahead of the agent's
-  answers, and none while the bridge has no running agent.
+  answers, and none while the bridge has no running session.
 - **The serving bridge** (`scripts/serving-bridge.js`) is the only process that
   talks to the platform, with the key from the repo's `.env`; the browser never
-  sees it. At start it creates a bundle of the promoted blueprint, as Stage 8 does
-  (`data_columns`, `timestamp_column: "timestamp"`), with `output_embeddings: true`,
-  and runs it in serving mode; the platform supplies the serving connectors. Each query carries 1 to 8 whole consecutive windows
-  (Settings → Windows per query), and each record goes back to `larco/results` with
-  its window's cycle, index and timestamps (the served agent numbers rows within the
-  query). `larco/agent` (retained) says what it is doing: starting, running,
-  waiting for a free worker, replacing a released agent, stopped.
+  sees it. At start it packages the embeddings blueprint `fit/library_embeddings.py`
+  made from Stage 5's (the same configuration with `output_embeddings: true`; a
+  package can't turn an output on), deploys it as `serving` and opens a session on
+  the deployment; the platform supplies the serving connectors. The blueprint
+  already pins `data_columns` and `timestamp_column` (a served query has no CSV
+  header). Without an embeddings blueprint for the current Stage 5 blueprint, it
+  serves Stage 5's and says so: the app works, but the embedding trail stays empty. Each query carries 1 to 8 whole
+  consecutive windows (Settings → Windows per query), and each record goes back to
+  `larco/results` with its window's cycle, index and timestamps (the served agent
+  numbers rows within the query). `larco/agent` (retained) says what it is doing:
+  starting, running, waiting for a free worker, replacing an ended session, stopped.
 - **The page** subscribes to the broker over WebSockets; there is no backend.
 
 **The served agent is the batch model.** Stage 8 measured 3,176 of 3,178 states
@@ -70,11 +73,14 @@ loads it at start; without it the tab says so and the rest of the app works. To
 recompute it, for instance after promoting another model:
 
 ```sh
-python fit/library_embeddings.py      # 4 batch runs, one per library file, then the view
+python fit/library_embeddings.py      # the embeddings blueprint, 4 batch sessions, then the view
 ```
 
-The runs and their bundle go in `fit/out/library_state.json`, so a rerun resumes
-and `python fit/cleanup.py --yes` deletes them.
+It first makes the embeddings blueprint the bridge serves: a 1-trial optimization at
+Stage 5's trial's point with `output_embeddings: true`, then promoted. Then a package
+of it, one batch deployment and a session per library file. The ids go in
+`fit/out/library_state.json`, so a rerun resumes, and `python fit/cleanup.py --yes`
+deletes the sessions, deployment and package (it keeps the embeddings blueprint).
 
 The two directions are the ones that best separate the four states (each
 embedding at unit length, as the model compares by cosine; PCA to 50 dimensions;
@@ -112,8 +118,8 @@ The agent takes a minute or so to start; the badge in the menubar turns to
 ## Stop and clean up
 
 **Stop it once:** Ctrl-C in the `npm run dev` terminal, or `npm run stop` from
-another. The bridge cancels and deletes its agent and deletes its bundle, which
-takes a few platform calls; `npm run stop` waits for it and checks the ports are
+another. The bridge cancels its session, stops its deployment, and deletes both and
+its package, which takes a few platform calls; `npm run stop` waits for it and checks the ports are
 free.
 
 **Check nothing is left:**
@@ -123,9 +129,9 @@ ls ../fit/out/app_serving_state.json      # gone once the bridge cleaned up
 ```
 
 If it is still there (a `kill -9`, a closed laptop), the bridge couldn't finish:
-`python fit/cleanup.py --yes` from the repo deletes what it lists. A serving agent
-left running holds a worker (one of Dev's 3) until it is deleted, or released after
-20 minutes without a query. The bridge refuses to start while the file is there.
+`python fit/cleanup.py --yes` from the repo deletes what it lists. A serving
+deployment left up holds a worker until it is stopped. The bridge refuses to start
+while the file is there.
 
 ## Ports
 
@@ -141,7 +147,7 @@ it: run one at a time.
 
 | path                                                     | what it is                                                                              |
 | -------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| `scripts/serving-bridge.js`                              | the bridge: the bundle, the serving agent, queries, release and cleanup                 |
+| `scripts/serving-bridge.js`                              | the bridge: the package, the serving deployment and session, queries and cleanup        |
 | `scripts/replayer.js`                                    | the replay: windows and pace |
 | `scripts/common.js`                                      | the repo path, the broker, the two `.env` files                                         |
 | `scripts/run-broker.sh`, `scripts/stop.sh`, `mosquitto/` | the broker; stop everything and check the ports                                         |

@@ -19,7 +19,13 @@ Step > window skips records and needs --allow-gaps. After the run it prints ever
 trial's scores, flags configurations sampled twice, and reports trial time (a fixed cost
 plus a cost per 1,000 windows).
 
-Writes fit/out/optimize_<optimization id>.json. Long runs: add --background, which
+The optimization searches the example's own copy of `osm`, in its project (fit/atai.py,
+base_blueprint), so what it promotes, and every package, deployment and session after it,
+lands in that project. A package runs a blueprint exactly as promoted, so the values serving
+needs are pinned here: `data_columns` and `timestamp_column` (batch reads them from the CSV
+header, the serving source from values), with `states` where the blueprint takes them.
+
+Writes fit/out/optimize_<optimization id>.json and fit/out/project_state.json. Long runs: add --background, which
 relaunches the same command under nohup + caffeinate with output to fit/out/optimize.log.
 
     python fit/optimize.py --dry-run                            # the plan: no uploads, no jobs
@@ -40,10 +46,10 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from atai import agents, api_base, load_dotenv, request, states_override, trial_f1, trial_setting, upload_file, wait_optimization  # noqa: E402
+from atai import agents, api_base, base_blueprint, load_dotenv, request, trial_f1, trial_setting, upload_file, wait_optimization  # noqa: E402
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "prep"))
 from background import add_background_flag, maybe_detach  # noqa: E402
-from states import STATES  # noqa: E402
+from states import CHANNELS, STATES  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROLES = os.path.join(ROOT, "data", "roles")
@@ -53,6 +59,16 @@ BLUEPRINT_ID = "osm"     # the canonical blueprint's key: each deployment resolv
 # The exhaustive pool (Stage 4b), limited to values known to work on the platform.
 FULL_POOL = {"windows": [256, 512, 1024], "steps": [256, 512, 1024], "k": [1, 3, 5, 7, 9, 15, 21, 31],
              "metrics": ["l1", "cosine"], "weights": ["uniform", "distance"]}
+
+
+def pinned_values(blueprint, extra=None):
+    """The optimization's `overrides`: the columns (the serving source reads them from values),
+    the states where the blueprint takes them (newer osm blueprints do; older ones read them
+    from the data), and any `extra` values, e.g. output_embeddings."""
+    values = {"data_columns": CHANNELS, "timestamp_column": "timestamp", **(extra or {})}
+    if "states" in ((blueprint.get("document") or {}).get("values") or {}):
+        values["states"] = STATES
+    return {"values": values}
 
 
 def log(msg):
@@ -237,13 +253,14 @@ def main():
                                 "inputs": [{"type": "file", "id": ids[p], "format": "csv"}],
                                 "ground_truth": {"state": {"from": {"column": "label"}, "downsampling": "last_record"}}}
                                for p in validation]
-        bp = request("GET", f"{agents()}/blueprints/{args.blueprint}")
+        base = base_blueprint(OUT, args.blueprint, log=log)
+        bp = request("GET", f"{agents()}/blueprints/{base['id']}")
         stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-        opt = request("POST", f"{agents()}/optimizations", body={
-            "name": f"{args.name} {stamp}", "blueprint_id": bp["id"], "objective": "macro_f1",
-            "search_space": space, "budget": {"max_trials": args.max_trials or len(grid)},
-            "training_examples": training, "validation_examples": validation_examples,
-            **states_override(bp, training)})
+        body = {"name": f"{args.name} {stamp}", "blueprint_id": bp["id"], "objective": "macro_f1",
+                "search_space": space, "budget": {"max_trials": args.max_trials or len(grid)},
+                "training_examples": training, "validation_examples": validation_examples,
+                "overrides": pinned_values(bp)}
+        opt = request("POST", f"{agents()}/optimizations", body=body)
         opt_id = opt["id"]
         log(f"optimization {opt_id} created (collect later with --resume {opt_id}) on {api_base()}")
 
