@@ -26,7 +26,10 @@ def load_dotenv(path=os.path.join(ROOT, ".env")):
         if line and not line.startswith("#") and "=" in line:
             key, _, value = line.partition("=")
             if not os.environ.get(key.strip()):     # unset, or exported but empty
-                os.environ[key.strip()] = value.strip()
+                value = value.strip()
+                if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
+                    value = value[1:-1]               # KEY="value" or KEY='value'
+                os.environ[key.strip()] = value
 
 
 def api_base():
