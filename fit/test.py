@@ -50,16 +50,8 @@ def stage_4c():
     return max(runs, key=lambda r: r["optimization"]["created_at"])["optimization"]["id"]
 
 
-def key_for(trial):
-    """Named after the setting, and unique per trial: a rerun, or the embeddings blueprint at
-    the same setting, never asks for a key that is taken."""
-    w, st, k, metric, weights = trial_setting(trial)
-    return f"osm-larco-w{w}-s{st}-{metric}-k{k}-{weights}-{trial['id'][-6:]}"
-
-
-def blueprint(opt, trial, name=None):
-    key = key_for(trial)
-    if trial.get("promoted_blueprint"):  # promoted already, perhaps under the platform's key
+def blueprint(opt, trial, key=None, name=None):
+    if trial.get("promoted_blueprint"):
         # by id: a key registered in a project resolves only with ?project_id=
         return request("GET", f"{agents()}/blueprints/{trial['promoted_blueprint']['id']}")
     w, st, k, metric, weights = trial_setting(trial)
@@ -67,13 +59,8 @@ def blueprint(opt, trial, name=None):
     body = {"name": name or f"OSM LARCO washing machine (w{w}, s{st}, {metric}, k{k}, {weights})",
         "description": f"Stage 5 model: window {w}, step {st}, {metric}, k {k}, {weights}; "
                        f"library = 4 files, 400 windows per state, 54 becken cycles."}
-    try:
-        bp = request("POST", url, body={"blueprint_key": key, **body})
-    except RuntimeError as e:
-        # choosing the key needs the admin role (a free-trial org has none): let the platform choose it
-        if "(403)" not in str(e) or "blueprint_key" not in str(e):
-            raise
-        bp = request("POST", url, body=body)
+    # the platform's key unless one is asked for: choosing it needs the admin role outside projects
+    bp = request("POST", url, body={**body, "blueprint_key": key} if key else body)
     log(f"promoted {trial['id']} -> {bp['blueprint_key']} ({bp['id']})")
     return bp
 
@@ -97,6 +84,7 @@ def scores(cm):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--optimization", metavar="OPT_ID", help="the Stage 4c optimization (default: the latest in fit/out/)")
+    ap.add_argument("--blueprint-key", help="promote under this key (needs the admin role outside projects); default: the platform's, <blueprint>-otr_<trial id>")
     ap.add_argument("--upload-jobs", type=int, default=3)
     add_background_flag(ap, default_log="fit/out/test.log")
     args = ap.parse_args()
@@ -119,7 +107,7 @@ def main():
     log(f"model: {OPT} trial {trial['id']} (w {w}, step {st}, k {k}, {metric}, {weights}; "
         f"all-21 validation macro-F1 {trial['objective_value']:.4f})")
     if "blueprint" not in state:
-        bp = blueprint(OPT, trial)
+        bp = blueprint(OPT, trial, args.blueprint_key)
         state["blueprint"] = {"id": bp["id"], "key": bp["blueprint_key"]}
         save()
 

@@ -701,9 +701,9 @@ python fit/baseline_bar.py --window 512 --step 512 --test   # the bar on the sam
 **What `fit/test.py` does** (platform only):
 1. Promotes the Stage 4c trial (this deployment's latest Stage 4c result in
    `fit/out/`, or `--optimization opt_...`:
-   512 / 512, k 31, cosine, uniform, trained on the 4 library files) to the
-   blueprint `osm-larco-w512-s512-cosine-k31-uniform-<last 6 of the trial id>` (named
-   after its setting, unique per trial), or reuses it if it was already promoted. It
+   512 / 512, k 31, cosine, uniform, trained on the 4 library files) to a
+   blueprint under the platform's key, `larco-otr_<trial>`, or reuses it if it was
+   already promoted. `--blueprint-key` chooses the key, which needs the admin role. It
    lands in the project (`LARCO OSM`) that Stage 4's optimizations searched.
 2. Uploads the 23 test files (18 cycles, whole), 3 at a time.
 3. Submits two evals together: all 23 files (the test number), and the files
@@ -751,9 +751,9 @@ python fit/deliver.py --resume                           # if the poller died: c
 **What it does:**
 1. Uploads the 122 delivery files (all 106 becken-flt cycles, whole, no
    labels; about 15 GB), 3 at a time, cached.
-2. Packages the Stage 5 blueprint (in `fit/out/test_state.json`), unchanged: a package
-   carries no values, so it runs at the trial's window and step with the columns
-   Stage 4 pinned. Then deploys the package as `batch`.
+2. Packages the Stage 5 blueprint (in `fit/out/test_state.json`; `larco-otr_<trial>`),
+   unchanged: a package carries no values, so it runs at the trial's window and step with
+   the columns Stage 4 pinned. Then deploys the package as `batch`.
 3. Runs it over the files in sessions (`--files-per-run`, default 25): the 122
    files, which are the 106 cycles (some split into segments at recording
    gaps, Stage 1b), go out as 5 sessions of 25, 25, 25, 25 and 22 files. Through

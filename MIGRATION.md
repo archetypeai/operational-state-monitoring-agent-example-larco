@@ -151,10 +151,11 @@ Statuses: package `building → ready | failed`; deployment `deploying → ready
    windowing. The app's bridge serves the same blueprint, when it was made from the
    current Stage 5 blueprint.
 
-6. **A promoted key names its trial.** `fit/test.py` promotes under
-   `osm-larco-w<window>-s<step>-<metric>-k<k>-<weights>-<last 6 of the trial id>`. Without
-   the trial id, Stage 9's embeddings blueprint (the same point, a different trial)
-   and a rerun's Stage 5 would ask for a key already taken in the project.
+6. **Let the platform choose the key.** `fit/test.py` and `fit/library_embeddings.py`
+   promote without a `blueprint_key`, and the platform keys each blueprint after the
+   copy and its trial, `larco-otr_<trial id>`, so Stage 5's blueprint, Stage 9's
+   embeddings blueprint and a rerun's never ask for a key that is taken.
+   `--blueprint-key` on `fit/test.py` chooses one, which takes the admin role.
 
 7. **Look blueprints up by id.** `GET /blueprints/{key}` resolves a key registered in a
    project only with `?project_id=`; the scripts and the bridge use the `blp_` id.
@@ -163,8 +164,8 @@ Statuses: package `building → ready | failed`; deployment `deploying → ready
    have a fallback:
    - `POST /blueprints` (registering an edited copy of a promoted blueprint, e.g. with
      embeddings on) takes the admin role; the 1-trial optimization doesn't;
-   - choosing `blueprint_key` on promote can take it too: `fit/test.py` tries its own key
-     and, on a 403, lets the platform choose (`larco-<trial id>`).
+   - choosing `blueprint_key` on promote can take it too: the scripts send none unless
+     asked (item 6).
 
 9. **A session's result `ref` is a root path.** `/sessions/{id}/results` returns
    `ref: "/api/files/<fil_…>/content"`, which already includes `/api`: resolve it against

@@ -92,7 +92,7 @@ def embeddings_blueprint(test, state, save):
     if opt["status"] != "completed" or not trial:
         sys.exit(f"{opt['id']} is {opt['status']} with no completed trial: move fit/out/library_state.json aside to try again")
     w, st, k, metric, weights = trial_setting(trial)
-    bp = promote(opt["id"], trial, f"OSM LARCO washing machine, embeddings on (w{w}, s{st}, {metric}, k{k}, {weights})")
+    bp = promote(opt["id"], trial, name=f"OSM LARCO washing machine, embeddings on (w{w}, s{st}, {metric}, k{k}, {weights})")
     state["embeddings_blueprint"] = {"id": bp["id"], "key": bp["blueprint_key"]}
     save()
     return state["embeddings_blueprint"]
