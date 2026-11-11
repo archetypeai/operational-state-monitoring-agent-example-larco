@@ -3,6 +3,12 @@
 > The full study. For a short version that runs the same lifecycle on 19 cycles, see
 > the [quickstart](https://github.com/archetypeai/operational-state-monitoring-agent-example-larco-quickstart).
 
+> **Agent Lifecycle 2.0:** Stages 6–9 run on projects, packages, deployments and
+> sessions; bundles and instances are being removed from the platform. What changed,
+> and how to move your own scripts: [MIGRATION.md](MIGRATION.md). Rerun that way
+> (Stages 4c–9, on dev and on staging), the results below came out the same; the
+> comparison is in [MIGRATION.md](MIGRATION.md#results).
+
 ## TL;DR
 
 - **What:** an OSM agent that labels each 2.56 s window of a washing machine's
@@ -212,9 +218,9 @@ The platform's rules, and how this example meets them:
 Zenodo ─> 0 split + download ─> 1a preflight ─> 1b prepare ─> 1c preflight ─> 2 role files ─> 3 preflight
                                                                                                     │
  7 score delivery <─ 6 deliver to becken-flt <─ 5 test once <─ 4c confirm <─ 4b Omega search <─ 4a the bar
-   (held-back labels)    (bundle, unlabelled)    (Evals API)   (all 21 val.)   (Optimize API)   (threshold, FFT)
+   (held-back labels)   (package, unlabelled)   (Evals API)   (all 21 val.)   (Optimize API)   (threshold, FFT)
                                  │
-                                 └─> 8 serve (/query): a window per query, checked against Stage 6
+                                 └─> 8 serve (a serving session): a window per query, checked against Stage 6
                                                 └─> 9 the app (app-serving/): the same, live in a browser
 ```
 
@@ -698,8 +704,9 @@ python fit/baseline_bar.py --window 512 --step 512 --test   # the bar on the sam
 1. Promotes the Stage 4c trial (this deployment's latest Stage 4c result in
    `fit/out/`, or `--optimization opt_...`:
    512 / 512, k 31, cosine, uniform, trained on the 4 library files) to a
-   blueprint under the platform's key, `osm-otr_<trial>`, or reuses it if it was
-   already promoted. `--blueprint-key` chooses the key, which needs the admin role.
+   blueprint under the platform's key, `larco-otr_<trial>`, or reuses it if it was
+   already promoted. `--blueprint-key` chooses the key, which needs the admin role. It
+   lands in the project (`LARCO OSM`) that Stage 4's optimizations searched.
 2. Uploads the 23 test files (18 cycles, whole), 3 at a time.
 3. Submits two evals together: all 23 files (the test number), and the files
    of `cold_cotton_40_2` alone, the one test cycle seen in exploration. The
@@ -746,14 +753,17 @@ python fit/deliver.py --resume                           # if the poller died: c
 **What it does:**
 1. Uploads the 122 delivery files (all 106 becken-flt cycles, whole, no
    labels; about 15 GB), 3 at a time, cached.
-2. Creates one bundle from the Stage 5 blueprint (in `fit/out/test_state.json`;
-   `osm-otr_<trial>`), unchanged.
-3. Runs it over the files in batches (`--files-per-run`, default 25): the 122
+2. Packages the Stage 5 blueprint (in `fit/out/test_state.json`; `larco-otr_<trial>`),
+   unchanged: a package carries no values, so it runs at the trial's window and step with
+   the columns Stage 4 pinned. Then deploys the package as `batch`.
+3. Runs it over the files in sessions (`--files-per-run`, default 25): the 122
    files, which are the 106 cycles (some split into segments at recording
-   gaps, Stage 1b), go out as 5 runs of 25, 25, 25, 25 and 22 files. All five
-   start at once and show `running`, but the platform processed them one at a
-   time: in our first run they finished 25–50 min apart, 2 h 50 min in all. Every run id is saved in `fit/out/delivery/runs.json` as soon as it
-   starts. A rerun collects those runs instead of starting new ones.
+   gaps, Stage 1b), go out as 5 sessions of 25, 25, 25, 25 and 22 files. Through
+   bundles, all five started at once and showed `running`, but the platform
+   processed them one at a time: they finished 25–50 min apart, 2 h 50 min in all.
+   The package, deployment and every session id are saved in
+   `fit/out/delivery/runs.json` as soon as each exists, before the script waits on
+   it. A rerun collects those sessions instead of starting new ones.
 4. Downloads every run's output and writes one predictions CSV per delivery
    file. A run can report `completed` while its last output is still being
    written, so a run counts as completed only once every file's predictions
@@ -837,11 +847,14 @@ and Staging; the
 the calls and their limits. Serve on the deployment Stages 4b–6 ran on
 (`fit/out/` records the endpoint).
 
-1. **Bundle:** of Stage 5's promoted blueprint itself, with `data_columns` (the 9
-   channels) and `timestamp_column: "timestamp"` as values: its source takes them
-   from the CSV header in batch, and a served query has none. The platform supplies
-   the `atai-records` serving connectors in place of the CSV source and sink.
-2. **Serving agent:** the bundle, run with `{"mode": "serving"}`.
+1. **Package:** of Stage 5's promoted blueprint itself. A package carries no values,
+   so `data_columns` (the 9 channels) and `timestamp_column: "timestamp"` were pinned
+   at Stage 4: the source takes them from the CSV header in batch, and a served query
+   has none. The platform supplies the `atai-records` serving connectors in place of
+   the CSV source and sink.
+2. **Serving deployment and session:** the package deployed as `serving` (the agent
+   placed on a worker and loaded, seconds), and a session opened on it, queried at
+   `POST /api/agents/sessions/{id}/query`.
 3. **Delivery files replayed a window at a time.** Every query carries one window,
    512 rows of the 9 channels, one list per channel, and gets one record back:
 
@@ -858,9 +871,10 @@ the calls and their limits. Serve on the deployment Stages 4b–6 ran on
 4. **Every answer against Stage 6:** `predicted_state` and the four probabilities
    (to within 10⁻⁴), and the macro-F1 against the held-back labels, served and
    batch.
-5. **Cleanup:** the agent is cancelled and deleted, and the bundle deleted, however
-   the replay ends (Ctrl-C, SIGTERM and SIGHUP included); the ids stay in
-   `fit/out/serve_state.json` until then.
+5. **Cleanup:** the session cancelled, the deployment stopped, and the session,
+   deployment and package deleted, however the replay ends (Ctrl-C, SIGTERM and
+   SIGHUP included); each id goes to `fit/out/serve_state.json` before the script
+   waits on it, and stays there until then.
 
 **What you should see** (Dev, 2026-10-16):
 
@@ -918,22 +932,25 @@ cd app-serving && npm install && npm run dev     # http://localhost:5182
 ```
 
 Stage 8 in a browser: [`app-serving/`](app-serving/README.md) replays a becken-flt
-cycle at 200 Hz, a 512-row window every 2.56 s, through a serving agent of the
+cycle at 200 Hz, a 512-row window every 2.56 s, through a serving session of the
 Stage 5 model, and shows the state it calls (the machine drawn filling, washing,
 spinning or draining), the four probabilities, a timeline of the cycle, the
 embedding space and a log of state changes. Any of the 122 delivery files can be
 replayed.
 
 - **`fit/library_embeddings.py`:** the model is a registry artifact, so the library
-  it compares windows with can't be read back. This runs the 4 library files
-  through the promoted blueprint in batch with `output_embeddings: true` and writes
+  it compares windows with can't be read back. A package can't turn
+  `output_embeddings` on, so this first makes an embeddings blueprint (a 1-trial
+  optimization at Stage 5's point with `output_embeddings: true`, promoted), then runs
+  the 4 library files through it in batch sessions and writes
   their 3,200 windows, on the 2 directions that best separate the four states, to
   `app-serving/static/library-view.{json,bin}`.
   Ids go to `fit/out/library_state.json`. The repo ships the view (from this
   README's model), so run it again only after promoting another model.
-- **The app** holds a serving worker (one of Dev's 3) while it runs. It deletes its
-  agent and bundle when it stops (Ctrl-C or `npm run stop`); the ids sit in
-  `fit/out/app_serving_state.json` until then.
+- **The app** holds a serving worker while it runs: its bridge packages the
+  embeddings blueprint, deploys it as serving and opens a session. It deletes the
+  session, deployment and package when it stops (Ctrl-C or `npm run stop`); the ids
+  sit in `fit/out/app_serving_state.json` until then.
 
 Needs Node 20+ and mosquitto (`brew install mosquitto`). The app's README has the
 architecture, the settings and the ports.
@@ -945,30 +962,27 @@ python fit/cleanup.py            # what would be deleted, and what stays
 python fit/cleanup.py --yes      # delete it
 ```
 
-It deletes, from the ids in `fit/out/`, Stage 6's delivery agents and their bundle
-(the bundle's own listing also finds the runs a rerun replaced; the outputs are
-already in `fit/out/delivery/`), Stage 8's serving agent and bundle if
-`fit/serve.py` was killed before it could (`kill -9`, a closed laptop), and Stage 9's:
-the app's serving agents and bundle if its bridge was killed the same way, and the
-library-embedding runs and their bundle. A running
-serving agent holds a serving worker (one of Dev's 3) until it is deleted, or released
-after 20 minutes idle. Agents go first, since a bundle that still has one answers 409,
-then bundles, then a served copy of the Stage 5 blueprint (`<key>-served-records`), if
-an earlier version made one. One object that won't delete doesn't stop the rest:
-they're listed at the end. **What stays:** the promoted blueprint (deleting it needs
-the admin role), and the optimizations and evals. After a cleanup,
-`fit/deliver.py --resume` can't collect again.
+It deletes, from the packages recorded in `fit/out/`, Stage 6's delivery (the outputs
+are already in `fit/out/delivery/`), Stage 8's serving replay if `fit/serve.py` was
+killed before it could (`kill -9`, a closed laptop), and Stage 9's: the app's serving
+deployment if its bridge was killed the same way, and the library-embedding sessions.
+For each package the platform's own listings (`GET /api/agents/deployments?package_id=`,
+then `GET /api/agents/sessions?deployment_id=`) give its deployments and their
+sessions, so ones a rerun replaced are found too. Sessions go first, then
+deployments, then the package: each holds the next. A serving deployment holds a
+serving worker until it is stopped. One object that won't delete doesn't stop the
+rest: they're listed at the end. **What stays:** the project and its copy of `osm`,
+the promoted blueprints (Stage 5's and the embeddings one; deleting one needs the
+admin role), and the optimizations and evals. After a cleanup, `fit/deliver.py
+--resume` can't collect again.
 
-To see whether a serving agent is still running (yours or anyone's):
+To see which serving deployments are up:
 
 ```sh
 set -a; source .env; set +a
-curl -s "$ATAI_API_ENDPOINT/agents/instances?status=running&limit=100" -H "Authorization: Bearer $ATAI_API_KEY" \
-  | jq -c '.data[] | select(.mode=="serving") | {id, blueprint, name, created_at}'
+curl -s "${ATAI_API_ENDPOINT%/api}/api/agents/deployments?status=ready&limit=100" -H "Authorization: Bearer $ATAI_API_KEY" \
+  | jq -c '.data[] | select(.kind=="serving") | {id, package_id, project_id, created_at}'
 ```
-
-`status=running` filters on the server; `mode=serving` is ignored there, so `jq`
-picks the serving agents. `fit/serve.py`'s agent is named `LARCO serve`.
 
 ### If a result differs
 
@@ -1055,7 +1069,7 @@ Found while building this example, and reproducing it on a second deployment:
 - **Macro-F1 counts a state the model knows but the scored data lacks as
   F1 = 0.** Every scored set must contain every state.
 - **A run can report `completed` before its last output file is fully
-  written.** In our second run, all 5 delivery runs did: each one's last file was
+  written.** Under bundles, in our second run, all 5 delivery runs did: each one's last file was
   still short at `completed`, and complete about a minute later.
   `deliver.py` counts a run as completed only once every file's predictions
   reach that file's end. On Dev on 2026-10-17, two runs went further: they reported
@@ -1077,9 +1091,10 @@ Found while building this example, and reproducing it on a second deployment:
   A served agent keeps nothing between queries, so each query carries the whole
   512-row window, and it numbers the rows itself (0–511). An agent left without a
   query for 20 minutes is released, and a query to it then answers 409.
-- **A bundle that still has agents can't be deleted** (409), even when they're
-  cancelled: delete its agents first. `GET /agents/instances?bundle_id=<bnd_…>`
-  lists every agent a bundle ran, including the attempts a rerun replaced.
+- **Delete in order:** a deployment that still has sessions, or a package that still
+  has deployments, can't be deleted. Sessions first, then the deployment (stopped),
+  then the package. `GET /api/agents/deployments?package_id=` and
+  `GET /api/agents/sessions?deployment_id=` list what a rerun replaced.
 
 ## Repo layout
 
@@ -1106,10 +1121,11 @@ Found while building this example, and reproducing it on a second deployment:
 | `prep/archive_roles.py` | pack `data/roles/` into Git LFS tar.xz parts under `data/archives/`, or unpack them (skip Stages 0–3) |
 | `data/archives/` | the packed role files (Git LFS) and their `SHA256SUMS` |
 | `fit/test.py` | Stage 5: promote the Stage 4c trial, test once with the Evals API → `fit/out/test.json` |
-| `fit/deliver.py` | Stage 6: bundle from the Stage 5 blueprint, runs over becken-flt in batches → `fit/out/delivery/<file>.csv` |
+| `fit/deliver.py` | Stage 6: package of the Stage 5 blueprint → batch deployment → sessions over becken-flt → `fit/out/delivery/<file>.csv` |
 | `fit/score_delivery.py` | Stage 7: the delivered predictions against the held-back labels → `fit/out/delivery/scores.json` |
-| `fit/serve.py` | Stage 8: a serving agent of the Stage 5 blueprint, a window per query, against Stage 6 → `fit/out/serving/` |
-| `fit/library_embeddings.py` | Stage 9, once: the library through the promoted blueprint with embeddings on, PCA 1-2 → `app-serving/static/library-view.{json,bin}` |
+| `fit/serve.py` | Stage 8: a serving deployment of the Stage 5 blueprint and a session, a window per query, against Stage 6 → `fit/out/serving/` |
+| `fit/library_embeddings.py` | Stage 9, once: an embeddings blueprint, the library through it in batch, PCA 50 → LDA 2 → `app-serving/static/library-view.{json,bin}` |
 | `app-serving/` | Stage 9: the browser app, with a serving bridge and a replayer ([its README](app-serving/README.md)) |
-| `fit/cleanup.py` | delete the agents and bundles of Stages 6, 8 and 9, from the ids in `fit/out/` |
+| `fit/cleanup.py` | delete the sessions, deployments and packages of Stages 6, 8 and 9, from `fit/out/` |
+| `MIGRATION.md` | the move from bundles and instances to projects, packages, deployments and sessions |
 | `data/` | the listing, split, licence, metadata and downloaded cycles (`data/raw/` gitignored) |
