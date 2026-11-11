@@ -5,7 +5,9 @@
 
 > **Agent Lifecycle 2.0:** Stages 6–9 run on projects, packages, deployments and
 > sessions; bundles and instances are being removed from the platform. What changed,
-> and how to move your own scripts: [MIGRATION.md](MIGRATION.md).
+> and how to move your own scripts: [MIGRATION.md](MIGRATION.md). Rerun that way
+> (Stages 4c–9, on dev and on staging), the results below came out the same; the
+> comparison is in [MIGRATION.md](MIGRATION.md#results).
 
 ## TL;DR
 
